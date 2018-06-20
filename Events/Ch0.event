@@ -1,0 +1,86 @@
+#include EAstdlib.event
+
+EventPointerTable(0x7,Chapter0)
+
+Chapter0:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+Units:
+UNIT Raphael EphraimLord 0x00 Level(1, Ally, 0) [14,5] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Cyrus Assassin 0x00 Level(1, Ally, 0) [14,3] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Ace Cavalier 0x00 Level(1, Ally, 0) [13,4] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Raptor Cavalier 0x00 Level(1, Ally, 0) [15,4] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+Enemies:
+UNIT Larry Knight 0x00 Level(1, Enemy, 0) [2,1] 0x00 0x00 0x0 0x00 [IronLance, HandAxe] GuardTileAI 
+UNIT 0x88 Knight 0x00 Level(1, Enemy, 1) [15,14] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI 
+UNIT 0x88 Fighter 0x00 Level(1, Enemy, 1) [11,15] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI 
+UNIT 0x88 Fighter 0x00 Level(1, Enemy, 1) [8,10] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI 
+UNIT 0x88 Soldier 0x00 Level(1, Enemy, 1) [10,11] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI 
+UNIT 0x88 Soldier 0x00 Level(1, Enemy, 1) [13,13] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI 
+UNIT 0x88 Archer 0x00 Level(1, Enemy, 1) [5,10] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI 
+UNIT 0x88 Soldier 0x00 Level(1, Enemy, 1) [5,14] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x88 Knight 0x00 Level(1, Enemy, 1) [1,11] 0x00 0x00 0x0 0x00 [Horseslayer] AttackInRangeAI 
+UNIT 0x88 Cavalier 0x00 Level(1, Enemy, 1) [3,5] 0x2 0x00 0x0 0x00 [IronSword] AttackInRangeAI 
+UNIT 0x88 Cavalier 0x00 Level(1, Enemy, 1) [4,6] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT
+
+ScorpioUnit:
+UNIT Scorpio Pirate 0x0 Level(1, Ally, 0) [0,2] 0x00 0x00 0x0 0x00 [IronAxe,HandAxe] NoAI
+UNIT
+
+//Turn Events
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+//Character Events
+CharacterBasedEvents:
+END_MAIN
+
+//Location Events
+LocationBasedEvents:
+END_MAIN
+
+//Misc Events
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatAll(EndingScene)
+END_MAIN
+
+//
+Dunno:
+END_MAIN
+
+//
+Tutorial:
+END_MAIN
+
+//Trap Data
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 Units
+ENUN
+LOAD1 0x1 Enemies
+ENUN
+ENDA
+
+EndingScene:
+LOAD1 0x1 ScorpioUnit
+MNC2 0x1
+ENDA

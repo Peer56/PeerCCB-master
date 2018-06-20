@@ -1,0 +1,21 @@
+#include "Tools/Tool Helpers.txt"
+
+Raphael_Mug:
+#incext PortraitFormatter "RaphaelMug.png"
+setMugEntry(0x2, Raphael_Mug, 3,5,3,3)
+
+Cyrus_Mug:
+#incext PortraitFormatter "CyrusMug.png"
+setMugEntry(0x4, Cyrus_Mug, 3,5,3,3)
+
+Ace_Mug:
+#incext PortraitFormatter "AceMug.png"
+setMugEntry(0x5, Ace_Mug, 3,5,3,3)
+
+Raptor_Mug:
+#incext PortraitFormatter "RaptorMug.png"
+setMugEntry(0x6, Raptor_Mug, 3,4,3,2)
+
+Scorpio_Mug:
+#incext PortraitFormatter "ScorpioMug.png"
+setMugEntry(0x8, Scorpio_Mug, 2,5,2,3)

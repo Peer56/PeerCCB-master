@@ -1,0 +1,65 @@
+#define FreeSpace 0xb2a610
+#define FreeSpaceBLRange 0x1c1ec0
+
+#define ChapterTileset(chapter, object, palette, config) "PUSH; ORG 0x8b0890 + (148* chapter) + 4; SHORT object; BYTE palette config; POP"
+#define ChapterTileAnims(chapter, anim1, anim2) "PUSH; ORG 0x8b0890 + (148* chapter) + 9; BYTE anim1 anim2; POP"
+
+#ifndef ItemTable
+  #define ItemTable 0x809B10
+#endif
+#ifndef DebuffTable
+    #define DebuffTable 0x203F100
+#endif
+
+#define LunarBrace MoonBracelet
+#define SolarBrace SunBracelet
+
+#include "Engine Hacks/Skill System/skill_definitions.event"
+
+// #define __DEBUG__ // Uncomment to get the Debug startup menu :p
+
+#define Raphael Eirika
+#define Cyrus Seth
+#define Ace Gilliam
+#define Raptor Franz
+#define Scorpio Vanessa
+#define Reese Moulder
+#define Xiong Garcia
+#define Ruby Ross
+#define Lucian Neimi
+#define Staphanie Colm
+#define Taranie Artur
+#define Sephyz Lute
+//#define Ch6xSamson Natasha
+#define Nard Joshua
+//#define Ch8char Forde
+//#define Ch9char Kyle
+//#define Ch10char Tana
+#define Etna Innes
+//#define Ch11char Gerik
+//#define Ch12char Tethys
+//#define Ch13char Marisa
+#define Jonathan LArachel
+ 
+#define Larry ONeill
+//#define Ch1boss Breguet
+#define Tsochueh Bone
+//#define Ch3boss Bazba
+#define Gorias Saar
+//#define Ch5boss Zonta
+//#define Ch6boss Novala
+#define Rahd Murray
+#define Lokir Tirado
+//#define Ch8boss Binks
+//#define Ch9boss Gheb
+//#define Ch10boss Pablo
+//#define Ch10xboss Beran
+//#define Ch11boss Aias
+//#define Ch12boss Selena
+//#define Ch13boss Carlyle
+
+//define the endgame bosses here
+
+//define classes here
+
+//define items here

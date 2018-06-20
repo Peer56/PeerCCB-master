@@ -1,0 +1,9 @@
+//Master Event Installer
+ALIGN 4
+{
+  #include "Ch0.event"
+}
+/*ALIGN 4
+{
+  #include "Ch1.event"
+}*/
