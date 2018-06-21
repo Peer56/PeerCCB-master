@@ -23,6 +23,9 @@
 	
 	//Mugs
 	#include "Mugs/_Mug Installer.event"
+	
+	//Music
+	#include "Music/Music Installer.event"
     
     MESSAGE Used free space ends at currentOffset
     MESSAGE Proc_Counter
