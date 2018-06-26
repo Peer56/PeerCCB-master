@@ -1,0 +1,285 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+ALIGN 4
+
+#include "leonarth/leonarth.event"
+
+ALIGN 4
+
+EventPointerTable(0x24, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Placement Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+//level 1 entombed every 3 turns until their boss is defeated 
+TURN 10 CallHillReinforcements [1,0xFF] 0
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Vendor(ShopItems,6,10)
+Armory(ArmoryItems,1,0)
+SecretShop(SecretItems,0,16)
+House(0,HouseEvent,11,5)
+House(11,TempleEvent,22,15)
+END_MAIN
+
+MiscBasedEvents:
+//check if enemies are dead to erase their crosses
+AREA 9 checkEnemy1 [0,0] [26,16]
+AREA 10 checkEnemy2 [0,0] [26,16]
+//hidden desert items in the sand
+AREA 12 hiddenScroll [18,4] [20,6]
+AREA 20 hiddenTreasure1 [0,0] [3,3]
+AREA 21 hiddenTreasure2 [8,0] [11,2]
+AREA 22 hiddenTreasure3 [15,0] [17,1]
+AREA 23 hiddenTreasure4 [20,0] [24,2]
+AREA 24 hiddenTreasure5 [22,8] [25,10]
+AREA 25 hiddenTreasure6 [25,1] [26,3]
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Placement:
+UNIT Moulder Paladin 0x1 0xA1 [11,5] 0b 0x0 0x0 0x0 [0] [0x0,0x0,0x0,0x0]
+UNIT Moulder Paladin 0x1 0xA1 [12,5] 0b 0x0 0x0 0x0 [0] [0x0,0x0,0x0,0x0]
+UNIT Moulder Paladin 0x1 0xA1 [10,4] 0b 0x0 0x0 0x0 [0] [0x0,0x0,0x0,0x0]
+UNIT Moulder Paladin 0x1 0xA1 [11,4] 0b 0x0 0x0 0x0 [0] [0x0,0x0,0x0,0x0]
+UNIT Moulder Paladin 0x1 0xA1 [12,4] 0b 0x0 0x0 0x0 [0] [0x0,0x0,0x0,0x0]
+UNIT Moulder Paladin 0x1 0xA1 [13,4] 0b 0x0 0x0 0x0 [0] [0x0,0x0,0x0,0x0]
+UNIT Moulder Paladin 0x1 0xA1 [14,4] 0b 0x0 0x0 0x0 [0] [0x0,0x0,0x0,0x0]
+UNIT Moulder Paladin 0x1 0xA1 [12,3] 0b 0x0 0x0 0x0 [0] [0x0,0x0,0x0,0x0]
+UNIT Moulder Paladin 0x1 0xA1 [13,3] 0b 0x0 0x0 0x0 [0] [0x0,0x0,0x0,0x0]
+UNIT Moulder Paladin 0x1 0xA1 [14,3] 0b 0x0 0x0 0x0 [0] [0x0,0x0,0x0,0x0]
+UNIT Moulder Paladin 0x1 0xA1 [15,3] 0b 0x0 0x0 0x0 [0] [0x0,0x0,0x0,0x0]
+UNIT
+
+Units1:
+UNIT Eirika  PegasusKnight 0x1 0xA1 [11,5] 0b 0x0 0x0 0x0 [0x1,0x98,0x88,0xa4] [0x0,0x0,0x0,0x0]
+UNIT
+
+CutsceneUnit:
+UNIT 0x5D Summoner_F 0x5D Level(20,Enemy,1) [10,16] 0x0 0x00 0x0 0x00 [0x0] NoAI
+UNIT
+
+Skeleton:
+UNIT 0xB0 Revenant 0x5C Level(6,Enemy,1)   [11,1] 0x0 0x00 0x0 0x00 [RottenClaw] AttackInRangeAI
+UNIT 0xB0 Revenant 0x5C Level(6,Enemy,1)   [16,0] 0x2 0x00 0x0 0x00 [RottenClaw,Antitoxin] AttackInRangeAI
+UNIT 0xB0 Revenant 0x5C Level(6,Enemy,1)   [17,7] 0x0 0x00 0x0 0x00 [RottenClaw] AttackInRangeAI
+UNIT 0xB0 Revenant 0x5C Level(6,Enemy,1)   [22,5] 0x2 0x00 0x0 0x00 [RottenClaw,Antitoxin] AttackInRangeAI
+UNIT 0xB0 Revenant 0x5C Level(6,Enemy,1)   [0,9] 0x0 0x00 0x0 0x00 [RottenClaw] AttackInRangeAI
+UNIT 0xB0 Wight 0x5C Level(1,Enemy,1)      [20,0] 0x2 0x00 0x0 0x00 [Wyrmslayer,SteelBlade] NeverMoveAI
+UNIT 0x5C Cyclops 0x5C Level(4,Enemy,1)    [23,1] 0x2 0x00 0x0 0x00 [Tomahawk,PoisonAxe,0xA4] NeverMoveAI
+UNIT
+
+Hill:
+UNIT 0xB0 Bonewalker 0x5C Level(8,Enemy,1)     [4,3] 0x0 0x00 0x0 0x00 [Javelin,Vulnerary] NeverMoveAI
+UNIT 0xB0 Bonewalker 0x5C Level(8,Enemy,1)     [3,4] 0x0 0x00 0x0 0x00 [Javelin,Vulnerary] NeverMoveAI
+UNIT 0xB0 Bonewalker 0x5C Level(8,Enemy,1)     [2,5] 0x0 0x00 0x0 0x00 [Javelin,Vulnerary] NeverMoveAI
+UNIT 0xB0 Bonewalker_Bow 0x5C Level(8,Enemy,1) [3,3] 0x2 0x00 0x0 0x00 [PoisonBow,Antitoxin] NeverMoveAI
+UNIT 0xB0 Bonewalker_Bow 0x5C Level(8,Enemy,1) [2,4] 0x0 0x00 0x0 0x00 [PoisonBow] NeverMoveAI
+UNIT 0xB0 Bonewalker_Bow 0x5C Level(8,Enemy,1) [3,1] 0x2 0x00 0x0 0x00 [PoisonBow] NeverMoveAI
+UNIT 0x5C Cyclops 0x5C Level(4,Enemy,1)        [3,2] 0x2 0x00 0x0 0x00 [Tomahawk,SilverAxe,0xA4] NeverMoveAI
+UNIT
+
+HillReinforcements:
+UNIT 0xB0 Entombed 0x5C Level(1,Enemy,1)       [0,2] 0x0 0x00 0x1 REDA_HillReinforcements [RottenClaw] PursueWithoutHeedAI
+UNIT
+
+REDA_HillReinforcements:
+REDA [0,2] 0 0 0 0
+
+Doogs:
+#define DoogAI [0x0D,0x06]
+UNIT 0xB0 Mauthedoog 0x5E Level(8,Enemy,1) [12,14] 0x0 0x00 0x0 0x00 [FireFang] DoogAI
+UNIT 0xB0 Mauthedoog 0x5E Level(8,Enemy,1) [12,15] 0x0 0x00 0x0 0x00 [FireFang] DoogAI
+UNIT 0xB0 Mauthedoog 0x5E Level(8,Enemy,1) [13,15] 0x0 0x00 0x0 0x00 [FireFang] DoogAI
+UNIT 0xB0 Mauthedoog 0x5E Level(8,Enemy,1) [14,15] 0x0 0x00 0x0 0x00 [FireFang] DoogAI
+UNIT 0x5E Gwyllgi    0x5E Level(4,Enemy,1) [13,14] 0x2 0x00 0x0 0x00 [HellFang,Antitoxin] ChaseOnceApproachedAI
+
+UNIT
+
+Temple:
+UNIT 0xB0 Bonewalker_Bow 0x5F Level(4,Enemy,1)        [21,11] 0x0 0x00 0x0 0x00 [ShortBow] NeverMoveAI
+UNIT 0xB0 Bonewalker_Bow 0x5F Level(4,Enemy,1)        [22,11] 0x0 0x00 0x0 0x00 [ShortBow] NeverMoveAI
+UNIT 0xB0 Bonewalker_Bow 0x5F Level(4,Enemy,1)        [23,11] 0x0 0x00 0x0 0x00 [ShortBow] NeverMoveAI
+UNIT 0xB0 Mogall 0x5F Level(4,Enemy,1)                [20,12] 0x0 0x00 0x0 0x00 [EvilEye] NeverMoveAI
+UNIT 0xB0 Mogall 0x5F Level(4,Enemy,1)                [25,12] 0x0 0x00 0x0 0x00 [EvilEye] NeverMoveAI
+UNIT 0xB0 Mogall 0x5F Level(4,Enemy,1)                [18,13] 0x0 0x00 0x0 0x00 [EvilEye] NeverMoveAI
+UNIT 0xB0 Mogall 0x5F Level(4,Enemy,1)                [24,14] 0x0 0x00 0x0 0x00 [EvilEye] NeverMoveAI
+UNIT 0xB0 Mogall 0x5F Level(4,Enemy,1)                [17,16] 0x0 0x00 0x0 0x00 [EvilEye] NeverMoveAI
+UNIT 0xB0 Mogall 0x5F Level(4,Enemy,1)                [26,16] 0x0 0x00 0x0 0x00 [EvilEye] NeverMoveAI
+UNIT 0x5F ArchMogall 0x5F Level(2,Enemy,1)            [20,15] 0x0 0x00 0x0 0x00 [CrimsonEye] NeverMoveAI
+UNIT 0x5F ArchMogall 0x5F Level(2,Enemy,1)            [24,15] 0x0 0x00 0x0 0x00 [CrimsonEye] NeverMoveAI
+UNIT
+
+Traps1:
+BLST [10,5] 0x35
+BLST [13,5] 0x35
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 CutsceneUnit
+ENUN
+LOAD1 0x1 Skeleton
+LOAD1 0x1 Hill
+LOAD1 0x1 Doogs
+LOAD1 0x1 Temple
+ENUN
+ENUT 1 //no boss quotes
+CAM1 [10,12]
+FADU 16
+STAL 60
+//text
+	CenterTutorialTextBox
+	TUTORIALTEXTBOXSTART
+	TEXTSHOW ch6explanation
+	TEXTEND
+	REMA
+MOVE 0 0x5D [10,15]
+ENUN
+STAL 60
+DISA 0x5D
+TILECHANGE 0
+STAL 60
+placeCross(6,10,8)
+placeCross(23,1,9)
+placeCross(3,2,10)
+placeCross(22,15,11)
+placeCross(19,5,12)
+LOAD1 0x1 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+ENUN
+GotoPrepScreen
+
+CallHillReinforcements:
+NoFade
+ENUF 10
+ASMC every3Turns|1
+BNE 4 0xB 0
+ENDB
+LABEL 4
+ReinforcementEvent(HillReinforcements)
+
+checkEnemy1:
+checkEnemy(23,1,9)
+checkEnemy2:
+checkEnemy(3,2,10)
+hiddenScroll:
+hiddenItem(26,0xA4)
+hiddenTreasure1:
+hiddenItem(20,BlueGem)
+hiddenTreasure2:
+hiddenItem(21,Elixir)
+hiddenTreasure3:
+hiddenItem(22,MasterSeal)
+hiddenTreasure4:
+hiddenItem(23,AngelicRobe)
+hiddenTreasure5:
+hiddenItem(24,EnergyRing)
+hiddenTreasure6:
+hiddenItem(25,MemberCard)
+
+TempleEvent:
+SVAL 3 0xA4
+NoFade
+ENDA
+
+EndingScene:
+MNC2 8
+NoFade
+ENDA
+
+HouseEvent:
+ASMC checkPieces|1
+BEQ 0 0xB 0
+//if the unit has all 5 pieces
+	CAM1 [10,5]
+	MUSC 0
+	STAL 60
+	SOUN 0x102
+	ASMC risingMisile|1
+	CAM1 [10,12]
+	STAL 120
+	ASMC fallingMisile|1
+	STAL 30
+	EARTHQUAKE_START 0x0
+	ASMC explosiveEnding|1
+	STAL 60
+	EARTHQUAKE_END
+	STAL 60
+	SOUN 0xD6
+	STAL 16
+	TILECHANGE 1
+	STAL 240
+	ASMC ch6TurnCount|1
+	BEQ 2 0x3 0
+	GIVEITEMTOMAIN 0
+	LABEL 2
+	BEQ 1 0xB 0
+	MNC2 8 //gaiden chapter id
+	NoFade
+	ENDB
+	LABEL 1
+	MNC2 9 //next non-gaiden chapter id
+//otherwise
+	NoFade
+	ENDB
+	LABEL 0
+	//text
+	CenterTutorialTextBox
+	TUTORIALTEXTBOXSTART
+	TEXTSHOW ch6house
+	TEXTEND
+	REMA
+	NoFade
+ENDA
+
+SecretItems:
+SHLI Heal Mend Restore Sleep Elfire Lockpick Elixir
+ALIGN 4
+
+ShopItems:
+//item 0xA4 can only be bought once
+SHLI Fire Thunder Heal 0xA4 Antitoxin Vulnerary
+ALIGN 4
+
+ArmoryItems:
+SHLI HandAxe Javelin SteelSword PoisonSword IronBow SteelBow
+ALIGN 4

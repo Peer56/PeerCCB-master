@@ -1,0 +1,22 @@
+//Statscreen and Glowy Remover
+PUSH
+ORG $88638
+POIN Statscreen
+ORG $88620
+POIN RemoveGlowy
+ORG $88640
+POIN StatscreenPal
+POP
+
+RemoveGlowy:
+#incext Png2Dmp "RemoveGlowy.png" --lz77
+Statscreen:
+#incext Png2Dmp "Statscreen.png" --lz77
+StatscreenPal:
+#incext Png2Dmp "Statscreen.png" --palette-only
+
+//Remove Map Sprite Platform
+PUSH
+    ORG $88354
+    SHORT $4770
+POP

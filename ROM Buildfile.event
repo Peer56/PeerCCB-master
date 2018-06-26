@@ -7,6 +7,10 @@
     #include "Text/Install Text Data.event"
     MESSAGE Used text space ends at currentOffset
 
+	//Animations
+    #include "Animations/Master Animation Installer.event"
+	MESSAGE Used animation space ends at currentOffset
+	
     //CSV tables
     #include "Tables/Table Installer.event"
     MESSAGE Used table space ends at currentOffset
@@ -21,9 +25,15 @@
     //Maps
     #include "Maps/Master Map Installer.event"
 	
-	//Mugs
-	#include "Mugs/_Mug Installer.event"
-    
+    //Mugs
+    #include "Mugs/_Mug Installer.event"
+	
+    //Music
+    #include "Music/Music Installer.event"
+	
+	//Graphics
+	#include "Graphics/_Master Graphics Installer.event"
+
     MESSAGE Used free space ends at currentOffset
     MESSAGE Proc_Counter
 #else

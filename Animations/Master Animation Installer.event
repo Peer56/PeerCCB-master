@@ -1,0 +1,29 @@
+#ifndef ClassAnimTable
+  #ifdef _FE8_
+    #define ClassAnimTable (0xc00008-0x20)
+  #endif
+  #ifdef _FE7_
+    #define ClassAnimTable (0xe00008-0x20)
+  #endif
+#endif
+
+#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
+
+//////////////Installed animations go here:
+
+#include "Lord/RaphaelSword Installer.event"
+#include "Lord/RaphaelDisarmed Installer.event"
+#include "Soldier/SoldierLance Installer.event"
+#include "Soldier/SoldierDisarmed Installer.event"
+#include "Berserker/YetizerkerAxe Installer.event"
+#include "General/GeneralSword Installer.event"
+#include "General/GeneralLance Installer.event"
+#include "General/GeneralAxe Installer.event"
+#include "General/GeneralHandaxe Installer.event"
+#include "General/GeneralDisarmed Installer.event"
+#include "Cavalier/CavalierLance Installer.event"
+#include "Cavalier/CavalierSword Installer.event"
+#include "Cavalier/CavalierDisarmed Installer.event"
+
+//
+#include BattleAnimPointers.event

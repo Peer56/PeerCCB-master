@@ -30,33 +30,33 @@
 #define Staphanie Colm
 #define Taranie Artur
 #define Sephyz Lute
-//#define Ch6xSamson Natasha
-#define Nard Joshua
-//#define Ch8char Forde
+#define Baro Joshua
+#define Nard Natasha
+#define Alexei Forde
 //#define Ch9char Kyle
-//#define Ch10char Tana
-#define Etna Innes
-//#define Ch11char Gerik
-//#define Ch12char Tethys
-//#define Ch13char Marisa
+#define Dariyush Tana
+#define Lucile Innes
+#define Theran Gerik
+#define Kithin Tethys
+#define Seras Marisa
 #define Jonathan LArachel
  
 #define Larry ONeill
 //#define Ch1boss Breguet
 #define Tsochueh Bone
-//#define Ch3boss Bazba
+#define Markino Bazba
 #define Gorias Saar
-//#define Ch5boss Zonta
+#define Michael Zonta
 //#define Ch6boss Novala
 #define Rahd Murray
 #define Lokir Tirado
-//#define Ch8boss Binks
+#define Tarak Binks
 //#define Ch9boss Gheb
 //#define Ch10boss Pablo
 //#define Ch10xboss Beran
-//#define Ch11boss Aias
-//#define Ch12boss Selena
-//#define Ch13boss Carlyle
+#define Yaurel Aias
+#define Brendain Selena
+#define Yvorhic Carlyle
 
 //define the endgame bosses here
 
