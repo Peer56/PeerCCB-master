@@ -1,0 +1,6 @@
+## ch2goal
+Escort Erhuang[X]
+
+## ch2objective
+Escort Erhuang back[N]
+to her village[X]
