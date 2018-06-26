@@ -1,0 +1,4745 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	losbastardos_grp  voicegroup000
+	#define	losbastardos_pri  0
+	#define	losbastardos_rev  0
+	#define	losbastardos_mvl  75
+	#define	losbastardos_key  0
+	#define	losbastardos_tbs  1
+	#define	losbastardos_exg  0
+	#define	losbastardos_cmp  1
+
+	// .rodata
+	//	losbastardos
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+losbastardos_1:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   160*losbastardos_tbs/2
+	BYTE		VOICE   18
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W24
+losbastardos_1_B1:
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+losbastardos_1_007:
+	BYTE		N05     Fn3   v080
+	BYTE		N05     As4   v096
+	BYTE	W12
+	BYTE		        Fn3   v080
+	BYTE		N05     As4   v096
+	BYTE	W24
+	BYTE		        Fn3   v080
+	BYTE		N05     As4   v096
+	BYTE	W12
+	BYTE		N23     Fn3   v080
+	BYTE		N23     As4   v096
+	BYTE	W24
+	BYTE		N05     Fn3   v080
+	BYTE		N05     As4   v096
+	BYTE	W12
+	BYTE		        Fn3   v080
+	BYTE		N05     As4   v096
+	BYTE	W12
+	BYTE	PEND
+// 008   ----------------------------------------
+losbastardos_1_008:
+	BYTE	W12
+	BYTE		N05     Fn3   v080
+	BYTE		N05     As4   v096
+	BYTE	W12
+	BYTE		N23     Fn3   v080
+	BYTE		N23     As4   v096
+	BYTE	W24
+	BYTE		N05     Fs3   v080
+	BYTE		N05     Bn4   v096
+	BYTE	W12
+	BYTE		        Fs3   v080
+	BYTE		N05     Bn4   v096
+	BYTE	W24
+	BYTE		N11     Fs3   v080
+	BYTE		N11     Bn4   v096
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+losbastardos_1_010:
+	BYTE		N11     As2   v096
+	BYTE		TIE     Fn4   v127
+	BYTE	W12
+	BYTE		N11     As2   v096
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE	PEND
+// 011   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		EOT     Fn4 
+	BYTE	W06
+	BYTE		N11     Bn2 
+	BYTE		N05     Ds4   v127
+	BYTE	W06
+	BYTE		        Fn4 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Fs4   v127
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Fn4   v127
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE	W06
+	BYTE		N11     Gs4 
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Fs4   v127
+	BYTE	W06
+	BYTE		        Gs4 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     As4   v127
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Bn4   v127
+	BYTE	W06
+	BYTE		        Gs4 
+	BYTE	W06
+// 012   ----------------------------------------
+losbastardos_1_012:
+	BYTE		N11     As2   v096
+	BYTE		TIE     As4   v127
+	BYTE	W12
+	BYTE		N11     As2   v096
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		EOT     As4 
+	BYTE	W06
+	BYTE		N11     Bn2 
+	BYTE		N05     Gs4   v127
+	BYTE	W06
+	BYTE		        As4 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Bn4   v127
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     As4   v127
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		N11     Cs5 
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Bn4   v127
+	BYTE	W06
+	BYTE		        Cs5 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Ds5   v127
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     En5   v127
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_012
+// 015   ----------------------------------------
+	BYTE		N11     Bn2   v096
+	BYTE	W06
+	BYTE		EOT     As4 
+	BYTE	W06
+	BYTE		N11     Bn2 
+	BYTE		N05     Fn5   v080
+	BYTE	W06
+	BYTE		        As4   v084
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Fn5   v084
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     As4   v084
+	BYTE	W06
+	BYTE		        Fn5   v088
+	BYTE	W06
+	BYTE		N11     As4 
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Fn5   v092
+	BYTE	W06
+	BYTE		        As4 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Fn5   v092
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     As4 
+	BYTE	W06
+	BYTE		        Fn5 
+	BYTE	W06
+// 016   ----------------------------------------
+losbastardos_1_016:
+	BYTE		N11     As2   v096
+	BYTE		N11     As4 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE		N05     Fn5 
+	BYTE	W06
+	BYTE		        As4 
+	BYTE	W06
+	BYTE		N11     Fn2 
+	BYTE		N11     Fn5 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE		N05     As4 
+	BYTE	W06
+	BYTE		        Fn5 
+	BYTE	W06
+	BYTE		N11     As4 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE		N05     Fn5 
+	BYTE	W06
+	BYTE		        As4 
+	BYTE	W06
+	BYTE		N11     Fn2 
+	BYTE		N11     Fn5 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE		N05     As4 
+	BYTE	W06
+	BYTE		        Fn5 
+	BYTE	W06
+	BYTE	PEND
+// 017   ----------------------------------------
+losbastardos_1_017:
+	BYTE		N11     Bn2   v096
+	BYTE		N11     As4   v112
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Fn5   v112
+	BYTE	W06
+	BYTE		        As4 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Fn5   v112
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     As4   v112
+	BYTE	W06
+	BYTE		        Fn5 
+	BYTE	W06
+	BYTE		N11     As4 
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Fn5   v112
+	BYTE	W06
+	BYTE		        As4 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Fn5   v112
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     As4   v112
+	BYTE	W06
+	BYTE		        Fn5 
+	BYTE	W06
+	BYTE	PEND
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+losbastardos_1_020:
+	BYTE		N05     As4   v080
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 021   ----------------------------------------
+losbastardos_1_021:
+	BYTE	W12
+	BYTE		N05     As4   v080
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Bn4 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+losbastardos_1_023:
+	BYTE		N11     As2   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE	PEND
+// 024   ----------------------------------------
+losbastardos_1_024:
+	BYTE		N11     Bn2   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE	PEND
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_023
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_024
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_023
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_024
+// 029   ----------------------------------------
+losbastardos_1_029:
+	BYTE		N15     As1   v112
+	BYTE	W16
+	BYTE		        As2 
+	BYTE	W16
+	BYTE		        Fn2 
+	BYTE	W16
+	BYTE		N11     As1 
+	BYTE	W24
+	BYTE		N23     As2 
+	BYTE	W24
+	BYTE	PEND
+// 030   ----------------------------------------
+losbastardos_1_030:
+	BYTE		N15     Bn1   v112
+	BYTE	W16
+	BYTE		        Bn2 
+	BYTE	W16
+	BYTE		        Fs2 
+	BYTE	W16
+	BYTE		N11     Bn1 
+	BYTE	W24
+	BYTE		N23     Bn2 
+	BYTE	W24
+	BYTE	PEND
+// 031   ----------------------------------------
+losbastardos_1_031:
+	BYTE		N15     Cn2   v112
+	BYTE	W16
+	BYTE		        Cn3 
+	BYTE	W16
+	BYTE		        Gn2 
+	BYTE	W16
+	BYTE		N11     Cn2 
+	BYTE	W24
+	BYTE		N23     Cn3 
+	BYTE	W24
+	BYTE	PEND
+// 032   ----------------------------------------
+losbastardos_1_032:
+	BYTE		N15     Cs2   v112
+	BYTE	W16
+	BYTE		        Cs3 
+	BYTE	W16
+	BYTE		        Gs2 
+	BYTE	W16
+	BYTE		N11     Cs2 
+	BYTE	W24
+	BYTE		N23     Cs3 
+	BYTE	W24
+	BYTE	PEND
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_029
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_030
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_031
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_032
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_007
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_008
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_010
+// 043   ----------------------------------------
+	BYTE		N11     Bn2   v096
+	BYTE	W06
+	BYTE		EOT     Fn4 
+	BYTE	W06
+	BYTE		N11     Bn2 
+	BYTE		N05     Ds4   v127
+	BYTE	W06
+	BYTE		        Fn4 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Fs4   v127
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Fn4   v127
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE	W06
+	BYTE		N11     Gs4 
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Fs4   v127
+	BYTE	W06
+	BYTE		        Gs4 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     As4   v127
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Bn4   v127
+	BYTE	W06
+	BYTE		        Gs4 
+	BYTE	W06
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_012
+// 045   ----------------------------------------
+	BYTE		N11     Bn2   v096
+	BYTE	W06
+	BYTE		EOT     As4 
+	BYTE	W06
+	BYTE		N11     Bn2 
+	BYTE		N05     Gs4   v127
+	BYTE	W06
+	BYTE		        As4 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Bn4   v127
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     As4   v127
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		N11     Cs5 
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Bn4   v127
+	BYTE	W06
+	BYTE		        Cs5 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Ds5   v127
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     En5   v127
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_012
+// 047   ----------------------------------------
+	BYTE		N11     Bn2   v096
+	BYTE	W06
+	BYTE		EOT     As4 
+	BYTE	W06
+	BYTE		N11     Bn2 
+	BYTE		N05     Fn5   v080
+	BYTE	W06
+	BYTE		        As4   v084
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Fn5   v084
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     As4   v084
+	BYTE	W06
+	BYTE		        Fn5   v088
+	BYTE	W06
+	BYTE		N11     As4 
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     Fn5   v092
+	BYTE	W06
+	BYTE		        As4 
+	BYTE	W06
+	BYTE		N11     Fs2   v096
+	BYTE		N11     Fn5   v092
+	BYTE	W12
+	BYTE		        Bn2   v096
+	BYTE		N05     As4 
+	BYTE	W06
+	BYTE		        Fn5 
+	BYTE	W06
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_016
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_017
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_020
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_021
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE		N23     Gs2   v112
+	BYTE		N22     Gs4   v080
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE		N23     As2   v112
+	BYTE		N23     As4   v080
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+losbastardos_1_057:
+	BYTE		N11     As1   v112
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE	PEND
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_057
+// 059   ----------------------------------------
+	BYTE		N11     Bn1   v112
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+// 060   ----------------------------------------
+	BYTE		        Cs2 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Gs1 
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Gs1 
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W12
+// 061   ----------------------------------------
+losbastardos_1_061:
+	BYTE		N11     As1   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE	PEND
+// 062   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_061
+// 063   ----------------------------------------
+losbastardos_1_063:
+	BYTE		N11     Fs1   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE	PEND
+// 064   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_063
+// 065   ----------------------------------------
+losbastardos_1_065:
+	BYTE		N11     Ds2   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE		        Ds2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE		        Ds2 
+	BYTE	W12
+	BYTE	PEND
+// 066   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_065
+// 067   ----------------------------------------
+losbastardos_1_067:
+	BYTE		N11     Fn2   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE	PEND
+// 068   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_067
+// 069   ----------------------------------------
+	BYTE		N11     As1   v096
+	BYTE		N92     Fn4   v080
+	BYTE	W12
+	BYTE		N11     As1   v096
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+// 070   ----------------------------------------
+	BYTE		N11   
+	BYTE		N44     As4   v080
+	BYTE	W12
+	BYTE		N11     As1   v096
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE		N44     Cs5   v080
+	BYTE	W12
+	BYTE		N11     As1   v096
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+// 071   ----------------------------------------
+	BYTE		        Fs1 
+	BYTE		N92     Fn5   v080
+	BYTE	W12
+	BYTE		N11     Fs1   v096
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+// 072   ----------------------------------------
+	BYTE		N11   
+	BYTE		N44     Ds5   v080
+	BYTE	W12
+	BYTE		N11     Fs1   v096
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		N44     Cs5   v080
+	BYTE	W12
+	BYTE		N11     Fs1   v096
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+// 073   ----------------------------------------
+	BYTE		        Ds2 
+	BYTE		N92     As4   v080
+	BYTE	W12
+	BYTE		N11     Ds2   v096
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE		        Ds2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE		        Ds2 
+	BYTE	W12
+// 074   ----------------------------------------
+	BYTE		        Fn2 
+	BYTE		N32     An4   v080
+	BYTE	W12
+	BYTE		N11     Fn2   v096
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE		N32     As4   v080
+	BYTE	W24
+	BYTE		N11     Fn2   v096
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE		N23     Cn5   v080
+	BYTE	W12
+	BYTE		N11     Fn2   v096
+	BYTE	W12
+// 075   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_1_061
+	BYTE	GoTo
+	 POIN2	losbastardos_1_B1
+losbastardos_1_B2:
+// 076   ----------------------------------------
+	BYTE	W96
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+losbastardos_2:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   65
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W24
+losbastardos_2_B1:
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+losbastardos_2_007:
+	BYTE		N05     As3   v096
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 008   ----------------------------------------
+losbastardos_2_008:
+	BYTE	W12
+	BYTE		N05     As3   v096
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Bn3 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+losbastardos_2_016:
+	BYTE	W24
+	BYTE		N05     Fn3   v112
+	BYTE	W12
+	BYTE		        Gs3 
+	BYTE	W12
+	BYTE		TIE     As3 
+	BYTE	W48
+	BYTE	PEND
+// 017   ----------------------------------------
+	BYTE	W92
+	BYTE	W03
+	BYTE		EOT   
+	BYTE	W01
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+losbastardos_2_020:
+	BYTE		N05     As3   v112
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 021   ----------------------------------------
+losbastardos_2_021:
+	BYTE	W12
+	BYTE		N05     As3   v112
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Bn3 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		N92     Fn4   v064
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE		        Fs4 
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE		        Fn4 
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE		        Fs4 
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE		        Fn4 
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE		        Fs4 
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_2_007
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_2_008
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_2_016
+// 049   ----------------------------------------
+	BYTE	W92
+	BYTE	W03
+	BYTE		EOT     As3 
+	BYTE	W01
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_2_020
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_2_021
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE		N23     Gs3   v064
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE	W96
+// 062   ----------------------------------------
+	BYTE	W96
+// 063   ----------------------------------------
+	BYTE	W96
+// 064   ----------------------------------------
+	BYTE	W96
+// 065   ----------------------------------------
+	BYTE	W96
+// 066   ----------------------------------------
+	BYTE	W96
+// 067   ----------------------------------------
+	BYTE	W96
+// 068   ----------------------------------------
+	BYTE	W96
+// 069   ----------------------------------------
+	BYTE		N92     Fn3 
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE		N44     As3 
+	BYTE	W48
+	BYTE		        Cs4 
+	BYTE	W48
+// 071   ----------------------------------------
+	BYTE		N92     Fn4 
+	BYTE	W96
+// 072   ----------------------------------------
+	BYTE		N44     Ds4 
+	BYTE	W48
+	BYTE		        Cs4 
+	BYTE	W48
+// 073   ----------------------------------------
+	BYTE		N92     As3 
+	BYTE	W96
+// 074   ----------------------------------------
+	BYTE		N32     An3 
+	BYTE	W36
+	BYTE		        As3 
+	BYTE	W36
+	BYTE		N23     Cn4 
+	BYTE	W24
+// 075   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	losbastardos_2_B1
+losbastardos_2_B2:
+// 076   ----------------------------------------
+	BYTE	W96
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+losbastardos_3:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   57
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W24
+losbastardos_3_B1:
+// 001   ----------------------------------------
+losbastardos_3_001:
+	BYTE		N05     Fn3   v096
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+losbastardos_3_002:
+	BYTE	W12
+	BYTE		N05     Fn3   v096
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Fs3 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_002
+// 005   ----------------------------------------
+losbastardos_3_005:
+	BYTE		N05     Fn4   v096
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+losbastardos_3_006:
+	BYTE	W12
+	BYTE		N05     Fn4   v096
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Fs4 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_005
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_006
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+losbastardos_3_016:
+	BYTE	W72
+	BYTE		N05     Fn3   v112
+	BYTE	W12
+	BYTE		        Gs3 
+	BYTE	W12
+	BYTE	PEND
+// 017   ----------------------------------------
+	BYTE		N92     As3 
+	BYTE	W96
+// 018   ----------------------------------------
+losbastardos_3_018:
+	BYTE		N05     Fn4   v112
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 019   ----------------------------------------
+losbastardos_3_019:
+	BYTE	W12
+	BYTE		N05     Fn4   v112
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Fs4 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_018
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_019
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+losbastardos_3_029:
+	BYTE	W48
+	BYTE		N11     As2   v096
+	BYTE	W24
+	BYTE		N23     As3   v116
+	BYTE	W24
+	BYTE	PEND
+// 030   ----------------------------------------
+losbastardos_3_030:
+	BYTE	W48
+	BYTE		N11     Bn2   v096
+	BYTE	W24
+	BYTE		N23     Bn3   v116
+	BYTE	W24
+	BYTE	PEND
+// 031   ----------------------------------------
+losbastardos_3_031:
+	BYTE	W48
+	BYTE		N11     Cn3   v096
+	BYTE	W24
+	BYTE		N23     Cn4   v116
+	BYTE	W24
+	BYTE	PEND
+// 032   ----------------------------------------
+losbastardos_3_032:
+	BYTE	W48
+	BYTE		N11     Cs3   v096
+	BYTE	W24
+	BYTE		N23     Cs4   v116
+	BYTE	W24
+	BYTE	PEND
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_029
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_030
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_031
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_032
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_005
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_006
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_005
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_006
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_016
+// 049   ----------------------------------------
+	BYTE		N92     As3   v112
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_018
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_019
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_018
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_019
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE		N23     Gs4   v096
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE		        As4 
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+losbastardos_3_061:
+	BYTE	W36
+	BYTE		N05     Fn3   v096
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N44   
+	BYTE	W48
+	BYTE	PEND
+// 062   ----------------------------------------
+	BYTE	W96
+// 063   ----------------------------------------
+	BYTE	W36
+	BYTE		N05     Cs4 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N44   
+	BYTE	W48
+// 064   ----------------------------------------
+	BYTE	W36
+	BYTE		N05     Fs3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N44   
+	BYTE	W48
+// 065   ----------------------------------------
+losbastardos_3_065:
+	BYTE	W36
+	BYTE		N05     As3   v096
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N44   
+	BYTE	W48
+	BYTE	PEND
+// 066   ----------------------------------------
+	BYTE	W96
+// 067   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_065
+// 068   ----------------------------------------
+	BYTE	W36
+	BYTE		N05     An3   v096
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N44   
+	BYTE	W48
+// 069   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_061
+// 070   ----------------------------------------
+	BYTE	W96
+// 071   ----------------------------------------
+	BYTE	W36
+	BYTE		N05     Fn4   v096
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N44   
+	BYTE	W48
+// 072   ----------------------------------------
+	BYTE	W96
+// 073   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_3_065
+// 074   ----------------------------------------
+	BYTE	W96
+// 075   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	losbastardos_3_B1
+losbastardos_3_B2:
+// 076   ----------------------------------------
+	BYTE	W72
+	BYTE		N23     Fn4   v112
+	BYTE	W24
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+losbastardos_4:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   40
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W24
+losbastardos_4_B1:
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+losbastardos_4_005:
+	BYTE		N68     As0   v080
+	BYTE	W72
+	BYTE		N68   
+	BYTE	W24
+	BYTE	PEND
+// 006   ----------------------------------------
+losbastardos_4_006:
+	BYTE	W48
+	BYTE		N23     Bn0   v080
+	BYTE	W24
+	BYTE		N23   
+	BYTE	W24
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_005
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_006
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+losbastardos_4_010:
+	BYTE		N11     As0   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn0 
+	BYTE	W12
+	BYTE		        As0 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn0 
+	BYTE	W12
+	BYTE		        As0 
+	BYTE	W12
+	BYTE	PEND
+// 011   ----------------------------------------
+losbastardos_4_011:
+	BYTE		N11     Bn0   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fs0 
+	BYTE	W12
+	BYTE		        Bn0 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fs0 
+	BYTE	W12
+	BYTE		        Bn0 
+	BYTE	W12
+	BYTE	PEND
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_011
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_011
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_011
+// 018   ----------------------------------------
+losbastardos_4_018:
+	BYTE		N68     As0   v096
+	BYTE	W72
+	BYTE		N68   
+	BYTE	W24
+	BYTE	PEND
+// 019   ----------------------------------------
+losbastardos_4_019:
+	BYTE	W48
+	BYTE		N23     Bn0   v096
+	BYTE	W24
+	BYTE		N23   
+	BYTE	W24
+	BYTE	PEND
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_018
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_019
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_011
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_011
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_011
+// 029   ----------------------------------------
+losbastardos_4_029:
+	BYTE		N15     As0   v112
+	BYTE	W16
+	BYTE		        As1 
+	BYTE	W16
+	BYTE		        Fn1 
+	BYTE	W16
+	BYTE		N11     As0 
+	BYTE	W24
+	BYTE		N23     As1 
+	BYTE	W24
+	BYTE	PEND
+// 030   ----------------------------------------
+losbastardos_4_030:
+	BYTE		N15     Bn0   v112
+	BYTE	W16
+	BYTE		        Bn1 
+	BYTE	W16
+	BYTE		        Fs1 
+	BYTE	W16
+	BYTE		N11     Bn0 
+	BYTE	W24
+	BYTE		N23     Bn1 
+	BYTE	W24
+	BYTE	PEND
+// 031   ----------------------------------------
+losbastardos_4_031:
+	BYTE		N15     Cn1   v112
+	BYTE	W16
+	BYTE		        Cn2 
+	BYTE	W16
+	BYTE		        Gn1 
+	BYTE	W16
+	BYTE		N11     Cn1 
+	BYTE	W24
+	BYTE		N23     Cn2 
+	BYTE	W24
+	BYTE	PEND
+// 032   ----------------------------------------
+losbastardos_4_032:
+	BYTE		N15     Cs1   v112
+	BYTE	W16
+	BYTE		        Cs2 
+	BYTE	W16
+	BYTE		        Gs1 
+	BYTE	W16
+	BYTE		N11     Cs1 
+	BYTE	W24
+	BYTE		N23     Cs2 
+	BYTE	W24
+	BYTE	PEND
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_029
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_030
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_031
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_032
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_005
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_006
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_005
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_006
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_011
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_011
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_011
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_011
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_018
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_019
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_018
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_019
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE		N23     Gs0   v112
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE		        As0 
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 062   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 063   ----------------------------------------
+losbastardos_4_063:
+	BYTE		N11     Fs0   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cs0 
+	BYTE	W12
+	BYTE		        Fs0 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cs0 
+	BYTE	W12
+	BYTE		        Fs0 
+	BYTE	W12
+	BYTE	PEND
+// 064   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_063
+// 065   ----------------------------------------
+losbastardos_4_065:
+	BYTE		N11     Ds1   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        As0 
+	BYTE	W12
+	BYTE		        Ds1 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        As0 
+	BYTE	W12
+	BYTE		        Ds1 
+	BYTE	W12
+	BYTE	PEND
+// 066   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_065
+// 067   ----------------------------------------
+losbastardos_4_067:
+	BYTE		N11     Fn1   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE	PEND
+// 068   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_067
+// 069   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 070   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+// 071   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_063
+// 072   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_063
+// 073   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_065
+// 074   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_067
+// 075   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_4_010
+	BYTE	GoTo
+	 POIN2	losbastardos_4_B1
+losbastardos_4_B2:
+// 076   ----------------------------------------
+	BYTE	W96
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+losbastardos_5:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   40
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W24
+losbastardos_5_B1:
+// 001   ----------------------------------------
+losbastardos_5_001:
+	BYTE		N05     As2   v096
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+losbastardos_5_002:
+	BYTE	W12
+	BYTE		N05     As2   v096
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Bn2 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_001
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_002
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_001
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_002
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_001
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_002
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+losbastardos_5_029:
+	BYTE	W48
+	BYTE		N11     As2   v112
+	BYTE	W24
+	BYTE		N23     As3   v127
+	BYTE	W24
+	BYTE	PEND
+// 030   ----------------------------------------
+losbastardos_5_030:
+	BYTE	W48
+	BYTE		N11     Bn2   v112
+	BYTE	W24
+	BYTE		N23     Bn3   v127
+	BYTE	W24
+	BYTE	PEND
+// 031   ----------------------------------------
+losbastardos_5_031:
+	BYTE	W48
+	BYTE		N11     Cn3   v112
+	BYTE	W24
+	BYTE		N23     Cn4   v127
+	BYTE	W24
+	BYTE	PEND
+// 032   ----------------------------------------
+losbastardos_5_032:
+	BYTE	W48
+	BYTE		N11     Cs3   v112
+	BYTE	W24
+	BYTE		N23     Cs4   v127
+	BYTE	W24
+	BYTE	PEND
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_029
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_030
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_031
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_032
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_001
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_002
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_001
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_002
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_001
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_002
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_001
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_5_002
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE		N23     Gs3   v112
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE	W96
+// 062   ----------------------------------------
+	BYTE	W96
+// 063   ----------------------------------------
+	BYTE	W96
+// 064   ----------------------------------------
+	BYTE	W96
+// 065   ----------------------------------------
+	BYTE	W96
+// 066   ----------------------------------------
+	BYTE	W96
+// 067   ----------------------------------------
+	BYTE	W96
+// 068   ----------------------------------------
+	BYTE	W96
+// 069   ----------------------------------------
+	BYTE		N92     Fn2 
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE		N44     As2 
+	BYTE	W48
+	BYTE		        Cs3 
+	BYTE	W48
+// 071   ----------------------------------------
+	BYTE		N92     Fn3 
+	BYTE	W96
+// 072   ----------------------------------------
+	BYTE		N44     Ds3 
+	BYTE	W48
+	BYTE		        Cs3 
+	BYTE	W48
+// 073   ----------------------------------------
+	BYTE		N92     As2 
+	BYTE	W96
+// 074   ----------------------------------------
+	BYTE		N32     An2 
+	BYTE	W36
+	BYTE		        As2 
+	BYTE	W36
+	BYTE		N23     Cn3 
+	BYTE	W24
+// 075   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	losbastardos_5_B1
+losbastardos_5_B2:
+// 076   ----------------------------------------
+	BYTE	W96
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+losbastardos_6:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   57
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W24
+losbastardos_6_B1:
+// 001   ----------------------------------------
+losbastardos_6_001:
+	BYTE		N68     As0   v080
+	BYTE	W72
+	BYTE		N68   
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+losbastardos_6_002:
+	BYTE	W48
+	BYTE		N23     Bn0   v080
+	BYTE	W24
+	BYTE		N23   
+	BYTE	W24
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_001
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_002
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_001
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_002
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_001
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_002
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+losbastardos_6_029:
+	BYTE	W48
+	BYTE		N11     As0   v096
+	BYTE	W24
+	BYTE		N23     As1   v116
+	BYTE	W24
+	BYTE	PEND
+// 030   ----------------------------------------
+losbastardos_6_030:
+	BYTE	W48
+	BYTE		N11     Bn0   v096
+	BYTE	W24
+	BYTE		N23     Bn1   v116
+	BYTE	W24
+	BYTE	PEND
+// 031   ----------------------------------------
+losbastardos_6_031:
+	BYTE	W48
+	BYTE		N11     Cn1   v096
+	BYTE	W24
+	BYTE		N23     Cn2   v116
+	BYTE	W24
+	BYTE	PEND
+// 032   ----------------------------------------
+losbastardos_6_032:
+	BYTE	W48
+	BYTE		N11     Cs1   v096
+	BYTE	W24
+	BYTE		N23     Cs2   v116
+	BYTE	W24
+	BYTE	PEND
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_029
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_030
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_031
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_032
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_001
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_002
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_001
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_002
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_001
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_002
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_001
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_002
+// 054   ----------------------------------------
+	BYTE	W96
+// 055   ----------------------------------------
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE	W96
+// 062   ----------------------------------------
+	BYTE	W96
+// 063   ----------------------------------------
+	BYTE	W96
+// 064   ----------------------------------------
+	BYTE	W96
+// 065   ----------------------------------------
+	BYTE	W96
+// 066   ----------------------------------------
+	BYTE	W96
+// 067   ----------------------------------------
+	BYTE	W96
+// 068   ----------------------------------------
+	BYTE	W96
+// 069   ----------------------------------------
+losbastardos_6_069:
+	BYTE		N11     As1   v064
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE	PEND
+// 070   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_069
+// 071   ----------------------------------------
+losbastardos_6_071:
+	BYTE		N11     Fs1   v064
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cs1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE	PEND
+// 072   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_071
+// 073   ----------------------------------------
+	BYTE		N11     Ds2   v064
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE		        Ds2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE		        Ds2 
+	BYTE	W12
+// 074   ----------------------------------------
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+// 075   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_6_069
+	BYTE	GoTo
+	 POIN2	losbastardos_6_B1
+losbastardos_6_B2:
+// 076   ----------------------------------------
+	BYTE	W96
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+losbastardos_7:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   116
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W12
+	BYTE		N05     Fn1   v096
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+losbastardos_7_B1:
+// 001   ----------------------------------------
+losbastardos_7_001:
+	BYTE		N05     As1   v096
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+losbastardos_7_002:
+	BYTE		N05     As1   v096
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23     Bn1 
+	BYTE	W24
+	BYTE		N23   
+	BYTE	W24
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_002
+// 005   ----------------------------------------
+losbastardos_7_005:
+	BYTE		N11     As1   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+losbastardos_7_006:
+	BYTE		N11     As1   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N23     Bn1 
+	BYTE	W24
+	BYTE		N23   
+	BYTE	W24
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_005
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_006
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_005
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_006
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_005
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_006
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE		N23     Bn0   v096
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE		N23   
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE		N23   
+	BYTE	W96
+// 032   ----------------------------------------
+losbastardos_7_032:
+	BYTE	W48
+	BYTE		N05     Fs1   v096
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE	PEND
+// 033   ----------------------------------------
+	BYTE		N23     Bn0 
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE		N23   
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE		N23   
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_032
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_005
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_006
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_005
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_006
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_005
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_006
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_005
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_006
+// 054   ----------------------------------------
+	BYTE		N11     Fs1   v080
+	BYTE	W12
+	BYTE		        Fs1   v088
+	BYTE	W12
+	BYTE		        Fs1   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N23     Fs1   v116
+	BYTE	W48
+// 055   ----------------------------------------
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+losbastardos_7_060:
+	BYTE	W72
+	BYTE		N02     As1   v096
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE	PEND
+// 061   ----------------------------------------
+	BYTE	W96
+// 062   ----------------------------------------
+	BYTE	W96
+// 063   ----------------------------------------
+	BYTE	W96
+// 064   ----------------------------------------
+	BYTE	W96
+// 065   ----------------------------------------
+	BYTE	W96
+// 066   ----------------------------------------
+	BYTE	W96
+// 067   ----------------------------------------
+	BYTE	W96
+// 068   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_060
+// 069   ----------------------------------------
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE	W96
+// 071   ----------------------------------------
+	BYTE	W96
+// 072   ----------------------------------------
+	BYTE	W96
+// 073   ----------------------------------------
+	BYTE	W96
+// 074   ----------------------------------------
+	BYTE	W96
+// 075   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	losbastardos_7_B1
+losbastardos_7_B2:
+// 076   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_7_005
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.8) ****************//
+
+losbastardos_8:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   52
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W24
+losbastardos_8_B1:
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W96
+// 055   ----------------------------------------
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE		N92     Fn3   v127
+	BYTE	W96
+// 062   ----------------------------------------
+losbastardos_8_062:
+	BYTE		N44     As3   v127
+	BYTE	W48
+	BYTE		        Cs4 
+	BYTE	W48
+	BYTE	PEND
+// 063   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+// 064   ----------------------------------------
+	BYTE		        Fs3 
+	BYTE	W96
+// 065   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W96
+// 066   ----------------------------------------
+losbastardos_8_066:
+	BYTE		N32     An3   v127
+	BYTE	W36
+	BYTE		        As3 
+	BYTE	W36
+	BYTE		N23     Cn4 
+	BYTE	W24
+	BYTE	PEND
+// 067   ----------------------------------------
+	BYTE		N80     As3 
+	BYTE	W84
+	BYTE		N05     Cn4   v112
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+// 068   ----------------------------------------
+	BYTE		N92     An3   v127
+	BYTE	W96
+// 069   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_8_062
+// 071   ----------------------------------------
+	BYTE		N92     Fn4   v127
+	BYTE	W96
+// 072   ----------------------------------------
+	BYTE		N44     Ds4 
+	BYTE	W48
+	BYTE		        Cs4 
+	BYTE	W48
+// 073   ----------------------------------------
+	BYTE		N92     As3 
+	BYTE	W96
+// 074   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_8_066
+// 075   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	losbastardos_8_B1
+losbastardos_8_B2:
+// 076   ----------------------------------------
+	BYTE	W96
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 9 (Midi-Chn.9) ****************//
+
+losbastardos_9:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   24
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W24
+losbastardos_9_B1:
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+losbastardos_9_010:
+	BYTE		N05     Fn2   v096
+	BYTE	W05
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W07
+	BYTE	PEND
+// 011   ----------------------------------------
+losbastardos_9_011:
+	BYTE	W12
+	BYTE		N05     Ds2   v096
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		N11     Fs2 
+	BYTE	W12
+	BYTE		N05     Fn2 
+	BYTE	W06
+	BYTE		        Fs2 
+	BYTE	W06
+	BYTE		N11     Gs2 
+	BYTE	W12
+	BYTE		N05     Fs2 
+	BYTE	W06
+	BYTE		        Gs2 
+	BYTE	W06
+	BYTE		N11     As2 
+	BYTE	W12
+	BYTE		N05     Bn2 
+	BYTE	W06
+	BYTE		        Gs2 
+	BYTE	W06
+	BYTE	PEND
+// 012   ----------------------------------------
+losbastardos_9_012:
+	BYTE		N05     As2   v096
+	BYTE	W05
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W07
+	BYTE	PEND
+// 013   ----------------------------------------
+losbastardos_9_013:
+	BYTE	W12
+	BYTE		N05     Gs2   v096
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		N11     Bn2 
+	BYTE	W12
+	BYTE		N05     As2 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		N11     Cs3 
+	BYTE	W12
+	BYTE		N05     Bn2 
+	BYTE	W06
+	BYTE		        Cs3 
+	BYTE	W06
+	BYTE		N11     Ds3 
+	BYTE	W12
+	BYTE		N05     En3 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE	PEND
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_9_012
+// 015   ----------------------------------------
+losbastardos_9_015:
+	BYTE	W12
+	BYTE		N05     Fn3   v096
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		N11     Fn3 
+	BYTE	W12
+	BYTE		N05     As2   v100
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE		N11     As2 
+	BYTE	W12
+	BYTE		N05     Fn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		N11     Fn3 
+	BYTE	W12
+	BYTE		N05     As2 
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE	PEND
+// 016   ----------------------------------------
+losbastardos_9_016:
+	BYTE		N11     As2   v100
+	BYTE	W12
+	BYTE		N05     Fn3   v104
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		N11     Fn3 
+	BYTE	W12
+	BYTE		N05     As2 
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE		N11     As2 
+	BYTE	W12
+	BYTE		N05     Fn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		N11     Fn3   v108
+	BYTE	W12
+	BYTE		N05     As2 
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE	PEND
+// 017   ----------------------------------------
+losbastardos_9_017:
+	BYTE		N11     As2   v108
+	BYTE	W12
+	BYTE		N05     Fn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		N11     Fn3 
+	BYTE	W12
+	BYTE		N05     As2 
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE		N11     As2   v112
+	BYTE	W12
+	BYTE		N05     Fn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		N11     Fn3 
+	BYTE	W12
+	BYTE		N05     As2 
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE	PEND
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		TIE     Fn4 
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W11
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		N17     Fs4 
+	BYTE	W18
+	BYTE		        Ds4 
+	BYTE	W18
+	BYTE		        Fn4 
+	BYTE	W18
+	BYTE		        Cs4 
+	BYTE	W18
+	BYTE		N11     Ds4 
+	BYTE	W12
+// 025   ----------------------------------------
+	BYTE		N17     Cn4 
+	BYTE	W18
+	BYTE		        Cs4 
+	BYTE	W18
+	BYTE		N11     As3 
+	BYTE	W12
+	BYTE		N17     Cn4 
+	BYTE	W18
+	BYTE		        Gs3 
+	BYTE	W18
+	BYTE		N11     As3 
+	BYTE	W12
+// 026   ----------------------------------------
+	BYTE		N17     Fs3 
+	BYTE	W18
+	BYTE		        Gs3 
+	BYTE	W18
+	BYTE		N11     Fn3 
+	BYTE	W12
+	BYTE		N17     Fs3 
+	BYTE	W18
+	BYTE		        Ds3 
+	BYTE	W18
+	BYTE		N11     Fn3 
+	BYTE	W12
+// 027   ----------------------------------------
+	BYTE		N17     Cs3 
+	BYTE	W18
+	BYTE		        Ds3 
+	BYTE	W18
+	BYTE		N11     Cn3 
+	BYTE	W12
+	BYTE		N17     Cs3 
+	BYTE	W18
+	BYTE		        As2 
+	BYTE	W18
+	BYTE		N11     Cn3 
+	BYTE	W12
+// 028   ----------------------------------------
+	BYTE		N17     Gs2 
+	BYTE	W18
+	BYTE		        As2 
+	BYTE	W18
+	BYTE		N11     Fs2 
+	BYTE	W12
+	BYTE		N17     Gs2 
+	BYTE	W18
+	BYTE		        Fn2 
+	BYTE	W18
+	BYTE		N11     Fs2 
+	BYTE	W12
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_9_010
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_9_011
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_9_012
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_9_013
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_9_012
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_9_015
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_9_016
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_9_017
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W96
+// 055   ----------------------------------------
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE		N92     Fn3   v127
+	BYTE	W96
+// 062   ----------------------------------------
+losbastardos_9_062:
+	BYTE		N44     As3   v127
+	BYTE	W48
+	BYTE		        Cs4 
+	BYTE	W48
+	BYTE	PEND
+// 063   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+// 064   ----------------------------------------
+	BYTE		        Fs3 
+	BYTE	W96
+// 065   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W96
+// 066   ----------------------------------------
+losbastardos_9_066:
+	BYTE		N32     An3   v127
+	BYTE	W36
+	BYTE		        As3 
+	BYTE	W36
+	BYTE		N23     Cn4 
+	BYTE	W24
+	BYTE	PEND
+// 067   ----------------------------------------
+	BYTE		N80     As3 
+	BYTE	W84
+	BYTE		N05     Cn4   v112
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+// 068   ----------------------------------------
+	BYTE		N92     An3   v127
+	BYTE	W96
+// 069   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_9_062
+// 071   ----------------------------------------
+	BYTE		N92     Fn4   v127
+	BYTE	W96
+// 072   ----------------------------------------
+	BYTE		N44     Ds4 
+	BYTE	W48
+	BYTE		        Cs4 
+	BYTE	W48
+// 073   ----------------------------------------
+	BYTE		N92     As3 
+	BYTE	W96
+// 074   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_9_066
+// 075   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	losbastardos_9_B1
+losbastardos_9_B2:
+// 076   ----------------------------------------
+	BYTE	W96
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 10 (Midi-Chn.10) ****************//
+
+losbastardos_10:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   124
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v-4
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W24
+losbastardos_10_B1:
+// 001   ----------------------------------------
+losbastardos_10_001:
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N23   
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+losbastardos_10_002:
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N05   
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_002
+// 007   ----------------------------------------
+losbastardos_10_007:
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N11   
+	BYTE		N23     An2   v080
+	BYTE	W12
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N23   
+	BYTE		N11     Fs2   v064
+	BYTE		N23     An2   v080
+	BYTE	W12
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE	PEND
+// 008   ----------------------------------------
+losbastardos_10_008:
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N23     An2   v080
+	BYTE	W12
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N23     An2   v080
+	BYTE	W06
+	BYTE		N05     Dn1 
+	BYTE	W06
+	BYTE		N05   
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE	PEND
+// 009   ----------------------------------------
+losbastardos_10_009:
+	BYTE		N23     Bn0   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N23     Bn0   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N23     Bn0   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W24
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE	PEND
+// 010   ----------------------------------------
+losbastardos_10_010:
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE		N44     An2   v080
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N11     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N05   
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE	PEND
+// 011   ----------------------------------------
+losbastardos_10_011:
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N11     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N05   
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE	PEND
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_001
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_002
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_007
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_008
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_009
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 029   ----------------------------------------
+losbastardos_10_029:
+	BYTE		N11     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N11   
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N23     Bn0 
+	BYTE		N05     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N23     Bn0 
+	BYTE		N05     Dn1 
+	BYTE		N23     An2 
+	BYTE	W06
+	BYTE		N05     Dn1 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE	PEND
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_029
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_029
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_029
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_029
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_029
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_029
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_029
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_001
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_002
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_007
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_008
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_009
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_010
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_001
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_002
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_007
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_008
+// 054   ----------------------------------------
+	BYTE		N11     Bn0   v064
+	BYTE		N11     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		        Bn0   v072
+	BYTE		N05     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N11     Bn0   v080
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		        Bn0   v080
+	BYTE		N05     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N11     Bn0   v080
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W24
+	BYTE		N23     An2   v080
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE		N11     Dn1 
+	BYTE		N23     An2 
+	BYTE	W12
+	BYTE		N11     Dn1 
+	BYTE	W12
+	BYTE		N23     Bn0 
+	BYTE		N23     Dn1   v096
+	BYTE	W24
+	BYTE		N11     Dn1   v080
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N23     Bn0 
+	BYTE		N23     Dn1   v096
+	BYTE	W24
+// 056   ----------------------------------------
+	BYTE		N11     Dn1   v080
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Bn0 
+	BYTE		N11     Dn1   v096
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     Bn0 
+	BYTE		N11     Dn1   v096
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     Bn0 
+	BYTE		N11     Dn1   v096
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+// 057   ----------------------------------------
+losbastardos_10_057:
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE		N23     An2   v080
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N11     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N05   
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE	PEND
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 059   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 060   ----------------------------------------
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N11     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Dn1 
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE		N05     Cs5   v127
+	BYTE	W06
+	BYTE		N11     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W12
+	BYTE		N05     Dn1   v080
+	BYTE		N11     Fs2   v064
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+// 061   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_057
+// 062   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 063   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 064   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 065   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 066   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 067   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 068   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 069   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_057
+// 070   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 071   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 072   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 073   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 074   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+// 075   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_10_011
+	BYTE	GoTo
+	 POIN2	losbastardos_10_B1
+losbastardos_10_B2:
+// 076   ----------------------------------------
+	BYTE		N23     Bn0   v080
+	BYTE		N23     An2   v096
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N23     Bn0   v080
+	BYTE		N11     Cs5   v127
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N23     Bn0   v080
+	BYTE		N23     Cs5   v127
+	BYTE	W24
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 11 (Midi-Chn.11) ****************//
+
+losbastardos_11:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   24
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W24
+losbastardos_11_B1:
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+losbastardos_11_005:
+	BYTE		N05     Fn4   v112
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+losbastardos_11_006:
+	BYTE	W12
+	BYTE		N05     Fn4   v112
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Fs4 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_005
+// 008   ----------------------------------------
+losbastardos_11_008:
+	BYTE	W12
+	BYTE		N05     Fn4   v112
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Fs4 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+losbastardos_11_015:
+	BYTE	W72
+	BYTE		N05     Fn3   v112
+	BYTE	W12
+	BYTE		        Gs3 
+	BYTE	W12
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE		N92     As3 
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE		        As3   v120
+	BYTE	W96
+// 018   ----------------------------------------
+losbastardos_11_018:
+	BYTE		N05     Fn4   v127
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 019   ----------------------------------------
+losbastardos_11_019:
+	BYTE	W12
+	BYTE		N05     Fn4   v127
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Fs4 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_018
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_019
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		TIE     Fn4   v127
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W11
+	BYTE		EOT   
+	BYTE	W01
+	BYTE		N17     Fs4 
+	BYTE	W18
+	BYTE		        Ds4 
+	BYTE	W18
+	BYTE		        Fn4 
+	BYTE	W18
+	BYTE		        Cs4 
+	BYTE	W18
+	BYTE		N11     Ds4 
+	BYTE	W12
+// 025   ----------------------------------------
+	BYTE		N17     Cn4 
+	BYTE	W18
+	BYTE		        Cs4 
+	BYTE	W18
+	BYTE		N11     As3 
+	BYTE	W12
+	BYTE		N17     Cn4 
+	BYTE	W18
+	BYTE		        Gs3 
+	BYTE	W18
+	BYTE		N11     As3 
+	BYTE	W12
+// 026   ----------------------------------------
+	BYTE		N17     Fs3 
+	BYTE	W18
+	BYTE		        Gs3 
+	BYTE	W18
+	BYTE		N11     Fn3 
+	BYTE	W12
+	BYTE		N17     Fs3 
+	BYTE	W18
+	BYTE		        Ds3 
+	BYTE	W18
+	BYTE		N11     Fn3 
+	BYTE	W12
+// 027   ----------------------------------------
+	BYTE		N17     Cs3 
+	BYTE	W18
+	BYTE		        Ds3 
+	BYTE	W18
+	BYTE		N11     Cn3 
+	BYTE	W12
+	BYTE		N17     Cs3 
+	BYTE	W18
+	BYTE		        As2 
+	BYTE	W18
+	BYTE		N11     Cn3 
+	BYTE	W12
+// 028   ----------------------------------------
+	BYTE		N17     Gs2 
+	BYTE	W18
+	BYTE		        As2 
+	BYTE	W18
+	BYTE		N11     Fs2 
+	BYTE	W12
+	BYTE		N17     Gs2 
+	BYTE	W18
+	BYTE		        Fn2 
+	BYTE	W18
+	BYTE		N11     Fs2 
+	BYTE	W12
+// 029   ----------------------------------------
+	BYTE		N92     Fn3   v096
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE		        Fs3 
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE		        Gs3 
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE		        Fs3 
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE		        Gs3 
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_005
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_006
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_005
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_008
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_015
+// 048   ----------------------------------------
+	BYTE		N92     As3   v112
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE		        As3   v120
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_018
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_019
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_018
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_019
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE		N23     Gs4   v096
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE		        As4 
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE		N92     Fn3   v116
+	BYTE	W96
+// 062   ----------------------------------------
+losbastardos_11_062:
+	BYTE		N44     As3   v116
+	BYTE	W48
+	BYTE		        Cs4 
+	BYTE	W48
+	BYTE	PEND
+// 063   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+// 064   ----------------------------------------
+	BYTE		        Fs3 
+	BYTE	W96
+// 065   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W96
+// 066   ----------------------------------------
+losbastardos_11_066:
+	BYTE		N32     An3   v116
+	BYTE	W36
+	BYTE		        As3 
+	BYTE	W36
+	BYTE		N23     Cn4 
+	BYTE	W24
+	BYTE	PEND
+// 067   ----------------------------------------
+	BYTE		N80     As3 
+	BYTE	W84
+	BYTE		N05     Cn4   v096
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+// 068   ----------------------------------------
+	BYTE		N92     An3   v116
+	BYTE	W96
+// 069   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W96
+// 070   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_062
+// 071   ----------------------------------------
+	BYTE		N92     Fn4   v116
+	BYTE	W96
+// 072   ----------------------------------------
+	BYTE		N44     Ds4 
+	BYTE	W48
+	BYTE		        Cs4 
+	BYTE	W48
+// 073   ----------------------------------------
+	BYTE		N92     As3 
+	BYTE	W96
+// 074   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_11_066
+// 075   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	losbastardos_11_B1
+losbastardos_11_B2:
+// 076   ----------------------------------------
+	BYTE	W96
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 12 (Midi-Chn.14) ****************//
+
+losbastardos_12:
+	BYTE	KEYSH   losbastardos_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   33
+	BYTE		VOL     100*losbastardos_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W24
+losbastardos_12_B1:
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+losbastardos_12_005:
+	BYTE		N05     As3   v080
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+losbastardos_12_006:
+	BYTE	W12
+	BYTE		N05     As3   v080
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Bn3 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_005
+// 008   ----------------------------------------
+losbastardos_12_008:
+	BYTE	W12
+	BYTE		N05     As3   v080
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Bn3 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+losbastardos_12_010:
+	BYTE		N11     As2   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE	PEND
+// 011   ----------------------------------------
+losbastardos_12_011:
+	BYTE		N11     Bn2   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE	PEND
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_011
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_011
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_011
+// 018   ----------------------------------------
+losbastardos_12_018:
+	BYTE		N05     As3   v096
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W12
+	BYTE	PEND
+// 019   ----------------------------------------
+losbastardos_12_019:
+	BYTE	W12
+	BYTE		N05     As3   v096
+	BYTE	W12
+	BYTE		N23   
+	BYTE	W24
+	BYTE		N05     Bn3 
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_018
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_019
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_011
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_011
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_011
+// 029   ----------------------------------------
+losbastardos_12_029:
+	BYTE		N15     As2   v112
+	BYTE	W16
+	BYTE		        As3 
+	BYTE	W16
+	BYTE		        Fn3 
+	BYTE	W16
+	BYTE		N11     As2 
+	BYTE	W24
+	BYTE		N23     As3 
+	BYTE	W24
+	BYTE	PEND
+// 030   ----------------------------------------
+losbastardos_12_030:
+	BYTE		N15     Bn2   v112
+	BYTE	W16
+	BYTE		        Bn3 
+	BYTE	W16
+	BYTE		        Fs3 
+	BYTE	W16
+	BYTE		N11     Bn2 
+	BYTE	W24
+	BYTE		N23     Bn3 
+	BYTE	W24
+	BYTE	PEND
+// 031   ----------------------------------------
+losbastardos_12_031:
+	BYTE		N15     Cn3   v112
+	BYTE	W16
+	BYTE		        Cn4 
+	BYTE	W16
+	BYTE		        Gn3 
+	BYTE	W16
+	BYTE		N11     Cn3 
+	BYTE	W24
+	BYTE		N23     Cn4 
+	BYTE	W24
+	BYTE	PEND
+// 032   ----------------------------------------
+losbastardos_12_032:
+	BYTE		N15     Cs3   v112
+	BYTE	W16
+	BYTE		        Cs4 
+	BYTE	W16
+	BYTE		        Gs3 
+	BYTE	W16
+	BYTE		N11     Cs3 
+	BYTE	W24
+	BYTE		N23     Cs4 
+	BYTE	W24
+	BYTE	PEND
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_029
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_030
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_031
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_032
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_005
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_006
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_005
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_008
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_011
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_011
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_011
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_011
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_018
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_019
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_018
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_019
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE		N23     Gs3   v112
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE		        As3 
+	BYTE	W96
+// 056   ----------------------------------------
+	BYTE	W96
+// 057   ----------------------------------------
+	BYTE	W96
+// 058   ----------------------------------------
+	BYTE	W96
+// 059   ----------------------------------------
+	BYTE	W96
+// 060   ----------------------------------------
+	BYTE	W96
+// 061   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 062   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 063   ----------------------------------------
+losbastardos_12_063:
+	BYTE		N11     Fs2   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE	PEND
+// 064   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_063
+// 065   ----------------------------------------
+losbastardos_12_065:
+	BYTE		N11     Ds3   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE		        Ds3 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE		        Ds3 
+	BYTE	W12
+	BYTE	PEND
+// 066   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_065
+// 067   ----------------------------------------
+losbastardos_12_067:
+	BYTE		N11     Fn3   v096
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE	PEND
+// 068   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_067
+// 069   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 070   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+// 071   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_063
+// 072   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_063
+// 073   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_065
+// 074   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_067
+// 075   ----------------------------------------
+	BYTE	PATT
+	 POIN2	losbastardos_12_010
+	BYTE	GoTo
+	 POIN2	losbastardos_12_B1
+losbastardos_12_B2:
+// 076   ----------------------------------------
+	BYTE	W96
+// 077   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+losbastardos:
+	BYTE	12	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	losbastardos_pri	// Priority
+	BYTE	losbastardos_rev	// Reverb.
+
+	POIN2	losbastardos_grp
+
+	POIN2	losbastardos_1
+	POIN2	losbastardos_2
+	POIN2	losbastardos_3
+	POIN2	losbastardos_4
+	POIN2	losbastardos_5
+	POIN2	losbastardos_6
+	POIN2	losbastardos_7
+	POIN2	losbastardos_8
+	POIN2	losbastardos_9
+	POIN2	losbastardos_10
+	POIN2	losbastardos_11
+	POIN2	losbastardos_12
+
+	
