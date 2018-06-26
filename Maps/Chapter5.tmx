@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="22" height="18" tilewidth="16" tileheight="16" infinite="0" nextobjectid="1">
  <tileset firstgid="1" name="1800191a" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="WeeklyBlitz/Maps/FE8/1800191a.png" width="512" height="512"/>
+  <image source="../../Users/Yalçın/Desktop/Project Folder/FEMapCreator/Tilesets/FE8 - Castle - 1800481a.png" width="512" height="512"/>
  </tileset>
  <tileset firstgid="1025" name="01000203" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="WeeklyBlitz/Maps/FE8/01000203.png" width="512" height="512"/>
+  <image source="../../Users/Yalçın/Desktop/Project Folder/FEMapCreator/Tilesets/FE8 - Castle - 1800481a.png" width="512" height="512"/>
  </tileset>
  <layer name="Main" width="22" height="18">
   <properties>
    <property name="Anims1" value="0"/>
-   <property name="ChapterID" value=""/>
+   <property name="ChapterID" value="5"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value=""/>
-   <property name="MapID" value=""/>
+   <property name="MapChangesID" value="0x1E"/>
+   <property name="MapID" value="0x1D"/>
    <property name="ObjectType" value="0x18"/>
    <property name="PaletteID" value="0x19"/>
    <property name="TileConfig" value="0x1a"/>

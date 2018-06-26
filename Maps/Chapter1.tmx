@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="31" height="19" tilewidth="16" tileheight="16" infinite="0" nextobjectid="1">
  <tileset firstgid="1" name="01003803" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="../../01003803.png" trans="ffffff" width="512" height="512"/>
+  <image source="../../Users/Yalçın/Desktop/Project Folder/FEMapCreator/Tilesets/FE8 - Fields - 01000203.png" trans="ffffff" width="512" height="512"/>
  </tileset>
  <layer name="Main" width="31" height="19">
   <properties>
    <property name="Anims1" value="5"/>
    <property name="ChapterID" value="1"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="0xc"/>
-   <property name="MapID" value="0xb"/>
+   <property name="MapChangesID" value="0x9"/>
+   <property name="MapID" value="0x8"/>
    <property name="ObjectType" value="0x1"/>
-   <property name="PaletteID" value="0x2"/>
+   <property name="PaletteID" value="0x38"/>
    <property name="TileConfig" value="0x3"/>
   </properties>
   <data>

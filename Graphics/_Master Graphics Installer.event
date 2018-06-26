@@ -20,3 +20,22 @@ PUSH
     ORG $88354
     SHORT $4770
 POP
+
+//Chapter 2 Palette
+ChapterTwoPalette:
+#incbin "Ch2palette.dmp"
+ALIGN 4
+
+EventPointerTable(0x60, ChapterTwoPalette)
+
+//Item Icons
+PUSH
+ORG $5926F4
+#incext Png2Dmp "Icons1.png"
+#incext Png2Dmp "Icons2.png"
+#incext Png2Dmp "Icons3.png"
+#incext Png2Dmp "Icons4.png"
+#incext Png2Dmp "Icons5.png"
+#incext Png2Dmp "Icons6.png"
+#incext Png2Dmp "Icons7.png"
+POP
