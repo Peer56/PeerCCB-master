@@ -1,0 +1,182 @@
+#include EAstdlib.event
+
+
+
+EventPointerTable(0x7,ThisChapter)
+
+
+
+ThisChapter:
+
+POIN TurnBasedEvents
+
+POIN CharacterBasedEvents
+
+POIN LocationBasedEvents
+
+POIN MiscBasedEvents
+
+POIN Dunno Dunno Dunno
+
+POIN Tutorial
+
+POIN TrapData TrapData
+
+POIN Units Units
+
+POIN $0 $0 $0 $0 $0 $0
+
+POIN BeginningScene EndingScene
+
+Units:
+UNIT Eirika EirikaMasterLord 0x00 Level(4, Ally, 0) [2,2] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [1,3] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [3,3] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [3,1] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [1,1] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [2,0] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [4,2] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [2,4] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [0,2] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [6,0] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [7,1] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [5,1] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [6,2] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT
+
+
+TurnBasedEvents:
+TURN 0x0 TurnUno[6,0] 0x0
+END_MAIN
+
+TurnUno:
+LOAD1 0x1 MarkIsBack
+ENUN
+//text: Kithlin: Sup, Old Boss, I'm back at it to get my revenge. You take my wife, I take your life. LET'S GO ONE VERSES ONE! I'LL BEAT YOU! Brendain: ... Why did I hire you?
+NoFade
+ENDA
+
+
+
+LocationBasedEvents:
+Village(0x9,VillageDragoonKilla,0,9)
+Armory(BananaBay,1,15)
+Armory(BananaBomb,15,5)
+Vendor(IcyShop,9,1)
+END_MAIN
+
+
+BananaBay:
+SHLI SilverSword KillingEdge Lightbrand SilverAxe KillerAxe Tomahawk SilverLance KillerLance Spear SilverBow KillerBow Longbow
+ALIGN 4
+IcyShop:
+SHLI Elfire Thunder Fimbultver Heal Mend Silence Physic Silence Elixir
+ALIGN 4
+BananaBomb
+SHLI BraveSword WoDao Runesword BraveAxe DragonAxe Tomahawk BraveLance DragonSpear BraveBow Armourslayer
+ALIGN 4
+
+VillageDragoonKilla:
+VillageEventItem(VillageText, Village, DragonSpear)
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+Seize(18,7)
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+BLST [12,7] IronBallista
+BLST [3,11] IronBallista
+BLST [20,7] IronBallista
+END_MAIN
+
+ALIGN 4
+
+// Events
+
+// Manual Movement
+
+// Scripted Fights
+
+// Units
+Remnants:
+UNIT Brendain WyvernKnight 0x00 Level(12, Enemy, 0) [18,7] 0x2 0x00 0x0 0x00 [BraveLance, SilverLance, Spear, DelphiShield] GuardTileAI 
+UNIT 0x91 Hero 0x00 Level(3, Enemy, 0) [8,7] 0x2 0x00 0x0 0x00 [SilverSword, Tomahawk] AttackInRangeAI 
+UNIT 0x91 Hero 0x00 Level(3, Enemy, 0) [5,9] 0x2 0x00 0x0 0x00 [SilverSword, Tomahawk] AttackInRangeAI 
+UNIT 0x91 Hero 0x00 Level(4, Enemy, 0) [8,15] 0x2 0x00 0x0 0x00 [BraveSword, Tomahawk] AttackInRangeAI 
+UNIT 0x91 Hero 0x00 Level(4, Enemy, 0) [11,10] 0x2 0x00 0x0 0x00 [BraveSword, Tomahawk] AttackInRangeAI 
+UNIT 0x91 Hero 0x00 Level(4, Enemy, 0) [8,18] 0x2 0x00 0x0 0x00 [BraveSword, Tomahawk] AttackInRangeAI 
+UNIT 0x91 Warrior 0x00 Level(3, Enemy, 0) [11,3] 0x00 0x00 0x0 0x00 [SilverAxe, BraveBow] AttackInRangeAI 
+UNIT 0x91 Warrior 0x00 Level(3, Enemy, 0) [8,11] 0x00 0x00 0x0 0x00 [SilverAxe, BraveBow] AttackInRangeAI 
+UNIT 0x91 Warrior 0x00 Level(3, Enemy, 0) [3,6] 0x00 0x00 0x0 0x00 [KillerAxe, BraveBow] GuardTileAI 
+UNIT 0x91 Paladin 0x00 Level(3, Enemy, 0) [11,0] 0x00 0x00 0x0 0x00 [BraveSword, Spear] ChaseOnceApproachedAI 
+UNIT 0x91 Paladin 0x00 Level(3, Enemy, 0) [13,0] 0x00 0x00 0x0 0x00 [BraveLance, Runesword] ChaseOnceApproachedAI 
+UNIT 0x91 Paladin 0x00 Level(4, Enemy, 0) [6,16] 0x00 0x00 0x0 0x00 [Armourslayer, BraveLance, Spear] PursueWithoutHeedAI 
+UNIT 0x91 Paladin 0x00 Level(4, Enemy, 0) [12,13] 0x00 0x00 0x0 0x00 [HeavySpear, BraveSword, Spear] PursueWithoutHeedAI 
+UNIT 0x91 Paladin 0x00 Level(5, Enemy, 0) [13,3] 0x00 0x00 0x0 0x00 [Spear, BraveLance, Horseslayer] PursueWithoutHeedAI 
+UNIT 0x91 Paladin 0x00 Level(5, Enemy, 0) [15,3] 0x00 0x00 0x0 0x00 [Spear, BraveLance, Horseslayer] PursueWithoutHeedAI 
+UNIT 0x91 Paladin 0x00 Level(5, Enemy, 0) [14,3] 0x00 0x00 0x0 0x00 [Runesword, BraveSword, Armourslayer] PursueWithoutHeedAI 
+UNIT 0x91 Paladin 0x00 Level(5, Enemy, 0) [16,3] 0x00 0x00 0x0 0x00 [Runesword, BraveSword, Armourslayer] PursueWithoutHeedAI 
+UNIT 0x91 General 0x00 Level(3, Enemy, 0) [8,4] 0x00 0x00 0x0 0x00 [BraveSword, Tomahawk, Horseslayer, Longbow] GuardTileAI 
+UNIT 0x91 General 0x00 Level(4, Enemy, 0) [18,15] 0x00 0x00 0x0 0x00 [BraveSword, Tomahawk, Horseslayer, Longbow] GuardTileAI 
+UNIT 0x91 General 0x00 Level(4, Enemy, 0) [14,14] 0x00 0x00 0x0 0x00 [BraveSword, Tomahawk, Horseslayer, Longbow] GuardTileAI 
+UNIT 0x91 General 0x00 Level(5, Enemy, 0) [18,13] 0x00 0x00 0x0 0x00 [BraveSword, Tomahawk, Horseslayer, Longbow] GuardTileAI 
+UNIT 0x91 General 0x00 Level(5, Enemy, 0) [15,10] 0x00 0x00 0x0 0x00 [BraveSword, Tomahawk, Horseslayer, Longbow] GuardTileAI 
+UNIT 0x91 General 0x00 Level(5, Enemy, 0) [17,8] 0x00 0x00 0x0 0x00 [BraveSword, Tomahawk, Horseslayer, Longbow] GuardTileAI 
+UNIT 0x91 General 0x00 Level(5, Enemy, 0) [19,8] 0x00 0x00 0x0 0x00 [BraveSword, Tomahawk, Horseslayer, Longbow] GuardTileAI 
+UNIT 0x91 General 0x00 Level(5, Enemy, 0) [4,14] 0x00 0x00 0x0 0x00 [BraveSword, Tomahawk, Horseslayer, Longbow] GuardTileAI 
+UNIT 0x91 Sniper 0x00 Level(5, Enemy, 0) [13,8] 0x00 0x00 0x0 0x00 [BraveBow, Longbow] AttackInRangeAI 
+UNIT 0x91 Sniper 0x00 Level(5, Enemy, 0) [4,12] 0x00 0x00 0x0 0x00 [BraveBow, Longbow] AttackInRangeAI 
+UNIT 0x91 Sniper 0x00 Level(5, Enemy, 0) [20,5] 0x00 0x00 0x0 0x00 [BraveBow, Longbow] AttackInRangeAI 
+UNIT 0x91 Sniper 0x00 Level(5, Enemy, 0) [9,2] 0x00 0x00 0x0 0x00 [BraveBow, Longbow] AttackInRangeAI 
+UNIT 0x91 Sniper 0x00 Level(5, Enemy, 0) [9,9] 0x00 0x00 0x0 0x00 [BraveBow, Longbow] AttackInRangeAI 
+UNIT 0x91 Sniper 0x00 Level(5, Enemy, 0) [24,12] 0x00 0x00 0x0 0x00 [BraveBow, Longbow] AttackInRangeAI 
+UNIT 0x91 Sniper 0x00 Level(5, Enemy, 0) [16,7] 0x00 0x00 0x0 0x00 [BraveBow, Longbow] AttackInRangeAI 
+UNIT 0x91 Assassin 0x00 Level(5, Enemy, 0) [25,15] 0x2 0x00 0x0 0x00 [KillingEdge, Runesword, MasterProof] AttackInRangeAI 
+UNIT 0x91 Assassin 0x00 Level(5, Enemy, 0) [13,21] 0x2 0x00 0x0 0x00 [KillingEdge, Runesword, MasterProof] AttackInRangeAI 
+UNIT 0x91 Assassin 0x00 Level(5, Enemy, 0) [17,17] 0x2 0x00 0x0 0x00 [KillingEdge, Runesword, WhiteGem] AttackInRangeAI 
+UNIT 0x91 Assassin 0x00 Level(5, Enemy, 0) [15,19] 0x2 0x00 0x0 0x00 [KillingEdge, Runesword, Speedwings] AttackInRangeAI 
+UNIT 0x91 Assassin 0x00 Level(5, Enemy, 0) [19,16] 0x2 0x00 0x0 0x00 [KillingEdge, Runesword, EnergyRing] AttackInRangeAI 
+UNIT 0x91 Assassin 0x00 Level(5, Enemy, 0) [21,14] 0x2 0x00 0x0 0x00 [KillingEdge, Runesword, Lockpick] AttackInRangeAI 
+UNIT 0x91 Druid 0x00 Level(5, Enemy, 0) [15,17] 0x00 0x00 0x0 0x00 [Fenrir] AttackInRangeAI 
+UNIT 0x91 Druid 0x00 Level(5, Enemy, 0) [22,15] 0x00 0x00 0x0 0x00 [Fenrir] AttackInRangeAI 
+UNIT 0x91 Druid 0x00 Level(5, Enemy, 0) [19,18] 0x00 0x00 0x0 0x00 [Fenrir] AttackInRangeAI 
+UNIT 0x91 Halberdier 0x00 Level(3, Enemy, 0) [6,8] 0x00 0x00 0x0 0x00 [BraveLance, Spear] AttackInRangeAI 
+UNIT 0x91 Halberdier 0x00 Level(4, Enemy, 0) [10,12] 0x00 0x00 0x0 0x00 [BraveLance, Spear] AttackInRangeAI 
+UNIT 0x91 Halberdier 0x00 Level(4, Enemy, 0) [11,17] 0x00 0x00 0x0 0x00 [BraveLance, Spear] AttackInRangeAI 
+UNIT 0x91 Halberdier 0x00 Level(5, Enemy, 0) [1,13] 0x00 0x00 0x0 0x00 [BraveLance, Spear] AttackInRangeAI 
+UNIT 0x91 Halberdier 0x00 Level(5, Enemy, 0) [2,12] 0x00 0x00 0x0 0x00 [BraveLance, Spear] AttackInRangeAI 
+UNIT 0x91 Halberdier 0x00 Level(5, Enemy, 0) [8,20] 0x00 0x00 0x0 0x00 [BraveLance, Spear] AttackInRangeAI 
+UNIT 0x91 Halberdier 0x00 Level(5, Enemy, 0) [21,12] 0x00 0x00 0x0 0x00 [BraveLance, Spear] AttackInRangeAI 
+UNIT 0x91 Halberdier 0x00 Level(5, Enemy, 0) [24,7] 0x00 0x00 0x0 0x00 [BraveLance, Spear] AttackInRangeAI 
+UNIT 0x91 Halberdier 0x00 Level(5, Enemy, 0) [21,3] 0x00 0x00 0x0 0x00 [BraveLance, Spear] AttackInRangeAI 
+UNIT 0x91 Halberdier 0x00 Level(5, Enemy, 0) [18,1] 0x00 0x00 0x0 0x00 [BraveLance, Spear] AttackInRangeAI 
+UNIT
+
+MarkIsBack:
+UNIT Kithin Halberdier 0x00 Level(8,Ally,0) [12,0] 0x00 0x00 0x0 0x00 [BraveLance, Spear] NoAI
+UNIT
+
+// Shop Data
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD1 0x1 Remnants
+ENUN
+GotoPrepScreen
+
+EndingScene:
+MNCH 13
+ENDA
+
+ENDA
+MESSAGE Events end at offset currentOffset

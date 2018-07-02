@@ -1,0 +1,204 @@
+#include EAstdlib.event
+
+
+
+EventPointerTable(0x7,ThisChapter)
+
+
+
+ThisChapter:
+
+POIN TurnBasedEvents
+
+POIN CharacterBasedEvents
+
+POIN LocationBasedEvents
+
+POIN MiscBasedEvents
+
+POIN Dunno Dunno Dunno
+
+POIN Tutorial
+
+POIN TrapData TrapData
+
+POIN Units Units
+
+POIN $0 $0 $0 $0 $0 $0
+
+POIN BeginningScene EndingScene
+
+Units:
+UNIT Eirika EirikaMasterLord 0x00 Level(4, Ally, 0) [2,2] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [1,3] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [3,3] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [3,1] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [1,1] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [2,0] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [4,2] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [2,4] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [0,2] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [6,0] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [7,1] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [5,1] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT Seth Assassin 0x00 Level(4, Ally, 0) [6,2] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT
+
+
+TurnBasedEvents:
+TURN 0x0 TurnUno[6,0] 0x0
+TURN 0x0 TurnDeux[9,0] 0x0
+END_MAIN
+
+TurnUno:
+LOAD1 0x1 THRACIAKILLERS
+ENUN
+//text: Brendain: After all this time... I finally get to meet the great Raphael in person... Come to your death! Come to what you deserve for killing my men! My family and most of all, the people of this world!
+NoFade
+ENDA
+
+TurnDeux:
+LOAD 0x1 SURPRISE
+ENUN
+//text: Yaurel: Finally... I've reached my home... The great temple of Kalisa... Home to the great lance of legend, Ignoth and the Blade of Justice, Loklin... Men... Secure the area. We must not let these... scum get the weapons!
+NoFade
+ENDA
+
+CharacterEvent(0x9,RecruitTheran,Raphael,Theran,0x00)
+END_MAIN
+
+RecruitTheran:
+/text Theran: H-Hold! Hold! Please! I don't want to fight! I was forced to join this stupid battle by dad! Raphael: Your own father forced you to fight? Theran: Y-Yes! He's gone mad, sir! I-I... want to help you... I want to stop dad... Raphael: ...So be it, you may join us.
+TurnAlly(Theran)
+NoFade
+ENDA
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+Seize(24,26)
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+// Events
+
+// Manual Movement
+
+// Scripted Fights
+
+// Units
+front:
+UNIT 0x91 Sage 0x00 Level(2, Enemy, 0) [10,11] 0x00 0x00 0x0 0x00 [Bolting, Bolting, Bolting, Bolting] GuardTileAI 
+UNIT 0x93 Sage 0x00 Level(2, Enemy, 0) [16,14] 0x00 0x00 0x0 0x00 [Bolting, Bolting, Bolting, Bolting] GuardTileAI 
+UNIT 0x93 Sage 0x00 Level(2, Enemy, 0) [21,1] 0x00 0x00 0x0 0x00 [Bolting, Bolting, Bolting, Bolting] GuardTileAI 
+UNIT 0x91 Sage 0x00 Level(2, Enemy, 0) [25,7] 0x00 0x00 0x0 0x00 [Bolting, Bolting, Bolting, Bolting] GuardTileAI 
+UNIT 0x93 Sage 0x00 Level(3, Enemy, 0) [1,21] 0x00 0x00 0x0 0x00 [Bolting, Bolting, Bolting, Bolting] GuardTileAI 
+UNIT 0x93 Sage 0x00 Level(2, Enemy, 0) [0,18] 0x00 0x00 0x0 0x00 [Bolting, Bolting, Bolting, Bolting] GuardTileAI 
+UNIT 0x91 Sage 0x00 Level(4, Enemy, 0) [25,20] 0x00 0x00 0x0 0x00 [Bolting, Bolting, Bolting, Bolting] GuardTileAI 
+UNIT 0x93 Sage 0x00 Level(4, Enemy, 0) [1,30] 0x00 0x00 0x0 0x00 [Bolting, Bolting, Bolting, Bolting] GuardTileAI 
+UNIT 0x91 Halberdier 0x00 Level(2, Enemy, 0) [12,0] 0x00 0x00 0x0 0x00 [KillerLance, Javelin] AttackInRangeAI 
+UNIT 0x91 Tent 0x00 Level(2, Enemy, 0) [14,2] 0x00 0x00 0x0 0x00 [SilverLance, Vulnerary] AttackInRangeAI 
+UNIT 0x91 Tent 0x00 Level(2, Enemy, 0) [16,5] 0x2 0x00 0x0 0x00 [BraveLance, MasterProof] AttackInRangeAI 
+UNIT 0x93 Hero 0x00 Level(2, Enemy, 0) [11,2] 0x2 0x00 0x0 0x00 [SteelBlade, HandAxe] AttackInRangeAI 
+UNIT 0x91 Hero 0x00 Level(2, Enemy, 0) [17,1] 0x2 0x00 0x0 0x00 [SilverAxe, Runesword] PursueWithoutHeedAI 
+UNIT 0x91 Hero 0x00 Level(2, Enemy, 0) [19,3] 0x2 0x00 0x0 0x00 [SilverSword, Tomahawk] ChaseOnceApproachedAI 
+UNIT 0x93 Paladin 0x00 Level(2, Enemy, 0) [19,6] 0x2 0x00 0x0 0x00 [KillingEdge, Spear] AttackInRangeAI 
+UNIT 0x91 Paladin 0x00 Level(2, Enemy, 0) [20,9] 0x2 0x00 0x0 0x00 [BraveSword, Spear] AttackInRangeAI 
+UNIT 0x93 Swordmaster 0x00 Level(2, Enemy, 0) [2,9] 0x2 0x00 0x0 0x00 [Shamshir, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Swordmaster_F 0x00 Level(2, Enemy, 0) [6,8] 0x2 0x00 0x0 0x00 [Shamshir, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Swordmaster_F 0x00 Level(2, Enemy, 0) [12,7] 0x2 0x00 0x0 0x00 [Shamshir, Elixir] PursueWithoutHeedAI 
+UNIT 0x91 Swordmaster_F 0x00 Level(3, Enemy, 0) [14,12] 0x2 0x00 0x0 0x00 [Shamshir, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Swordmaster 0x00 Level(3, Enemy, 0) [23,2] 0x2 0x00 0x0 0x00 [Shamshir, Elixir] PursueWithoutHeedAI 
+UNIT 0x91 Swordmaster 0x00 Level(3, Enemy, 0) [25,3] 0x2 0x00 0x0 0x00 [BraveSword, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Swordmaster 0x00 Level(3, Enemy, 0) [11,10] 0x2 0x00 0x0 0x00 [BraveSword, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Swordmaster_F 0x00 Level(3, Enemy, 0) [27,11] 0x2 0x00 0x0 0x00 [KillingEdge, Elixir] PursueWithoutHeedAI 
+UNIT 0x91 Berserker 0x00 Level(2, Enemy, 0) [1,11] 0x2 0x00 0x0 0x00 [SilverAxe, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Berserker 0x00 Level(2, Enemy, 0) [5,9] 0x2 0x00 0x0 0x00 [SilverAxe, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Berserker 0x00 Level(2, Enemy, 0) [9,6] 0x2 0x00 0x0 0x00 [KillerAxe, Elixir] PursueWithoutHeedAI 
+UNIT 0x91 Berserker 0x00 Level(2, Enemy, 0) [14,9] 0x2 0x00 0x0 0x00 [Halberd, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Berserker 0x00 Level(2, Enemy, 0) [16,12] 0x2 0x00 0x0 0x00 [Hammer, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Berserker 0x00 Level(2, Enemy, 0) [22,3] 0x2 0x00 0x0 0x00 [BraveAxe, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Berserker 0x00 Level(2, Enemy, 0) [25,10] 0x2 0x00 0x0 0x00 [Tomahawk, Elixir] PursueWithoutHeedAI 
+UNIT 0x91 Sniper 0x00 Level(2, Enemy, 0) [3,11] 0x2 0x00 0x0 0x00 [SilverBow, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Sniper 0x00 Level(2, Enemy, 0) [11,8] 0x2 0x00 0x0 0x00 [SilverBow, Elixir] PursueWithoutHeedAI 
+UNIT 0x91 Sniper 0x00 Level(2, Enemy, 0) [25,1] 0x2 0x00 0x0 0x00 [SilverBow, Elixir] PursueWithoutHeedAI 
+UNIT 0x93 Sniper 0x00 Level(2, Enemy, 0) [28,12] 0x2 0x00 0x0 0x00 [SilverBow, Elixir] PursueWithoutHeedAI 
+UNIT 0x91 Sniper 0x00 Level(2, Enemy, 0) [12,13] 0x2 0x00 0x0 0x00 [SilverBow, Elixir] PursueWithoutHeedAI 
+UNIT 0x92 Druid 0x00 Level(3, Enemy, 0) [12,18] 0x2 0x00 0x0 0x00 [Flux, Elixir] ChaseOnceApproachedAI 
+UNIT 0x92 Druid 0x00 Level(3, Enemy, 0) [14,16] 0x2 0x00 0x0 0x00 [Luna, Elixir] ChaseOnceApproachedAI 
+UNIT 0x92 Druid 0x00 Level(3, Enemy, 0) [24,16] 0x2 0x00 0x0 0x00 [Luna, Elixir] ChaseOnceApproachedAI 
+UNIT 0x92 Druid 0x00 Level(3, Enemy, 0) [23,18] 0x2 0x00 0x0 0x00 [Nosferatu, Elixir] ChaseOnceApproachedAI 
+UNIT 0x92 Druid 0x00 Level(3, Enemy, 0) [2,20] 0x2 0x00 0x0 0x00 [Nosferatu, Elixir] ChaseOnceApproachedAI 
+UNIT 0x92 Druid 0x00 Level(3, Enemy, 0) [20,23] 0x2 0x00 0x0 0x00 [Nosferatu, Elixir] ChaseOnceApproachedAI 
+UNIT 0x92 Druid 0x00 Level(4, Enemy, 0) [12,30] 0x2 0x00 0x0 0x00 [Fenrir, Elixir] ChaseOnceApproachedAI 
+UNIT 0x92 Druid 0x00 Level(4, Enemy, 0) [9,30] 0x2 0x00 0x0 0x00 [Fenrir, Elixir] ChaseOnceApproachedAI 
+UNIT 0x92 Druid 0x00 Level(4, Enemy, 0) [27,23] 0x2 0x00 0x0 0x00 [Fenrir, Elixir] ChaseOnceApproachedAI 
+UNIT 0x92 Druid 0x00 Level(4, Enemy, 0) [0,25] 0x2 0x00 0x0 0x00 [Fenrir, Elixir] ChaseOnceApproachedAI 
+UNIT 0x93 General 0x00 Level(4, Enemy, 0) [16,2] 0x2 0x00 0x0 0x00 [SilverLance, Tomahawk, Longbow, Elixir] GuardTileAI 
+UNIT 0x91 General 0x00 Level(4, Enemy, 0) [10,3] 0x2 0x00 0x0 0x00 [SilverLance, Tomahawk, Longbow, Elixir] GuardTileAI 
+UNIT 0x91 General 0x00 Level(4, Enemy, 0) [15,20] 0x2 0x00 0x0 0x00 [SilverLance, Tomahawk, Longbow, Elixir] GuardTileAI 
+UNIT 0x93 General 0x00 Level(4, Enemy, 0) [15,23] 0x2 0x00 0x0 0x00 [SilverLance, Tomahawk, Longbow, Elixir] GuardTileAI 
+UNIT
+
+THRACIAKILLERS:
+UNIT Theran WyvernRider 0x00 Level(4, Enemy, 0) [13,30] 0x00 0x00 0x0 0x00 [SteelLance, Spear] PursueWithoutHeedAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [7,30] 0x00 0x00 0x0 0x00 [Horseslayer, Tomahawk] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [5,30] 0x00 0x00 0x0 0x00 [Spear, Hammer] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [4,30] 0x00 0x00 0x0 0x00 [BraveAxe, Spear] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [8,30] 0x00 0x00 0x0 0x00 [BraveLance, Tomahawk] AttackInRangeAI 
+UNIT Brendain WyvernKnight 0x00 Level(12, Enemy, 0) [6,30] 0x00 0x00 0x0 0x00 [BraveLance, KillerLance, Spear, DelphiShield] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [17,30] 0x00 0x00 0x0 0x00 [BraveAxe, Tomahawk] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [19,30] 0x00 0x00 0x0 0x00 [BraveLance, Spear] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [26,30] 0x00 0x00 0x0 0x00 [KillerLance, Tomahawk] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [28,30] 0x00 0x00 0x0 0x00 [KillerAxe, Spear] AttackInRangeAI 
+UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [21,30] 0x00 0x00 0x0 0x00 [BraveLance, Horseslayer, Spear] AttackInRangeAI 
+UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [15,30] 0x00 0x00 0x0 0x00 [BraveLance, Horseslayer, Spear] AttackInRangeAI 
+UNIT 0x91 Druid 0x00 Level(4, Enemy, 0) [29,29] 0x00 0x00 0x0 0x00 [Luna, Fenrir] AttackInRangeAI 
+UNIT 0x91 Druid 0x00 Level(4, Enemy, 0) [29,25] 0x00 0x00 0x0 0x00 [Luna, Fenrir] AttackInRangeAI 
+UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [0,15] 0x00 0x00 0x0 0x00 [BraveLance, Axereaver] ChaseOnceApproachedAI 
+UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [0,19] 0x00 0x00 0x0 0x00 [BraveLance, Axereaver] ChaseOnceApproachedAI 
+UNIT
+
+SURPRISE:
+UNIT Yaurel Sage_F 0x00 Level(8, Enemy, 0) [24,30] 0x00 0x00 0x0 0x00 [Bolting, Fimbulvetr] GuardTileAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [25,27] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [24,27] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [23,27] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [25,28] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [24,28] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [23,28] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [25,29] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [24,29] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [23,29] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
+UNIT
+
+
+// Shop Data
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD1 0x1 front
+ENUN
+GotoPrepScreen
+
+EndingScene:
+MNCH 12
+ENDA
+
+ENDA
+MESSAGE Events end at offset currentOffset
