@@ -36,3 +36,21 @@
 {
 #include "Chapter9.event"
 }
+{
+#include "Chapter10.event"
+}
+{
+#include "Chapter10x.event"
+}
+{
+#include "Chapter11.event"
+}
+{
+#include "Chapter12.event"
+}
+{
+#include "Chapter13.event"
+}
+{
+#include "Endgame1.event"
+}

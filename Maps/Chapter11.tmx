@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="31" tilewidth="16" tileheight="16" nextobjectid="1">
  <tileset firstgid="1" name="FE8 - Desert - 42004344" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="Tilesets/FE8 - Desert - 42004344.png" trans="ffffff" width="512" height="512"/>
+  <image source="../../WeeklyBlitz/Maps/FE8/42004344.png" trans="ffffff" width="512" height="512"/>
  </tileset>
  <layer name="Tile Layer 1" width="30" height="31">
   <properties>
+   <property name="Anims1" value="5"/>
+   <property name="ChapterID" value="0xC"/>
    <property name="Main" value=""/>
+   <property name="MapID" value="0x35"/>
+   <property name="ObjectType" value="0x42"/>
+   <property name="PaletteID" value="0x43"/>
+   <property name="TileConfig" value="0x44"/>
   </properties>
   <data>
    <tile gid="75"/>
