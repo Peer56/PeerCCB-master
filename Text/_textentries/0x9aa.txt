@@ -1,1 +1,3 @@
-Two cavaliers.[X]
+[OpenFarRight][LoadFace][0xFF][0xFF]
+Scrapped text.[A][NL]
+Despacito[A][X]

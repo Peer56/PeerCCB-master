@@ -44,7 +44,7 @@ CharacterEvent(0x9,RecruitRuby,Raphael,Ruby,0x00)
 END_MAIN
 
 RecruitRuby:
-/text Raphael: Is that... No. You dare turn your lance on your lord, Ruby?! Ruby: H-Hello, L-Lord R-Raphael! Thank gods you got to me first, I had to turn sides to survive, they had me surrounded by archers! You know what they do to poor Sheila. Raphael: ...I do. I see, turn your lance back on the enemy and we shall prevail. Ruby: Understood, sir! 
+//text Raphael: Is that... No. You dare turn your lance on your lord, Ruby?! Ruby: H-Hello, L-Lord R-Raphael! Thank gods you got to me first, I had to turn sides to survive, they had me surrounded by archers! You know what they do to poor Sheila. Raphael: ...I do. I see, turn your lance back on the enemy and we shall prevail. Ruby: Understood, sir! 
 TurnAlly(Ruby)
 NoFade
 ENDA

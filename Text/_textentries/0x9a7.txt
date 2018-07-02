@@ -1,1 +1,4 @@
-Ace[X]
+[OpenFarRight][LoadFace][0x02][0x01]
+So... Is this the tome?[A][NL]
+This is just a common Bolting tome![A][NL]
+Damn that villager, he tricked me![A][NL][X]
