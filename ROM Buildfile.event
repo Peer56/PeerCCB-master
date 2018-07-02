@@ -1,6 +1,7 @@
 #ifdef _FE8_
     #include "EAstdlib.event"
     #include "Custom Definitions.event"
+    #include "REDAs.event"
 
     ORG FreeSpace
     //Text first for Text ID definitions

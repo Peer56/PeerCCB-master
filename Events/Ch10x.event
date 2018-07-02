@@ -1,0 +1,386 @@
+
+#define DISABLE_TUTORIALS
+#include EAstdlib.event
+
+#include YangDefs.txt
+#include REDAs.event
+
+
+EventPointerTable(0x07,PointersCh10x)
+EventPointerTable(0x06,TileChangesCh10x) 
+
+ALIGN 4
+
+PointersCh10x:
+POIN Turn_eventsCh10x 
+POIN Character_eventsCh10x
+POIN Location_eventsCh10x
+POIN Misc_eventCh10x
+POIN Dunno1Ch10x Dunno2Ch10x Dunno3Ch10x TutorialCh10x
+POIN Traps1Ch10x Traps2Ch10x
+POIN GoodCh10x GoodCh10x  //This unit group prep
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN Opening_eventCh10x Ending_eventCh10x
+
+ALIGN 4
+Dunno1Ch10x:
+END_MAIN
+
+ALIGN 4
+
+Dunno2Ch10x:
+END_MAIN
+ALIGN 4
+
+Dunno3Ch10x:
+END_MAIN
+ALIGN 4
+
+TutorialCh10x:
+END_MAIN
+ALIGN 4
+
+Traps1Ch10x:
+// Vein(9,23,0x0,DV1Desc) //freeze enemies
+ENDTRAP
+ALIGN 4
+
+Traps2Ch10x:
+ENDTRAP
+ALIGN 4
+
+
+BadCh10x:
+
+UNIT Descit Hero 0x0 Level(7, Enemy, False) [14,4] 0x2 0x0 0x0 0x0 [SilverBlade,LightBrand,Elixir] NeverMoveAI
+
+
+
+UNIT Ch10xLackey1 Skeleton Descit Level(15, Enemy, True) [2,12] 0x0 0x00 0x0 0x0 [SteelLance] AttackInRangeAI
+UNIT Ch10xLackey1 Skeleton Descit Level(15, Enemy, True) [26,12] 0x0 0x00 0x0 0x0 [SteelLance] AttackInRangeAI
+UNIT Ch10xLackey1 Skeleton Descit Level(15, Enemy, True) [5,20] 0x0 0x00 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Ch10xLackey1 Skeleton Descit Level(15, Enemy, True) [23,20] 0x0 0x00 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Ch10xLackey1 Skeleton Descit Level(15, Enemy, True) [5,18] 0x0 0x00 0x0 0x0 [BraveSword] AttackInRangeAI
+UNIT Ch10xLackey1 Skeleton Descit Level(15, Enemy, True) [23,18] 0x2 0x00 0x0 0x0 [BraveSword] AttackInRangeAI
+
+
+UNIT Ch10xLackey2 Eyeball Descit Level(17, Enemy, True) [14,17] 0x0 0x00 0x0 0x0 [EvilEye] AttackInRangeAI
+
+UNIT Ch10xLackey2 Eyeball Descit Level(17, Enemy, True) [2,11] 0x0 0x00 0x0 0x0 [EvilEye] AttackInRangeAI
+UNIT Ch10xLackey2 Eyeball Descit Level(17, Enemy, True) [26,11] 0x0 0x00 0x0 0x0 [EvilEye] AttackInRangeAI
+UNIT Ch10xLackey2 Eyeball Descit Level(17, Enemy, True) [8,13] 0x0 0x00 0x0 0x0 [EvilEye] AttackInRangeAI
+UNIT Ch10xLackey2 Eyeball Descit Level(17, Enemy, True) [20,13] 0x0 0x00 0x0 0x0 [EvilEye] AttackInRangeAI
+
+
+
+
+UNIT Ch10xLackey3 Centaur Descit Level(16, Enemy, True) [6,10] 0x0 0x00 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Ch10xLackey3 Centaur Descit Level(16, Enemy, True) [22,10] 0x2 0x00 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Ch10xLackey3 Centaur Descit Level(13, Enemy, True) [11,12] 0x0 0x00 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
+UNIT Ch10xLackey3 Centaur Descit Level(13, Enemy, True) [17,12] 0x0 0x00 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
+
+UNIT Ch10xLackey3 Centaur Descit Level(12, Enemy, True) [4,3] 0x0 0x00 0x0 0x0 [SilverAxe] AttackInRangeAI
+UNIT Ch10xLackey3 Centaur Descit Level(12, Enemy, True) [24,3] 0x0 0x00 0x0 0x0 [SilverAxe] AttackInRangeAI
+
+UNIT Ch10xLackey3 SCentaur Descit Level(3, Enemy, True) [10,8] 0x0 0x00 0x0 0x0 [HandAxe] AttackInRangeAI
+UNIT Ch10xLackey3 SCentaur Descit Level(3, Enemy, True) [18,8] 0x0 0x00 0x0 0x0 [HandAxe] AttackInRangeAI
+
+UNIT Ch10xLackey1 BonewakerB Descit Level(3, Enemy, True) [8,4] 0x0 0x00 0x0 0x0 [IronBow] AttackInRangeAI
+UNIT Ch10xLackey1 BonewakerB Descit Level(3, Enemy, True) [20,4] 0x2 0x00 0x0 0x0 [IronBow] AttackInRangeAI
+
+UNIT Ch10xLackey2 Mogall Descit Level(3, Enemy, True) [2,3] 0x0 0x00 0x0 0x0 [EvilEye] AttackInRangeAI
+UNIT Ch10xLackey2 Mogall Descit Level(3, Enemy, True) [26,3] 0x0 0x00 0x0 0x0 [EvilEye] AttackInRangeAI
+
+UNIT Ch10xLackey3 SpiderG Descit Level(3, Enemy, True) [3,7] 0x0 0x00 0x0 0x0 [PoisonClaw] AttackInRangeAI
+UNIT Ch10xLackey3 SpiderG Descit Level(3, Enemy, True) [25,7] 0x0 0x00 0x0 0x0 [PoisonClaw] AttackInRangeAI
+
+
+UNIT Ch10xLackey4 Ogre Descit Level(3, Enemy, True) [14,7] 0x0 0x00 0x0 0x0 [Tomahawk] AttackInRangeAI
+
+
+
+UNIT Ch10xLackey2 Sage Descit Level(2, Enemy, True) [14,5] 0x2 0x00 0x0 0x0 [Fire,Bolting] AttackInRangeAI
+UNIT Ch10xLackey1 Swordmaster Descit Level(2, Enemy, True) [13,8] 0x0 0x00 0x0 0x0 [KillingEdge] PursueWithoutHeedAI
+UNIT Ch10xLackey1 Swordmaster Descit Level(2, Enemy, True) [15,8] 0x0 0x00 0x0 0x0 [KillingEdge] PursueWithoutHeedAI
+
+
+
+
+UNIT
+
+
+Reinforcements1TO4Ch10x:
+UNIT Ch10xLackey4 Phantom Descit Level(1, Enemy, True) [13,11] 0x0 0x00 0x1 REDA13R12 [IronAxe] PursueWithoutHeedAI
+UNIT Ch10xLackey4 Phantom Descit Level(1, Enemy, True) [15,11] 0x0 0x00 0x1 REDA15R12 [IronAxe] PursueWithoutHeedAI
+
+UNIT
+
+Reinforcements5TO9Ch10x:
+UNIT Ch10xLackey4 Phantom Descit Level(5, Enemy, True) [13,11] 0x0 0x00 0x1 REDA13R12 [SteelAxe] PursueWithoutHeedAI
+UNIT Ch10xLackey4 Phantom Descit Level(5, Enemy, True) [15,11] 0x0 0x00 0x1 REDA15R12 [SteelAxe] PursueWithoutHeedAI
+
+UNIT Ch10xLackey4 Phantom Descit Level(1, Enemy, True) [10,2] 0x0 0x00 0x1 REDA10R3 [IronAxe] PursueWithoutHeedAI
+UNIT Ch10xLackey4 Phantom Descit Level(1, Enemy, True) [18,2] 0x0 0x00 0x1 REDA18R3 [IronAxe] PursueWithoutHeedAI
+
+UNIT
+
+
+Reinforcements10TO20Ch10x:
+UNIT Ch10xLackey4 Phantom Descit Level(9, Enemy, True) [10,2] 0x0 0x00 0x1 REDA10R3 [SteelAxe] PursueWithoutHeedAI
+UNIT Ch10xLackey4 Phantom Descit Level(9, Enemy, True) [18,2] 0x0 0x00 0x1 REDA18R3 [SteelAxe] PursueWithoutHeedAI
+
+UNIT
+
+
+Reinforcements21TO99Ch10x:
+UNIT EndgamelevelLackey Phantom Descit Level(20, Enemy, True) [10,2] 0x0 0x00 0x1 REDA10R3 [SilverAxe] PursueWithoutHeedAI
+UNIT EndgamelevelLackey Phantom Descit Level(20, Enemy, True) [18,2] 0x0 0x00 0x1 REDA18R3 [SilverAxe] PursueWithoutHeedAI
+
+
+UNIT
+
+
+
+ALIGN 4
+
+GoodCh10x:
+UNIT Eirika 0x1 0x0 Level(15, Ally, True) [8,19] 0x0 0x0 0x0 0x0 [SteelSword,IronSword,Vulnerary] NoAI
+UNIT Seth Assassin Eirika Level(7, Ally, True) [8,20] 0x0 0x0 0x0 0x0 [KillingEdge,Elixir] NoAI
+UNIT Franz Cavalier Eirika Level(15, Ally, True) [7,20] 0x0 0x0 0x0 0x0 [BraveLance, IronLance] NoAI
+UNIT Gilliam Cavalier Eirika Level(15, Ally, True) [9,20] 0x0 0x0 0x0 0x0 [BraveSword, IronSword] NoAI
+UNIT Moulder Bishop Eirika Level(5, Ally, True) [8,21] 0x0 0x0 0x0 0x0 [Shine,Mend] NoAI
+
+UNIT Vanessa PegasusKnight Eirika Level(15, Ally, True) [20,19] 0x0 0x0 0x0 0x0 [SteelLance, IronLance] NoAI
+UNIT Garcia Pirate Eirika Level(15, Ally, True) [20,20] 0x0 0x0 0x0 0x0 [SteelAxe,IronAxe] NoAI
+UNIT Neimi Archer_F Eirika Level(15, Ally, True) [20,21] 0x0 0x0 0x0 0x0 [SteelBow,IronBow] NoAI
+UNIT Lute Valkyrie Eirika Level(5, Ally, True) [19,20] 0x0 0x0 0x0 0x0 [Recover,Lightning,Fire] NoAI
+UNIT Artur Dancer Eirika Level(15, Ally, True) [21,20] 0x0 0x0 0x0 0x0 [Elixir,Elixir] NoAI
+
+UNIT
+
+EndChapterUnitsCh10x:
+UNIT Eirika 0x1 0x0 Level(3, Ally, False) [14,4] 0x0 0x0 0x0 0x0 [LightBrand,IronSword,Vulnerary] NoAI
+UNIT Seth Assassin Eirika Level(7, Ally, False) [14,5] 0x0 0x0 0x0 0x0 [KillingEdge] NoAI
+UNIT
+
+OnlyLucileCh10x:
+UNIT Lucile Sage_F 0x0 Level(3, Enemy, False) [14,13] 0x2 0x0 0x0 0x0 [Thunder, Lockpick] NeverMoveAI
+UNIT
+
+
+
+ALIGN 4
+
+Turn_eventsCh10x:
+TURN 0x0 LoadLucileCh10x [1,0] 0x0
+TURN 0x11 CallRein1Ch10x [1,4] 0x0
+TURN 0x11 CallRein2Ch10x [5,9] 0x0
+TURN 0x11 CallRein3Ch10x [10,20] 0x0
+TURN 0x11 CallRein4Ch10x [21,99] 0x0
+TURN
+
+LoadLucileCh10x:
+LOAD1 0x1 OnlyLucileCh10x
+ENUN
+ENDA
+
+
+CallRein1Ch10x:
+ENUF 0x11 //sets eventID as "off"
+ReinforcementEvent(Reinforcements1TO4Ch10x)
+ENDA
+
+CallRein2Ch10x:
+ENUF 0x11 //sets eventID as "off"
+ReinforcementEvent(Reinforcements5TO9Ch10x)
+ENDA
+
+CallRein3Ch10x:
+ENUF 0x11 //sets eventID as "off"
+ReinforcementEvent(Reinforcements10TO20Ch10x)
+ENDA
+
+CallRein4Ch10x:
+ENUF 0x11 //sets eventID as "off"
+ReinforcementEvent(Reinforcements21TO99Ch10x)
+ENDA
+
+
+Character_eventsCh10x:
+CharacterEventBothWays(0x10,EirikaLucileTalkCh10x,Eirika,Lucile)
+
+
+CHAR
+
+
+EirikaLucileTalkCh10x:
+MUSC Comrades
+TEXTSHOW (Ch10xConvo1)
+TEXTEND
+REMA
+
+TurnAlly(Lucile)
+ENDA
+
+
+
+
+Location_eventsCh10x:
+CHES 0x0 Tomahawk [13,17] 0x14
+CHES 0x0 BraveSword [15,17] 0x14
+Seize(14,4)
+Door(14,15)
+LOCA
+
+
+Misc_eventCh10x:
+CauseGameOverIfLordDies
+// DefeatBoss(Classdefeat)
+
+AREA 0x7 LeftSquare [1, 3] [1, 3] 
+AREA 0x8 RightSquare [27, 3] [27, 3] 
+
+
+END_MAIN
+
+
+LeftSquare:
+
+CHECK_ALLEGIANCE 0xFFFF //Check allegiance of active character
+SETVAL 0x2 0x2//Stores 0x2 (value of enemy) to Memory slot 0x2
+IFNE 0x00 0xC 0x2 // If not enemy XD
+
+TEXTSHOW (Ch10xMisc1)
+TEXTEND
+REMA
+
+
+TILECHANGE 0x4//Open the right door
+STAL 0x05
+
+
+GOTO 0x1  // Else
+ENIF 0x0
+
+
+ENUF 0x7 //sets eventID as "off"
+ENIF 0x1  //End of the Else
+
+ENDA
+
+
+RightSquare:
+
+CHECK_ALLEGIANCE 0xFFFF //Check allegiance of active character
+SETVAL 0x2 0x2//Stores 0x2 (value of enemy) to Memory slot 0x2
+IFNE 0x00 0xC 0x2 // If not enemy XD
+
+TEXTSHOW (Ch10xMisc1)
+TEXTEND
+REMA
+
+
+TILECHANGE 0x3//Open the right door
+STAL 0x05
+
+
+GOTO 0x1  // Else
+ENIF 0x0
+
+
+ENUF 0x8 //sets eventID as "off"
+ENIF 0x1  //End of the Else
+
+ENDA
+
+
+
+Opening_eventCh10x:
+MUSC Advance
+LOAD1 0x1 GoodCh10x
+ENUN
+LOAD1 0x1 BadCh10x
+ENUN
+
+
+SetBackground(Volcano)
+TEXTSHOW (Ch10xText1)
+TEXTEND
+REMA
+CAM1 Eirika
+CALL $9EE2C4
+GotoPrepScreen
+ENDA
+
+
+
+
+
+
+Ending_eventCh10x:
+// UnitClear
+MUSC Victory
+NoFade
+FADI 0x10
+CLEE 0x0
+CLEA 0x0
+LOAD2 0x1 EndChapterUnitsCh10x
+ENUN
+CAM1 Eirika
+SetBackground(Shrine_3)
+FADU 0x10
+NoFade
+TEXTSHOW (Ch10xEndText1)
+TEXTEND
+REMA
+
+CALL $9EE2C4
+
+SMOV 0x3 Bolting
+GIVEITEMTO Eirika
+
+
+MNC2 0x1
+ENDA
+
+
+
+ALIGN 4
+TrapDataCh10x:
+ENDTRAP
+
+ALIGN 4
+MESSAGE Events end at offset currentOffset
+//The map for this chapter is at offset: ????????
+
+
+ALIGN 4
+TileChangesCh10x:     
+TileMap(0x00,13,17,1,1,OpenChestLavaCaveCh10x)
+TileMap(0x01,15,17,1,1,OpenChestLavaCaveCh10x)
+TileMap(0x02,14,15,1,1,OpenDoorLavaCaveCh10x)
+
+TileMap(0x03,11,7,1,2,OpenHDoorLavaCaveCh10x)
+TileMap(0x04,17,7,1,2,OpenHDoorLavaCaveCh10x)
+
+TileMapEnd
+ALIGN 4
+
+
+ALIGN 4
+
+
+
+OpenChestLavaCaveCh10x:
+SHORT 0x0004
+
+OpenDoorLavaCaveCh10x:
+SHORT 0x0AD0
+
+OpenHDoorLavaCaveCh10x:
+SHORT 0x0898
+SHORT 0x0BD0
+
+MESSAGE Tiles end at offset currentOffset
+

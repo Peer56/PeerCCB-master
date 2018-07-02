@@ -1,0 +1,300 @@
+﻿EventPointerTable(0x17,Chapter4)
+
+#define RaphaelLord EphraimLord
+#define Hunter1 0x86
+#define Hunter2 0x87
+#define Karpat_Ein 0x80
+
+Chapter4:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TURN 0x0 LucianJoins [1,0] 0x0
+TURN 0x0 Wyverns [3,0] 0x0
+TURN 0x0 Bandits [3,0] 0x0
+TURN 0x0 Wyverns [5,0] 0x0
+TURN 0x0 Cavs [5,0] 0x0
+TURN 0x0 Hunters [7,0] 0x0
+TURN 0x0 Cavs [8,0] 0x0
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Seize(18,17)
+Village(0x7,WrathVillage,2,8)
+Village(0x8,Ch4RobeVillage,19,7)
+House(0x9,Ch4House1,4,4)
+House(0xa,Ch4House2,14,11)
+SHOP 0x0 Armory [17,5] 0x16
+SHOP 0x0 Vendor [20,8] 0x17
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Raphael RaphaelLord 0x00 Level(5, Ally, 0) [5,16] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Cyrus Assassin Raphael Level(5, Ally, 0) [4,15] 0x00 0x00 0x0 0x00 [SilverSword, Vulnerary] NoAI
+UNIT Cyrus Assassin Raphael Level(5, Ally, 0) [3,16] 0x00 0x00 0x0 0x00 [SilverSword, Vulnerary] NoAI
+UNIT Cyrus Assassin Raphael Level(5, Ally, 0) [4,17] 0x00 0x00 0x0 0x00 [SilverSword, Vulnerary] NoAI
+UNIT Cyrus Assassin Raphael Level(5, Ally, 0) [3,18] 0x00 0x00 0x0 0x00 [SilverSword, Vulnerary] NoAI
+UNIT Cyrus Assassin Raphael Level(5, Ally, 0) [5,18] 0x00 0x00 0x0 0x00 [SilverSword, Vulnerary] NoAI
+UNIT Cyrus Assassin Raphael Level(5, Ally, 0) [4,19] 0x00 0x00 0x0 0x00 [SilverSword, Vulnerary] NoAI
+UNIT Cyrus Assassin Raphael Level(5, Ally, 0) [6,17] 0x00 0x00 0x0 0x00 [SilverSword, Vulnerary] NoAI
+UNIT
+
+RaphCyrus:
+UNIT Raphael RaphaelLord 0x00 Level(5, Ally, 0) [5,19] 0x00 0x00 0x1 REDA5R16 [Rapier, Vulnerary] NoAI
+UNIT Cyrus Assassin Raphael Level(5, Ally, 0) [5,19] 0x00 0x00 0x1 REDA4R15 [SilverSword, Vulnerary] NoAI
+UNIT
+
+People1:
+UNIT Lucian Bard Raphael Level(5, NPC, 0) [7,4] 0x00 0x00 0x0 0x00 [Shine, Vulnerary] NoAI
+UNIT Hunter1 Ranger Gorias Level(5, Enemy, 0) [8,5] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT Hunter2 Ranger Gorias Level(5, Enemy, 0) [9,4] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT RenaisCivilian Civilian Raphael Level(5, NPC, 0) [5,4] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT RenaisCivilian_F Civilian_F Raphael Level(5, NPC, 0) [4,6] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT RiverFolk Journeyman_1 Raphael Level(5, NPC, 0) [5,8] 0x00 0x00 0x0 0x00 [0x00] NoAI
+UNIT
+
+LucianIsHere:
+UNIT Lucian Bard Raphael Level(5, NPC, 0) [2,8] 0x00 0x00 0x1 REDA3R15 [Shine, Vulnerary] NoAI
+UNIT
+
+LosInfamosos:
+UNIT Gorias Cavalier 0x00 Level(5, Enemy, 0) [8,5] 0x00 0x00 0x1 REDA4R13 [0x00] NoAI
+UNIT Hunter1 Ranger Gorias Level(5, Enemy, 0) [8,5] 0x00 0x00 0x1 REDA3R12 [0x00] NoAI
+UNIT Hunter2 Ranger Gorias Level(5, Enemy, 0) [9,4] 0x00 0x00 0x1 REDA4R12 [0x00] NoAI
+
+EnemyUnits1:
+UNIT Gorias Cavalier 0x00 Level(13, Enemy, 0) [18,17] 0x2 0x00 0x0 0x00 [KillerLance, KnightsCrest] NeverMoveAI // Delete
+UNIT Karpat_Ein Archer Gorias Level(8, Enemy, 1) [20,17] 0x00 0x00 0x0 0x00 [Ballista] GuardTileAI // Delete
+UNIT Karpat_Ein Archer Gorias Level(8, Enemy, 1) [15,3] 0x00 0x00 0x0 0x00 [Ballista] GuardTileAI // Delete
+UNIT Karpat_Ein Cavalier Gorias Level(8, Enemy, 1) [14,17] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI // Delete
+UNIT Karpat_Ein Cavalier Gorias Level(8, Enemy, 1) [16,17] 0x00 0x00 0x0 0x00 [IronBlade] AttackInRangeAI // Delete
+UNIT Karpat_Ein Cavalier Gorias Level(8, Enemy, 1) [15,16] 0x00 0x00 0x0 0x00 [ShortSpear] AttackInRangeAI // Delete
+UNIT Karpat_Ein Cavalier Gorias Level(8, Enemy, 1) [15,7] 0x00 0x00 0x1 REDA4R5 [SteelSword, Javelin] AttackInRangeAI // Delete
+UNIT Karpat_Ein Cavalier Gorias Level(8, Enemy, 1) [16,7] 0x00 0x00 0x1 REDA5R6 [PoisonLance] AttackInRangeAI // Delete
+UNIT Karpat_Ein Cavalier Gorias Level(8, Enemy, 1) [15,10] 0x2 0x00 0x0 0x00 [Longsword] AttackInRangeAI // Delete
+UNIT Karpat_Ein Cavalier Gorias Level(8, Enemy, 1) [16,9] 0x00 0x00 0x0 0x00 [Axereaver] AttackInRangeAI // Delete
+UNIT Karpat_Ein Knight Gorias Level(8, Enemy, 1) [15,8] 0x00 0x00 0x1 REDA9R5 [PoisonAxe] AttackInRangeAI // Delete
+UNIT Karpat_Ein Knight Gorias Level(8, Enemy, 1) [16,8] 0x00 0x00 0x1 REDA10R4 [HandAxe] AttackInRangeAI // Delete
+UNIT
+
+EnemyUnits2:
+UNIT Karpat_Ein Myrmidon Gorias Level(8, Enemy, 1) [0,6] 0x00 0x00 0x0 REDA1R9 [SteelSword] PursueWithoutHeedAI // Delete
+UNIT Karpat_Ein Myrmidon Gorias Level(8, Enemy, 1) [14,4] 0x00 0x00 0x0 0x00 [WindSword] AttackInRangeAI // Delete
+UNIT Karpat_Ein Fighter Gorias Level(8, Enemy, 1) [15,5] 0x00 0x00 0x0 0x00 [PoisonAxe] AttackInRangeAI // Delete
+UNIT Karpat_Ein Fighter Gorias Level(8, Enemy, 1) [16,4] 0x00 0x00 0x1 REDA4R8 [PoisonAxe] AttackInRangeAI // Delete
+UNIT Karpat_Ein Fighter Gorias Level(8, Enemy, 1) [15,4] 0x00 0x00 0x1 REDA5R9 [Hatchet] AttackInRangeAI // Delete
+UNIT Karpat_Ein Fighter Gorias Level(8, Enemy, 1) [19,8] 0x2 0x00 0x0 0x00 [DevilAxe] AttackInRangeAI // Delete
+UNIT Karpat_Ein WyvernRider Gorias Level(8, Enemy, 1) [18,0] 0x00 0x00 0x0 0x00 [Javelin] PursueWithoutHeedAI // Delete
+UNIT Karpat_Ein WyvernRider Gorias Level(8, Enemy, 1) [19,1] 0x00 0x00 0x0 0x00 [SteelLance] PursueWithoutHeedAI // Delete
+UNIT Karpat_Ein WyvernRider Gorias Level(8, Enemy, 1) [17,1] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI // Delete
+UNIT Karpat_Ein Brigand Gorias Level(8, Enemy, 1) [0,0] 0x00 0x00 0x1 REDA0R3 [Halberd] BrigandAI // Delete
+UNIT
+
+EnemyUnits3:
+UNIT Karpat_Ein Archer Gorias Level(8, Enemy, 1) [19,9] 0x00 0x00 0x0 0x00 [KillerBow] AttackInRangeAI // Delete
+UNIT Karpat_Ein Archer Gorias Level(8, Enemy, 1) [15,12] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI // Delete
+UNIT Karpat_Ein Cavalier Gorias Level(8, Enemy, 1) [17,8] 0x00 0x00 0x0 0x00 [IronBlade] AttackInRangeAI // Delete
+UNIT Karpat_Ein Myrmidon Gorias Level(8, Enemy, 1) [19,18] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI // Delete
+UNIT Karpat_Ein Myrmidon Gorias Level(8, Enemy, 1) [13,5] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI // Delete
+UNIT
+
+Wyverns:
+ReinforcementEvent(Wyvernspawn)
+
+Wyvernspawn:
+UNIT Karpat_Ein WyvernRider Gorias Level(8, Enemy, 1) [10,11] 0x00 0x00 0x1 REDA9R11 [IronLance] PursueWithoutHeedAI
+UNIT Karpat_Ein WyvernRider Gorias Level(8, Enemy, 1) [10,11] 0x00 0x00 0x1 REDA11R11 [Javelin] PursueWithoutHeedAI
+UNIT
+
+Cavs:
+ReinforcementEvent(Cavaliers)
+
+Cavaliers:
+UNIT Karpat_Ein Cavalier Gorias Level(8, Enemy, 1) [18,17] 0x00 0x00 0x1 REDA18R18 [SteelLance,Javelin] PursueWithoutHeedAI
+UNIT Karpat_Ein Cavalier Gorias Level(8, Enemy, 1) [18,17] 0x00 0x00 0x1 REDA17R18 [SteelBlade] PursueWithoutHeedAI
+UNIT Karpat_Ein Cavalier Gorias Level(8, Enemy, 1) [18,17] 0x00 0x00 0x1 REDA19R18 [SteelLance] PursueWithoutHeedAI
+UNIT
+
+Bandits:
+ReinforcementEvent(Oleh)
+
+Oleh:
+UNIT Karpat_Ein Brigand Gorias Level(8, Enemy, 1) [21,12] 0x00 0x00 0x1 REDA20R12 [SteelAxe] BrigandAI // Delete
+UNIT Karpat_Ein Brigand Gorias Level(8, Enemy, 1) [21,12] 0x00 0x00 0x1 REDA21R11 [Tomahawk] BrigandAI // Delete
+UNIT
+
+Hunters:
+Text(0x26,HuntersAttack)
+ReinforcementEvent(HolyCrap)
+CUMO Hunter1
+STAL 60
+CURE
+Text(TheyCanThinkPad)
+NoFade
+ENDA
+
+HolyCrap:
+UNIT Karpat_Ein Ranger Gorias Level(2, Enemy, 0) [18,17] 0x2 0x00 0x1 REDA17R18 [Longbow] PursueWithoutHeedAI
+UNIT Karpat_Ein Ranger Gorias Level(2, Enemy, 0) [18,17] 0x00 0x00 0x1 REDA19R18 [LightBrand] PursueWithoutHeedAI
+UNIT
+
+BeginningScene:
+CAM1 [4,16]
+LOAD2 0x1 RaphCyrus
+ENUN
+LOAD1 0x1 People1
+ENUN
+MUSC 0x24
+CUMO Raphael
+STAL 60
+CURE
+Text(0x21,Ch4IntroText1)
+CAM1 [4,5]
+CUMO Lucian
+STAL 60
+CURE
+BACG 0x24
+TEXTSTART
+TEXTSHOW Ch4IntroText2
+MUSC 0x25
+TEXTCONT
+TEXTEND
+MOVE 16 Lucian [2,8]
+MOVE 16 Hunter1 [19,8]
+MOVE 16 Hunter2 [18,9]
+MOVE 16 RenaisCivilian [4,4]
+MOVE 16 RenaisCivilian_F [2,8]
+MOVE 16 RiverFolk [2,8]
+ENUN
+DISA Lucian
+DISA Hunter1
+DISA Hunter2
+DISA RenaisCivilian
+DISA RenaisCivilian_F
+DISA RiverFolk
+CLEA
+LOAD2 0x1 Units
+ENUN
+CAM1 [4,3]
+CUMO [2,8]
+STAL 60
+CURE
+Text(0x2,Ch4IntroText3)
+LOAD1 0x1 LucianIsHere
+ENUN
+CAM1 [4,13]
+CUMO Lucian
+STAL 60
+CURE
+MUSC 0x30
+Text(0x21,Ch4IntroText4)
+LOAD1 0x1 LosInfamosos
+ENUN
+CUMO Gorias
+STAL 60
+MUSC 0x2e
+Text(0x21,Ch4IntroText5)
+MOVE 16 Gorias [10,5]
+MOVE 16 Hunter1 [10,4]
+MOVE 16 Hunter2 [11,5]
+ENUN
+CLEE
+CAM1 [5,7]
+LOAD1 0x1 EnemyUnits3
+ENUN
+LOAD1 0x1 EnemyUnits2
+ENUN
+LOAD1 0x1 EnemyUnits1
+ENUN
+CUMO Raphael
+STAL 60
+CURE
+Text(0x21,Ch4IntroText6)
+GotoPrepScreen
+ENDA
+
+LucianJoins:
+TEXTSTART
+TEXTSHOW Ch4IntroText7
+TEXTEND
+CUSA Lucian
+ENDA
+
+Ch4WrathVillage:
+	Text(0x2,WrathSpeech)
+	
+	// Set parameters
+	SVAL r1 WrathID
+	SVAL r2 (-1) // (-1) is active unit
+	
+	// Check if unit has skill
+	// If they have, goto label #0 (end)
+	ASMC (ASMC_HasSkill+1)
+	BNE 0 rC r0
+	
+	// Learn skill to unit
+	ASMC (ASMC_LearnNewSkill+1)
+	
+LABEL 0
+	// end
+	
+	TILECHANGE 0x1 //Done this just in case...
+	NoFade
+	ENDA
+	
+Ch4RobeVillage:
+	VillageEventItem(RobeText, 0x0, AngelicRobe)
+	
+House1:
+Text(0x0,Ch4House1)
+ENDA
+
+House2:
+Text(0x0,Ch4House2)
+ENDA
+
+ALIGN 4
+
+Armory:
+SHLI IronSword SteelSword IronLance SteelLance IronAxe HandAxe IronBow SteelBow
+
+Vendor:
+SHLI Fire Thunder Lightning Heal Mend Vulnerary PureWater DoorKey ChestKey
+
+ALIGN 4
+
+EndingScene:
+MUSC 0x31
+Text(0x27,Ch4EndingText)
+MNC2 0x5
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET

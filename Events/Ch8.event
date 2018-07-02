@@ -1,0 +1,176 @@
+EventPointerTable(0x33,ThisChapter) //based on the assumption that this is ID 11
+
+#define Ch8BaseLevel 12
+#define Ch8BaseLevelPromoted 1
+#define Chapter9ID 12 //based on the assumption that this is ID 11
+
+/*
+
+Event IDs Used:
+0x7 - RecruitAlexei
+
+Text IDs Used:
+DVText_CreateBridge - "Bridge gap[X]"
+
+*/
+
+VeinEffect(0, SpawnBridgeBottom)
+VeinEffect(1, SpawnBridgeTop)
+VeinEffect(2, SpawnBridgeLeft)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+Units:
+UNIT Raphael EphraimLord 0x00 Level(1, Ally, 0) [15,26] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth    EphraimLord 0x00 Level(1, Ally, 0) [17,26] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth    EphraimLord 0x00 Level(1, Ally, 0) [16,27] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth    EphraimLord 0x00 Level(1, Ally, 0) [15,28] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth    EphraimLord 0x00 Level(1, Ally, 0) [16,29] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth    EphraimLord 0x00 Level(1, Ally, 0) [17,28] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth    EphraimLord 0x00 Level(1, Ally, 0) [18,27] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+CharacterEvent(0x7, RecruitAlexei, Raphael)
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+Vein(6,27,0,DVText_CreateBridge)
+Vein(11,7,1,DVText_CreateBridge)
+Vein(2,26,2,DVText_CreateBridge)
+ENDTRAP
+ALIGN 4
+
+ALIGN 4
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD1 0x1 Enemies1
+ENUN
+LOAD1 0x1 Enemies2
+ENUN
+LOAD1 0x1 Enemies3
+ENUN
+LOAD1 0x1 AlexeiGroup
+ENUN
+GotoPrepScreen
+NoFade
+ENDA
+
+EndingScene:
+MNC2 Chapter9ID
+ENDA
+
+// Events
+RecruitAlexei:
+CUSA Alexei
+NoFade
+ENDA
+
+SpawnBridgeBottom:
+VeinActivation
+TILECHANGE 0x0
+NoFade
+ENDA
+
+SpawnBridgeTop:
+VeinActivation
+TILECHANGE 0x1
+NoFade
+ENDA
+
+SpawnBridgeLeft:
+VeinActivation
+TILECHANGE 0x2
+NoFade
+ENDA
+
+// Manual Movement
+
+// Scripted Fights
+
+// Units
+Enemies1:
+UNIT Novala Druid 0x00 Level(Ch8BaseLevelPromoted, Enemy, 0) [3,3] 0x00 0x00 0x0 0x00 [Flux, Vulnerary] NeverMoveAI 
+UNIT 0x88 Knight 0x00 Level(Ch8BaseLevel, Enemy, 1) [4,27] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] AttackInRangeAI 
+UNIT 0x88 Knight 0x00 Level(Ch8BaseLevel, Enemy, 1) [4,25] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] AttackInRangeAI 
+UNIT 0x88 Knight_F 0x00 Level(Ch8BaseLevel, Enemy, 1) [3,26] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] AttackInRangeAI 
+UNIT 0x88 Knight_F 0x00 Level(Ch8BaseLevel, Enemy, 1) [5,26] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] AttackInRangeAI 
+UNIT 0x88 Knight 0x00 Level(Ch8BaseLevel, Enemy, 1) [15,21] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] AttackInRangeAI 
+UNIT 0x88 Knight 0x00 Level(Ch8BaseLevel, Enemy, 1) [17,21] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] AttackInRangeAI 
+UNIT 0x88 Bonewalker_Bow 0x00 Level(Ch8BaseLevel, Enemy, 1) [15,20] 0x00 0x00 0x0 0x00 [IronBow] ChaseOnceApproachedAI 
+UNIT 0x88 Bonewalker_Bow 0x00 Level(Ch8BaseLevel, Enemy, 1) [17,20] 0x00 0x00 0x0 0x00 [IronBow] ChaseOnceApproachedAI 
+UNIT 0x88 Mogall 0x00 Level(Ch8BaseLevel, Enemy, 1) [16,21] 0x00 0x00 0x0 0x00 [EvilEye] ChaseOnceApproachedAI 
+UNIT 0x88 Soldier 0x00 Level(Ch8BaseLevel, Enemy, 1) [16,22] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI 
+UNIT 0x88 Gargoyle 0x00 Level(Ch8BaseLevel, Enemy, 1) [7,27] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI 
+UNIT 0x88 Gargoyle 0x00 Level(Ch8BaseLevel, Enemy, 1) [1,26] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI 
+UNIT 0x88 Gargoyle 0x00 Level(Ch8BaseLevel, Enemy, 1) [9,15] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI 
+UNIT 0x88 Gargoyle 0x00 Level(Ch8BaseLevel, Enemy, 1) [1,14] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI 
+UNIT
+
+Enemies2:
+UNIT 0x88 Druid_F 0x00 Level(Ch8BaseLevelPromoted, Enemy, 1) [2,5] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x88 Druid_F 0x00 Level(Ch8BaseLevelPromoted, Enemy, 1) [4,5] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x88 Soldier 0x00 Level(Ch8BaseLevel, Enemy, 1) [18,17] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI 
+UNIT 0x88 Soldier 0x00 Level(Ch8BaseLevel, Enemy, 1) [18,12] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI 
+UNIT 0x88 Bonewalker 0x00 Level(Ch8BaseLevel, Enemy, 1) [19,16] 0x00 0x00 0x0 0x00 [IronSword] ChaseOnceApproachedAI 
+UNIT 0x88 Bonewalker 0x00 Level(Ch8BaseLevel, Enemy, 1) [17,16] 0x00 0x00 0x0 0x00 [IronSword] ChaseOnceApproachedAI 
+UNIT 0x88 Bonewalker 0x00 Level(Ch8BaseLevel, Enemy, 1) [17,11] 0x00 0x00 0x0 0x00 [IronSword] ChaseOnceApproachedAI 
+UNIT 0x88 Bonewalker 0x00 Level(Ch8BaseLevel, Enemy, 1) [19,11] 0x00 0x00 0x0 0x00 [IronSword] ChaseOnceApproachedAI 
+UNIT 0x88 Shaman 0x00 Level(Ch8BaseLevel, Enemy, 1) [12,8] 0x00 0x00 0x0 0x00 [Flux] ChaseOnceApproachedAI 
+UNIT 0x88 Shaman 0x00 Level(Ch8BaseLevel, Enemy, 1) [13,8] 0x00 0x00 0x0 0x00 [Flux] ChaseOnceApproachedAI 
+UNIT 0x88 Shaman 0x00 Level(Ch8BaseLevel, Enemy, 1) [18,14] 0x00 0x00 0x0 0x00 [Flux] ChaseOnceApproachedAI 
+UNIT 0x88 Shaman 0x00 Level(Ch8BaseLevel, Enemy, 1) [18,8] 0x00 0x00 0x0 0x00 [Flux] ChaseOnceApproachedAI 
+UNIT
+
+Enemies3:
+UNIT 0x88 Mage 0x00 Level(Ch8BaseLevel, Enemy, 1) [12,6] 0x00 0x00 0x0 0x00 [Thunder] ChaseOnceApproachedAI 
+UNIT 0x88 Mage 0x00 Level(Ch8BaseLevel, Enemy, 1) [16,6] 0x00 0x00 0x0 0x00 [Thunder] ChaseOnceApproachedAI 
+UNIT 0x88 Archer 0x00 Level(Ch8BaseLevel, Enemy, 1) [9,14] 0x00 0x00 0x0 0x00 [IronBow] ChaseOnceApproachedAI 
+UNIT 0x88 Archer 0x00 Level(Ch8BaseLevel, Enemy, 1) [1,15] 0x00 0x00 0x0 0x00 [IronBow] ChaseOnceApproachedAI 
+UNIT 0x88 General 0x00 Level(Ch8BaseLevelPromoted, Enemy, 1) [3,11] 0x00 0x00 0x0 0x00 [SteelLance, SteelSword, SteelAxe] AttackInRangeAI 
+UNIT 0x88 Knight 0x00 Level(Ch8BaseLevel, Enemy, 1) [3,7] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] AttackInRangeAI 
+UNIT 0x88 Knight 0x00 Level(Ch8BaseLevel, Enemy, 1) [5,14] 0x00 0x00 0x0 0x00 [SteelLance, Javelin] AttackInRangeAI 
+UNIT 0x88 Cavalier 0x00 Level(Ch8BaseLevel, Enemy, 1) [4,14] 0x00 0x00 0x0 0x00 [IronSword, IronLance] ChaseOnceApproachedAI 
+UNIT 0x88 Cavalier 0x00 Level(Ch8BaseLevel, Enemy, 1) [6,14] 0x00 0x00 0x0 0x00 [IronSword, IronLance] ChaseOnceApproachedAI 
+UNIT 0x88 Archer 0x00 Level(Ch8BaseLevel, Enemy, 1) [7,28] 0x00 0x00 0x0 0x00 [SteelBow] ChaseOnceApproachedAI 
+UNIT 0x88 Archer 0x00 Level(Ch8BaseLevel, Enemy, 1) [1,27] 0x00 0x00 0x0 0x00 [SteelBow] ChaseOnceApproachedAI 
+UNIT
+
+AlexeiGroup:
+UNIT Alexei Monk 0x00 Level(10, NPC, 0) [16,20] 0x00 0x00 0x0 0x00 [Lightning, Shine, Elixir] NoAI 
+UNIT
+
+// Shop Data
+
+MESSAGE Events end at offset currentOffset

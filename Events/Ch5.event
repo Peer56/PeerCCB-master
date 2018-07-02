@@ -1,0 +1,167 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+EventPointerTable(0x7, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TURN 0x0 WaveThief[4,0] 0x0
+TURN 0x0 WaveFirst[6,0] 0x0
+TURN 0x0 WaveSecond[8,0] 0x0
+TURN 0x0 WaveThird[11,0] 0x0
+TURN 0x0 WaveFourth[13,0] 0x0
+END_MAIN
+
+WaveThief:
+ReinforcementEvent(ThiefWave)
+ENDA
+
+WaveFirst:
+ReinforcementEvent(Wave1)
+ENDA
+
+WaveSecond:
+ReinforcementEvent(Wave2)
+ENDA
+
+WaveThird:
+ReinforcementEvent(Wave3)
+ENDA
+
+WaveFourth:
+ReinforcementEvent(Wave4)
+ENDA
+
+CharacterBasedEvents:
+CharacterEventBothWays(0x10,TalkEvent, Raphael, Staphanie)
+END_MAIN
+
+LocationBasedEvents:
+Chest(Barrier,15,16)
+Chest(KillerBow,16,16)
+Chest(WindSword,15,8)
+Chest(EnergyRing,15,10)
+Seize(20,2)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Units:
+UNIT Raphael EphraimLord 0x00 Level(1, Ally, 0) [2,17] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin Raphael Level(1, Ally, 0) [2,16] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin Raphael Level(1, Ally, 0) [1,16] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin Raphael Level(1, Ally, 0) [3,16] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin Raphael Level(1, Ally, 0) [3,15] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin Raphael Level(1, Ally, 0) [2,15] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin Raphael Level(1, Ally, 0) [1,15] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin Raphael Level(1, Ally, 0) [0,16] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin Raphael Level(1, Ally, 0) [4,16] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin Raphael Level(1, Ally, 0) [3,17] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT Seth Paladin Raphael Level(1, Ally, 0) [1,17] 0x00 0x00 0x0 0x00 [0x00] NoAI 
+UNIT
+
+MagicalGirl:
+UNIT Staphanie Troubadour 0x00 Level(3, NPC, 0) [2,13] 0x00 0x00 0x0 0x00 [Mend, ChestKey] HealUnits 
+UNIT
+
+Bad:
+UNIT 0x80 Mercenary Bazba Level(9, Enemy, 1) [8,10] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI 
+UNIT 0x80 Mage Bazba Level(9, Enemy, 1) [11,10] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 Knight Bazba Level(10, Enemy, 1) [12,15] 0x00 0x00 0x0 0x00 [Javelin] GuardTileAI 
+UNIT 0x80 Shaman Bazba Level(10, Enemy, 1) [11,15] 0x00 0x00 0x0 0x00 [Nosferatu] GuardTileAI 
+UNIT 0x80 Cavalier Bazba Level(10, Enemy, 1) [20,16] 0x2 0x00 0x0 0x00 [BraveLance] AttackInRangeAI 
+UNIT 0x80 Cavalier Bazba Level(10, Enemy, 1) [19,16] 0x00 0x00 0x0 0x00 [BraveLance] AttackInRangeAI 
+UNIT 0x80 Knight Bazba Level(10, Enemy, 1) [19,8] 0x00 0x00 0x0 0x00 [HandAxe] GuardTileAI 
+UNIT 0x80 WyvernRider Bazba Level(10, Enemy, 1) [20,8] 0x00 0x00 0x0 0x00 [Javelin] GuardTileAI 
+UNIT 0x80 Sniper Bazba Level(1, Enemy, 1) [20,3] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
+UNIT 0x80 Sniper Bazba Level(1, Enemy, 1) [11,6] 0x00 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
+UNIT 0x80 Sniper Bazba Level(1, Enemy, 1) [14,8] 0x2 0x00 0x0 0x00 [Longbow] AttackInRangeAI 
+UNIT 0x80 Fighter Bazba Level(9, Enemy, 1) [1,5] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI 
+UNIT 0x80 Mercenary Bazba Level(9, Enemy, 1) [3,5] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI 
+UNIT 0x80 Mage Bazba Level(10, Enemy, 1) [2,2] 0x2 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT 0x80 WyvernRider Bazba Level(10, Enemy, 1) [7,1] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT 0x80 WyvernRider Bazba Level(10, Enemy, 1) [7,0] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT 0x80 Shaman Bazba Level(10, Enemy, 1) [11,4] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Hero Bazba Level(10, Enemy, 1) [14,3] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI 
+UNIT 0x80 Shaman Bazba Level(11, Enemy, 1) [17,5] 0x2 0x00 0x0 0x00 [Nosferatu] GuardTileAI 
+UNIT 0x80 Mercenary Bazba Level(11, Enemy, 1) [17,4] 0x2 0x00 0x0 0x00 [Runesword] GuardTileAI 
+UNIT 0x80 Druid Bazba Level(1, Enemy, 1) [20,4] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x80 Knight Bazba Level(9, Enemy, 1) [7,10] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI 
+UNIT 0x80 Cavalier Bazba Level(9, Enemy, 1) [12,10] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI 
+UNIT 0x80 Myrmidon Bazba Level(9, Enemy, 1) [7,17] 0x00 0x00 0x0 0x00 [Lancereaver] AttackInRangeAI 
+UNIT 0x80 Fighter Bazba Level(11, Enemy, 1) [18,13] 0x00 0x00 0x0 0x00 [SteelAxe] AttackInRangeAI 
+UNIT 0x80 Mage Bazba Level(11, Enemy, 1) [21,13] 0x00 0x00 0x0 0x00 [Elfire] AttackInRangeAI 
+UNIT Bazba Warrior 0x00 Level(1, Enemy, 0) [20,2] 0x00 0x00 0x0 0x00 [HandAxe, Hammer, Halberd, BlueGem] GuardTileAI 
+UNIT
+
+ThiefWave:
+UNIT 0x80 Thief Bazba Level(11, Enemy, 1) [21,11] 0x00 0x00 0x0 0x00 [SteelSword] LootingThiefAI 
+UNIT 0x80 Thief Bazba Level(11, Enemy, 1) [12,4] 0x00 0x00 0x0 0x00 [SteelSword] LootingThiefAI 
+UNIT
+
+Wave1:
+UNIT 0x80 Soldier Bazba Level(11, Enemy, 1) [12,4] 0x00 0x00 0x0 0x00 [ShortSpear, Horseslayer] PursueWithoutHeedAI 
+UNIT 0x80 Monk Bazba Level(11, Enemy, 1) [12,5] 0x00 0x00 0x0 0x00 [Divine] PursueWithoutHeedAI 
+UNIT
+
+Wave2:
+UNIT 0x80 MageKnight Bazba Level(1, Enemy, 1) [9,16] 0x00 0x00 0x0 0x00 [Fire] PursueWithoutHeedAI 
+UNIT 0x80 MageKnight Bazba Level(1, Enemy, 1) [8,16] 0x00 0x00 0x0 0x00 [Fire] PursueWithoutHeedAI 
+UNIT
+
+Wave3:
+UNIT 0x80 WyvernRider Bazba Level(11, Enemy, 1) [0,0] 0x00 0x00 0x0 0x00 [SteelLance, HeavySpear] PursueWithoutHeedAI 
+UNIT 0x80 WyvernRider Bazba Level(11, Enemy, 1) [0,3] 0x00 0x00 0x0 0x00 [SteelLance, HeavySpear] PursueWithoutHeedAI 
+UNIT 0x80 WyvernRider Bazba Level(11, Enemy, 1) [0,1] 0x00 0x00 0x0 0x00 [SteelLance, Horseslayer] PursueWithoutHeedAI 
+UNIT 0x80 WyvernRider Bazba Level(11, Enemy, 1) [0,4] 0x00 0x00 0x0 0x00 [SteelLance, Horseslayer] PursueWithoutHeedAI
+UNIT
+
+Wave4:
+UNIT 0x80 Swordmaster Bazba Level(1, Enemy, 1) [18,11] 0x00 0x00 0x0 0x00 [IronBlade] PursueWithoutHeedAI 
+UNIT 0x80 Swordmaster Bazba Level(1, Enemy, 1) [21,11] 0x00 0x00 0x0 0x00 [IronBlade] PursueWithoutHeedAI 
+UNIT
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD1 0x1 Bad
+ENUN
+LOAD1 0x1 MagicalGirl
+ENUN
+NoFade
+GotoPrepScreen
+
+EndingScene:
+MNC2 Ch6
+NoFade
+ENDA

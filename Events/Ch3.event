@@ -1,0 +1,127 @@
+#include EAstdlib.event
+
+EventPointerTable(0x07,ThisChapter)
+
+ORG 0xE80000
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+Units:
+UNIT Eirika EirikaLord 0x00 Level(4, Ally, 0) [1,11] 0x00 0x00 0x0 0x00 [0x00] AttackInRangeAI 
+UNIT Eirika Assassin 0x00 Level(4, Ally, 0) [0,12] 0x00 0x00 0x0 0x00 [0x00] AttackInRangeAI 
+UNIT Eirika Assassin 0x00 Level(4, Ally, 0) [2,12] 0x00 0x00 0x0 0x00 [0x00] AttackInRangeAI 
+UNIT Eirika Assassin 0x00 Level(4, Ally, 0) [0,10] 0x00 0x00 0x0 0x00 [0x00] AttackInRangeAI 
+UNIT Eirika Assassin 0x00 Level(4, Ally, 0) [2,10] 0x00 0x00 0x0 0x00 [0x00] AttackInRangeAI 
+UNIT Eirika Assassin 0x00 Level(4, Ally, 0) [1,9] 0x00 0x00 0x0 0x00 [0x00] AttackInRangeAI 
+UNIT Eirika Assassin 0x00 Level(4, Ally, 0) [3,11] 0x00 0x00 0x0 0x00 [0x00] AttackInRangeAI 
+UNIT
+
+
+TurnBasedEvents:
+TURN 0x0 TurnUno[1,0] 0x0
+END_MAIN
+
+TurnUno:
+LOAD1 0x1 RubyRises
+ENUN
+//text: "Oh come on! I find lord Raphael and then I get surrounded by mercenaries! Ugh! I've got to protect myself, m'lord. Forgive me, hey mercs! I'm a new recruit from your boss, I believe that's the boy we're after! Let's get 'em! Bone: Hey what you doin'! Stop pointing your weapons at her! Turn and fight the boy!
+TurnEnemy(Ruby)
+NoFade
+ENDA
+
+CharacterBasedEvents:
+CharacterEvent(0x9,RecruitRuby,Raphael,Ruby,0x00)
+END_MAIN
+
+RecruitRuby:
+/text Raphael: Is that... No. You dare turn your lance on your lord, Ruby?! Ruby: H-Hello, L-Lord R-Raphael! Thank gods you got to me first, I had to turn sides to survive, they had me surrounded by archers! You know what they do to poor Sheila. Raphael: ...I do. I see, turn your lance back on the enemy and we shall prevail. Ruby: Understood, sir! 
+TurnAlly(Ruby)
+NoFade
+ENDA
+
+LocationBasedEvents:
+Village(0x8,VillageHeavy,2,2)
+END_MAIN
+
+VillageGem:
+VillageEventItem(VillageText, Village, HeavySpear)
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+//DO NOT TOUCH
+WORD $00
+
+Tutorial:
+//DO NOT TOUCH
+WORD $00
+
+TrapData:
+END_MAIN
+
+ALIGN 4
+
+BeginningScene:
+ENDA
+
+EndingScene:
+ENDA
+
+// Events
+
+// Manual Movement
+
+// Scripted Fights
+
+// Units
+Badenemies:
+UNIT Bone Mercenary 0x00 Level(10, Enemy, 0) [16,1] 0x00 0x00 0x0 0x00 [SteelSword, Vulnerary] GuardTileAI 
+UNIT 0x91 Archer 0x00 Level(5, Enemy, 0) [14,7] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI 
+UNIT 0x91 Archer 0x00 Level(6, Enemy, 0) [17,2] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI 
+UNIT 0x91 Archer 0x00 Level(4, Enemy, 0) [11,9] 0x00 0x00 0x0 0x00 [IronBow] PursueWithoutHeedAI 
+UNIT 0x91 Archer 0x00 Level(4, Enemy, 0) [10,12] 0x00 0x00 0x0 0x00 [SteelBow] PursueWithoutHeedAI 
+UNIT 0x91 Knight 0x00 Level(5, Enemy, 0) [12,11] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x91 Knight 0x00 Level(5, Enemy, 0) [13,1] 0x00 0x00 0x0 0x00 [SteelLance] GuardTileAI 
+UNIT 0x92 Shaman 0x00 Level(6, Enemy, 0) [12,1] 0x00 0x00 0x0 0x00 [Flux] GuardTileAI 
+UNIT 0x92 Shaman 0x00 Level(6, Enemy, 0) [4,1] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI 
+UNIT 0x91 Cavalier 0x00 Level(4, Enemy, 0) [12,7] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI 
+UNIT 0x91 Cavalier 0x00 Level(5, Enemy, 0) [8,1] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI 
+UNIT 0x91 Fighter 0x00 Level(4, Enemy, 0) [3,7] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI 
+UNIT 0x91 Fighter 0x00 Level(6, Enemy, 0) [11,5] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI 
+UNIT 0x91 Soldier 0x00 Level(6, Enemy, 0) [8,10] 0x00 0x00 0x0 0x00 [Javelin, Vulnerary] GuardTileAI 
+UNIT 0x91 Soldier 0x00 Level(6, Enemy, 0) [6,4] 0x00 0x00 0x0 0x00 [Javelin, Vulnerary] GuardTileAI 
+UNIT 0x91 Myrmidon 0x00 Level(4, Enemy, 0) [10,7] 0x00 0x00 0x0 0x00 [SteelSword, Vulnerary] AttackInRangeAI 
+UNIT 0x91 Myrmidon 0x00 Level(4, Enemy, 0) [1,3] 0x00 0x00 0x0 0x00 [IronSword, Vulnerary] AttackInRangeAI 
+UNIT 0x91 Myrmidon 0x00 Level(4, Enemy, 0) [0,2] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI 
+UNIT 0x91 Knight 0x00 Level(5, Enemy, 0) [10,3] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI 
+UNIT 0x91 Knight 0x00 Level(5, Enemy, 0) [8,5] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI  
+UNIT
+
+RubyRises:
+UNIT Ross PegasusKnight 0x00 Level(1, Ally, 0) [14,11] 0x00 0x00 0x0 0x00 [SlimLance, Javelin, Vulnerary] AttackInRangeAI 
+UNIT
+
+
+// Shop Data
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD1 0x1 Badenemies
+ENUN
+GotoPrepScreen
+
+ENDA
+MESSAGE Events end at offset currentOffset

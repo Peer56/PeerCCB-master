@@ -1,0 +1,35 @@
+#define Lucile 0x0B
+#define Descit 0x5B
+
+
+#define Ch10xLackey1 0x88
+#define Ch10xLackey2 0x89
+#define Ch10xLackey3 0x8A
+#define Ch10xLackey4 0x8B
+#define EndgamelevelLackey 0x8C
+
+
+
+//Classes
+#define Phantom 0x51
+#define Zombie 0x52
+#define Skeleton 0x54
+#define SkeletonB 0x55
+#define Bonewaker 0x56
+#define BonewakerB 0x57
+#define Spider 0x58
+#define SpiderG 0x59
+#define Ogre 0x5A
+#define Wolf 0x5B
+#define Cerberu 0x5C
+#define Centaur 0x5D
+#define SCentaur 0x5E
+#define Eyeball 0x5F
+#define Moggal 0x60
+#define Medusa 0x61
+#define Egg 0x62
+#define Imp 0x63
+#define Demon 0x64
+#define DragonZombie 0x65
+
+
