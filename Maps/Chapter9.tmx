@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="32" height="20" tilewidth="16" tileheight="16" nextobjectid="1">
- <tileset firstgid="1" name="Tileset" tilewidth="16" tileheight="16" tilecount="1024">
-  <image source="../Tilesets/0e007210.png" width="512" height="512"/>
+ <tileset firstgid="1" name="Tileset" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="../../WeeklyBlitz/Maps/FE8/0e007210.png" width="512" height="512"/>
  </tileset>
  <layer name="Main" width="32" height="20">
   <properties>

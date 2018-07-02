@@ -1,0 +1,222 @@
+# 0x21C LucileName
+Lucile[X]
+
+# 0x278 LucileDesc
+A mysterious girl with[NL]
+problems to control her powers.[X]
+
+
+# 0x9A0 Ch10xGoal
+Trigger switches[NL]
+and seize.[X]
+
+
+# 0x9A1  Ch10xMission
+Seize[X]
+
+
+# 0x9A2 LucileBattleQuote
+[OpenFarLeft][LoadInnes]
+I'm sorry...[A][NL]
+I don't know...[A][NL]
+How to control these[NL]
+powers of mine...[A][NL][X]
+
+# 0x9A3 LucileDieQuote
+[OpenFarLeft][LoadInnes]
+At last... Freedom...[A][X]
+
+# 0x9A4 Ch10xBossBattleQuote
+[OpenFarLeft][LoadFace][0x3E][0x01]
+Despacito![A][X]
+
+# 0x9A5 Ch10xBossDieQuote
+[OpenFarLeft][LoadFace][0x3E][0x01]
+Despacito...[A][X]
+
+
+# 0x248 Ch10xBossName
+Iak Gnay[X]
+
+# 0x2A2 Ch10xBossDesc
+General of Blume[NL]
+in charge of Leonster.[X]
+
+
+# 0x9A6 Ch10xText1
+[OpenMidLeft][LoadFace][0x02][0x01]
+[OpenMidRight][LoadFace][0x04][0x01]
+I think this is the place, Lord Raphael.[A][NL]
+[OpenMidLeft]
+Is it really, Cyrus?[NL]
+This place looks pretty weird.[A][NL]
+[OpenMidRight]
+Yes, this is the NES-Ganon Cave,[NL]
+I do wonder what does it have such[A][NL]
+a weird name, to begin with.[A][NL]
+[OpenMidLeft]
+We will discover, I guess.[A][NL]
+Okay men, forward![A][NL]
+Let's see if that secret tome[NL]
+thing is real or not.[A][NL]
+[X]
+
+
+
+# 0x9A7 Ch10xEndText1
+[OpenFarRight][LoadFace][0x02][0x01]
+So... Is this the tome?[A][NL]
+This is just a common Bolting tome![A][NL]
+Damn that villager, he tricked me![A][NL][X]
+
+# 0x9A8 Ch10xConvo1
+[OpenMidLeft][LoadFace][0xFF][0xFF]
+[OpenMidRight][LoadInnes][CloseEyes]
+Ah, get away![NL]
+I don't wish to...[A][NL]
+I don't wish to hurt you...[A][NL]
+[OpenMidLeft]
+Calm down, calm down![A][NL]
+I don't wish to harm you as well.[A][NL]
+[OpenMidRight][OpenEyes]
+You don't wish to harm me...?[A][NL]
+Why is that?[A][NL]
+[OpenMidLeft][ToggleSmile]
+You don't like you are happy here.[A][NL]
+You feel out of place,[NL]
+on this weird named cave.[A][NL]
+[OpenMidRight]
+But... Don't you know?[A][NL]
+Those monsters that are being[NL]
+summoned are my fault...[A][NL]
+[OpenMidLeft][ToggleSmile]
+Um, why is that?[A][NL]
+[OpenMidRight]
+My mother was a powerfull summoner[NL]
+and I inherited her powers.[A][NL]
+But I'm nowhere near her mastery in[NL]
+these arts.[A][NL]
+So she created a special armlet that[NL]
+when I'm wearing it, I can control[A][NL]
+my powers correctly.[A][NL]
+[OpenMidLeft]
+And why aren't you wearing it then?[A][NL]
+[OpenMidRight]
+That man, he took it from me[A]
+and forced me to work to him.[A][NL]
+[OpenMidLeft]
+So... While you're alive, those[NL]
+monsters will keep spawning.[A][NL]
+Am I right?[A][NL]
+[OpenMidRight][CloseEyes]
+Yes...[A][NL][OpenEyes]
+Unless I wear the armlet.[A][NL]
+[OpenMidLeft][ToggleSmile]
+Grab my hand.[A][NL][MoveRight]
+Let's recover that armlet together.[A][NL]
+[OpenMidRight]
+Oh![A][NL][X]
+
+
+
+# 0x9A9 Ch10xMisc1
+[OpenFarRight][LoadFace][0xFF][0xFF]
+Alright, this swith is on.[A][NL][X]
+
+# 0x9AA Ch10xMisc2
+[OpenFarRight][LoadFace][0xFF][0xFF]
+Scrapped text.[A][NL]
+Despacito[A][X]
+
+
+
+
+# 0x9AB RafLucileSup1
+[OpenMidLeft][LoadFace][0xFF][0xFF]
+[OpenMidRight][LoadInnes][CloseEyes]
+[OpenMidLeft]
+Yo, Lucile![NL]
+How are you doing?[A][NL]
+[OpenMidRight]
+I'm doing just fine,[NL]
+thank you.[A][NL]
+[raf]
+So, are you getting better[NL]
+into mastering that power of yours?[A][NL]
+[luc]
+Um, well, not really,[NL]
+I'm sorry...[A][NL]
+[raf]
+Hold up, that's nothing[NL]
+to apologise for.[A][NL]
+[luc]
+It's just that...[NL]
+You have been so nice to me.[A][NL]
+And I haven't done much in order[NL]
+to help you out here.[A][NL]
+[raf]
+Nah, your skill in the magic arts[NL]
+is already helping me a lot.[A][NL]
+Thank you for joining our side.[A][NL]
+[luc]
+Umm, well...[A][NL]
+[raf]
+Oh, wait![NL]
+The enemy![A][NL][ClearFace]
+[luc]
+Wait... Ah.[A][NL]
+He's gone.[A][NL][X]
+
+
+# 0x9AC RafLucileSup2
+[OpenMidLeft][LoadFace][0xFF][0xFF]
+[OpenMidRight][LoadInnes][CloseEyes]
+[OpenMidLeft]
+Hey there Lucile![A][NL]
+I think you were going to[NL]
+say something, before I left.[A][NL]
+What was it.[A][NL]
+[luc]
+Uh?[A][NL]
+Oh, never mind.[A][NL]
+[raf]
+Is that it?[NL]
+Ok then.[A][NL]
+Um, well anyways, if you do[NL]
+need something, don't hesitate[A][NL]
+to tell me ok?[A][NL]
+[luc]
+Sure.[A][NL][X]
+
+# 0x9AD RafLucileSup3
+[OpenMidLeft][LoadFace][0xFF][0xFF]
+[OpenMidRight][LoadInnes][CloseEyes]
+Lord Raphael...[A][NL]
+There's something I've been wanting to[NL]
+tell you since we've met up.[A][NL]
+[raf]
+Huh?[A][NL]
+What's it?[A][NL]
+[luc]
+Do you believe in love[NL]
+at the first sight?[A][NL]
+[raf]
+Say no more Lucile...[A][NL]
+[luc]
+So you know...[A][NL]
+I thought I might say that[NL]
+as I have a chance now and[A][NL]
+before we part from each other.[A][NL]
+I like you a lot.[A][NL]
+I want us to be more[NL]
+than just friends...[A][NL]
+[raf]
+[CloseEyes]Lucile...[A][NL][OpenEyes]
+I also do love you, so...[A][NL]
+Once this war is over.[A][NL]
+Come with me to my kingdom.[NL]
+We shall marry and live happily.[A][NL]
+[luc]
+Lord Raphael...[A][NL][X]
+
+

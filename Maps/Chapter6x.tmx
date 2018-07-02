@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="15" height="16" tilewidth="16" tileheight="16" infinite="0" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="16" tilewidth="16" tileheight="16" nextobjectid="1">
  <properties>
   <property name="Main" value=""/>
  </properties>
  <tileset firstgid="1" name="FE8 - Fields - 01000203" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="Project Folder/FEMapCreator/Tilesets/FE8 - Fields - 01000203.png" trans="ffffff" width="512" height="512"/>
+  <image source="../../WeeklyBlitz/Maps/FE8/01000203.png" trans="ffffff" width="512" height="512"/>
  </tileset>
- <layer name="Tile Layer 1" width="15" height="16">
+ <layer name="Main" width="15" height="16">
   <properties>
+   <property name="Anims1" value="0"/>
+   <property name="ChapterID" value="0x7"/>
    <property name="Main" value=""/>
+   <property name="MapID" value="0x22"/>
+   <property name="ObjectType" value="1"/>
+   <property name="PaletteID" value="2"/>
+   <property name="TileConfig" value="3"/>
   </properties>
   <data>
    <tile gid="547"/>
@@ -120,7 +126,7 @@
    <tile gid="164"/>
    <tile gid="99"/>
    <tile gid="99"/>
-   <tile gid="99"/>
+   <tile gid="783"/>
    <tile gid="100"/>
    <tile gid="100"/>
    <tile gid="721"/>
@@ -133,8 +139,8 @@
    <tile gid="457"/>
    <tile gid="100"/>
    <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
+   <tile gid="783"/>
+   <tile gid="100"/>
    <tile gid="99"/>
    <tile gid="100"/>
    <tile gid="100"/>
@@ -149,9 +155,9 @@
    <tile gid="869"/>
    <tile gid="164"/>
    <tile gid="132"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
+   <tile gid="100"/>
+   <tile gid="100"/>
+   <tile gid="100"/>
    <tile gid="99"/>
    <tile gid="99"/>
    <tile gid="99"/>
@@ -164,15 +170,15 @@
    <tile gid="100"/>
    <tile gid="163"/>
    <tile gid="721"/>
+   <tile gid="100"/>
+   <tile gid="100"/>
    <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
+   <tile gid="721"/>
+   <tile gid="209"/>
+   <tile gid="200"/>
+   <tile gid="199"/>
+   <tile gid="206"/>
+   <tile gid="100"/>
    <tile gid="131"/>
    <tile gid="131"/>
    <tile gid="784"/>
@@ -180,14 +186,14 @@
    <tile gid="786"/>
    <tile gid="786"/>
    <tile gid="721"/>
+   <tile gid="100"/>
+   <tile gid="209"/>
+   <tile gid="200"/>
    <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
+   <tile gid="231"/>
+   <tile gid="434"/>
+   <tile gid="266"/>
+   <tile gid="100"/>
    <tile gid="100"/>
    <tile gid="131"/>
    <tile gid="385"/>
@@ -196,12 +202,12 @@
    <tile gid="746"/>
    <tile gid="680"/>
    <tile gid="721"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
+   <tile gid="165"/>
+   <tile gid="239"/>
+   <tile gid="783"/>
+   <tile gid="721"/>
+   <tile gid="271"/>
+   <tile gid="177"/>
    <tile gid="99"/>
    <tile gid="67"/>
    <tile gid="721"/>
@@ -211,13 +217,13 @@
    <tile gid="753"/>
    <tile gid="545"/>
    <tile gid="719"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
    <tile gid="67"/>
+   <tile gid="721"/>
    <tile gid="99"/>
-   <tile gid="99"/>
+   <tile gid="209"/>
+   <tile gid="402"/>
+   <tile gid="402"/>
+   <tile gid="200"/>
    <tile gid="721"/>
    <tile gid="753"/>
    <tile gid="522"/>
@@ -227,12 +233,12 @@
    <tile gid="460"/>
    <tile gid="561"/>
    <tile gid="721"/>
+   <tile gid="100"/>
    <tile gid="99"/>
    <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
+   <tile gid="231"/>
+   <tile gid="402"/>
+   <tile gid="298"/>
    <tile gid="784"/>
    <tile gid="496"/>
    <tile gid="425"/>
@@ -241,13 +247,13 @@
    <tile gid="616"/>
    <tile gid="425"/>
    <tile gid="683"/>
-   <tile gid="786"/>
+   <tile gid="653"/>
    <tile gid="784"/>
    <tile gid="721"/>
    <tile gid="721"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
+   <tile gid="721"/>
+   <tile gid="297"/>
+   <tile gid="304"/>
    <tile gid="786"/>
    <tile gid="431"/>
    <tile gid="617"/>

@@ -39,3 +39,5 @@ Zeke[X]
 #include "skilldesc_text.txt"
 
 #include "ch6text.txt"
+
+#include "ch10text.txt"

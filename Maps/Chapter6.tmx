@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="27" height="17" tilewidth="16" tileheight="16" infinite="0" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="27" height="17" tilewidth="16" tileheight="16" nextobjectid="1">
  <tileset firstgid="1" name="FE8 - Desert - 42004344" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="../../Users/Yalçın/Desktop/Project Folder/FEMapCreator/Tilesets/FE8 - Desert - 42004344.png" trans="ffffff" width="512" height="512"/>
+  <image source="../../WeeklyBlitz/Maps/FE8/42004344.png" trans="ffffff" width="512" height="512"/>
  </tileset>
- <layer name="Tile Layer 4" width="27" height="17">
+ <layer name="Main" width="27" height="17">
   <properties>
    <property name="Anims1" value="5"/>
    <property name="ChapterID" value="6"/>

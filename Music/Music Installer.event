@@ -17,4 +17,6 @@ voicegroup000:
 SongTable(0xC,losbastardos,MapMusicGroup)
 #include "losbastardos.event"
 
+SongTable(0x9,losbastardos,MapMusicGroup)
+#include "disllusion.event"
 */
