@@ -56,7 +56,8 @@ ENUN
 NoFade
 ENDA
 
-
+CharacterBasedEvents:
+END_MAIN
 
 LocationBasedEvents:
 Village(0x9,VillageDragoonKilla,0,9)
@@ -70,9 +71,9 @@ BananaBay:
 SHLI SilverSword KillingEdge Lightbrand SilverAxe KillerAxe Tomahawk SilverLance KillerLance Spear SilverBow KillerBow Longbow
 ALIGN 4
 IcyShop:
-SHLI Elfire Thunder Fimbultver Heal Mend Silence Physic Silence Elixir
+SHLI Elfire Thunder Fimbulvetr Heal Mend Silence Physic Silence Elixir
 ALIGN 4
-BananaBomb
+BananaBomb:
 SHLI BraveSword WoDao Runesword BraveAxe DragonAxe Tomahawk BraveLance DragonSpear BraveBow Armourslayer
 ALIGN 4
 
