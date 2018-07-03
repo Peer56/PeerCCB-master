@@ -2,6 +2,6 @@
 
 #include eastdlib.event
 
-SetChapterData(0x0F,0x88,0,0x89,0x8a,,Map,0,0,0)
+SetChapterData(0x0F,0x88,0,0x89,0x8a,0x45,Map,0,0,0)
 Map:
 #incbin "Endgame1_data.dmp"
