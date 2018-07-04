@@ -1,6 +1,6 @@
 #include EAstdlib.event
 
-EventPointerTable(0x18,ThisChapter)
+EventPointerTable(0x41,ThisChapter)
 
 ORG 0xE80000
 

@@ -1,4 +1,4 @@
-EventPointerTable(0x11,ThisChapter) //based on the assumption that this is ID 11
+EventPointerTable(0x2A,ThisChapter) //based on the assumption that this is ID 11
 
 #define Ch8BaseLevel 12
 #define Ch8BaseLevelPromoted 1

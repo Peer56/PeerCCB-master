@@ -8,8 +8,11 @@
     MESSAGE Used text space ends at currentOffset
 
 	//Animations
+	PUSH
+	ORG 0x1000000
     #include "Animations/Master Animation Installer.event"
 	MESSAGE Used animation space ends at currentOffset
+	POP
 	
     //CSV tables
     #include "Tables/Table Installer.event"
