@@ -16,6 +16,18 @@
 #include "Chapter1.event"
 }
 {
+#include "Chapter10x.event"
+}
+{
+#include "Chapter11.event"
+}
+{
+#include "Chapter12.event"
+}
+{
+#include "Chapter13.event"
+}
+{
 #include "Chapter2.event"
 }
 {
@@ -28,6 +40,9 @@
 #include "Chapter5.event"
 }
 {
+#include "Chapter6.event"
+}
+{
 #include "Chapter6x.event"
 }
 {
@@ -35,18 +50,6 @@
 }
 {
 #include "Chapter9.event"
-}
-{
-#include "Chapter10x.event"
-}
-{
-#include "Chapter11.event"
-}
-{
-#include "Chapter12.event"
-}
-{
-#include "Chapter13.event"
 }
 {
 #include "Endgame1.event"
