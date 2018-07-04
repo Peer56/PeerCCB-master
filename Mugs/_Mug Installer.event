@@ -19,3 +19,18 @@ setMugEntry(0x6, Raptor_Mug, 3,4,3,2)
 Scorpio_Mug:
 #incext PortraitFormatter "ScorpioMug.png"
 setMugEntry(0x8, Scorpio_Mug, 2,5,2,3)
+
+Reese_Mug:
+#incext PortraitFormatter "ReeseMug.png"
+setMugEntry(0x7, Reese_Mug,  3,6,3,3)
+
+
+
+
+
+#define RaphaelMug Raphael_Mug
+#define CyrusMug Cyrus_Mug
+#define AceMug Ace_Mug
+#define RaptorMug Raptor_Mug
+#define ScorpioMug Scorpio_Mug
+#define ReeseMug Reese_Mug
