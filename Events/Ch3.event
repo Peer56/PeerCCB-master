@@ -2,7 +2,7 @@
 
 EventPointerTable(0x07,ThisChapter)
 
-ORG 0xE80000
+//ORG 0xE80000
 
 ThisChapter:
 POIN TurnBasedEvents
@@ -72,9 +72,6 @@ TrapData:
 END_MAIN
 
 ALIGN 4
-
-BeginningScene:
-ENDA
 
 EndingScene:
 ENDA

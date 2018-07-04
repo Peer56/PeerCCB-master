@@ -200,7 +200,7 @@ DISA Hunter2
 DISA RenaisCivilian
 DISA RenaisCivilian_F
 DISA RiverFolk
-CLEA
+CLEA 0x0
 LOAD2 0x1 Units
 ENUN
 CAM1 [4,3]
@@ -226,7 +226,7 @@ MOVE 16 Gorias [10,5]
 MOVE 16 Hunter1 [10,4]
 MOVE 16 Hunter2 [11,5]
 ENUN
-CLEE
+CLEE 0x0
 CAM1 [5,7]
 LOAD1 0x1 EnemyUnits3
 ENUN
