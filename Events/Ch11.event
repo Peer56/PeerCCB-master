@@ -64,6 +64,7 @@ ENUN
 NoFade
 ENDA
 
+CharacterBasedEvents:
 CharacterEvent(0x9,RecruitTheran,Raphael,Theran,0x00)
 END_MAIN
 
