@@ -1,6 +1,6 @@
 # ch1open1
-[OpenLeft][LoadFace][0x01][0x01]
-[OpenMidRight][LoadFace][0x01][0x01]
+[OpenLeft][LoadFace][RaphaelMug][0x01]
+[OpenMidRight][LoadFace][ReeseMug][0x01]
 [ToggleSmile]Ah, young prince of Draco.[A][NL]
 I had a feeling you[NL]
 would come to see me.[A][ToggleSmile][CloseSpeechFast]
@@ -9,15 +9,15 @@ would come to see me.[A][ToggleSmile][CloseSpeechFast]
 have come to seek guidance.[A][NL]
 You see, I've been[NL]
 tasked with this quest-[ToggleSmile][CloseSpeechFast]
-[OpenFarLeft][LoadFace][0x01][0x01]
+[OpenFarLeft][LoadFace][CyrusMug][0x01]
 Milord! We've got trouble![A][CloseSpeechFast][X]
 
 # ch1open2
-[OpenMidRight][LoadFace][0x01][0x01]
+[OpenMidRight][LoadFace][RaphaelMug][0x01]
 Agryllian soldiers, here? Damn![A][NL]
 I guess we have no choice.[NL]
 We must fight back.[A]
-[OpenFarFarLeft][LoadFace][0x01][0x01]
+[OpenFarFarLeft][LoadFace]ReeseMug][0x01]
 Young prince, wait![A][MoveMidLeft][2NL]
 Allow me to accompany you on your journey.[A]
 [OpenMidRight]
@@ -29,8 +29,8 @@ Take me with you, and[NL]
 you'll be very glad you did.[A][X]
 
 # ch1village
-[OpenMidRight][LoadFace][0x01][0x01]
-[OpenMidLeft][LoadFace][0x01][0x01]
+[OpenMidRight][LoadFace][0xFFFF][0x01]
+[OpenMidLeft][LoadFace][VillagerMug][0x01]
 Come to stop the Agryllians, eh?[A][2NL]
 Here, take these magical wings.[NL]
 Use them and you can increase your speed.[A][2NL]
@@ -40,8 +40,8 @@ Don't go looking a gift[NL]
 horse in the mouth, boy![A][X]
 
 # ch1end
-[OpenMidLeft][LoadFace][0x01][0x01]
-[OpenMidRight][LoadFace][0x01][0x01]
+[OpenMidLeft][LoadFace][RaphaelMug][0x01]
+[OpenMidRight][LoadFace][CyrusMug][0x01]
 Damn, it seems that the[NL]
 Agryllians are everywhere.[A][NL]
 If only there were someplace that they[NL]
@@ -58,19 +58,19 @@ there to be an act of war.[A]
 That's a risk we'll have to take.[A][X]
 
 # ch1bossquote
-[OpenLeft][LoadFace][0x01][0x01]
+[OpenLeft][LoadFace][FaustMug][0x01]
 Die, you Draconian scum![A][X]
 
 # ch1bossquote2
-[OpenRight][LoadFace][0x01][0x01]
-[OpenLeft][LoadFace][0x01][0x01]
+[OpenRight][LoadFace][ReeseMug][0x01]
+[OpenLeft][LoadFace][FaustMug][0x01]
 You think you can face me, old man?[A][NL]
 I'll show you just how wrong you are![A][X]
 
 # ch1bossdeath
-[OpenLeft][LoadFace][0x01][0x01]
+[OpenLeft][LoadFace][FaustMug][0x01]
 For king[ToggleMouthMove]...[ToggleMouthMove]and country[ToggleMouthMove]...[ToggleMouthMove][A][X]
 
 # ReeseDeathQuote
-[OpenRight][LoadFace][0x01][0x01]
+[OpenRight][LoadFace][ReeseMug][0x01]
 This is one wound I cannot heal[ToggleMouthMove]...[ToggleMouthMove][A][X]
