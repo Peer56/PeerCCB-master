@@ -1,6 +1,6 @@
 #include EAstdlib.event
 
-EventPointerTable(0x3b,ThisChapter)
+EventPointerTable(0x17,ThisChapter)
 
 ThisChapter:
 

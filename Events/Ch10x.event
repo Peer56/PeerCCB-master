@@ -6,8 +6,8 @@
 #include REDAs.event
 
 
-EventPointerTable(0x07,PointersCh10x)
-EventPointerTable(0x06,TileChangesCh10x) 
+EventPointerTable(0x14,PointersCh10x)
+EventPointerTable(0x15,TileChangesCh10x) 
 
 ALIGN 4
 
