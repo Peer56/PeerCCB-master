@@ -1,1 +1,2 @@
-Destroy the town[X]
+Your only axe user.[N]
+Have fun.[X]

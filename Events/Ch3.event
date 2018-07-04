@@ -53,7 +53,7 @@ LocationBasedEvents:
 Village(0x8,VillageHeavy,2,2)
 END_MAIN
 
-VillageGem:
+VillageHeavy:
 VillageEventItem(VillageText, Village, HeavySpear)
 
 MiscBasedEvents:
