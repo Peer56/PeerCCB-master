@@ -68,7 +68,7 @@ CharacterEvent(0x9,RecruitTheran,Raphael,Theran,0x00)
 END_MAIN
 
 RecruitTheran:
-/text Theran: H-Hold! Hold! Please! I don't want to fight! I was forced to join this stupid battle by dad! Raphael: Your own father forced you to fight? Theran: Y-Yes! He's gone mad, sir! I-I... want to help you... I want to stop dad... Raphael: ...So be it, you may join us.
+//text Theran: H-Hold! Hold! Please! I don't want to fight! I was forced to join this stupid battle by dad! Raphael: Your own father forced you to fight? Theran: Y-Yes! He's gone mad, sir! I-I... want to help you... I want to stop dad... Raphael: ...So be it, you may join us.
 TurnAlly(Theran)
 NoFade
 ENDA

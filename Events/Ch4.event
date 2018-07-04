@@ -33,7 +33,7 @@ END_MAIN
 
 LocationBasedEvents:
 Seize(18,17)
-Village(0x7,WrathVillage,2,8)
+Village(0x7,Ch4WrathVillage,2,8)
 Village(0x8,Ch4RobeVillage,19,7)
 House(0x9,Ch4House1,4,4)
 House(0xa,Ch4House2,14,11)

@@ -7,8 +7,8 @@
   <properties>
    <property name="Anims1" value="0"/>
    <property name="ChapterID" value="0x0F"/>
-   <property name="Main" value="0x45"/>
-   <property name="MapID" value=""/>
+   <property name="Main" value=""/>
+   <property name="MapID" value="0x45"/>
    <property name="ObjectType" value="0x88"/>
    <property name="PaletteID" value="0x89"/>
    <property name="TileConfig" value="0x8a"/>

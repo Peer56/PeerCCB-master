@@ -42,3 +42,5 @@
 
 #include "FE8 Nightmare modules\Item editors\Stat Bonuses Editor.event"
 
+#include "Sound Room\Sound Room Editor.event"
+

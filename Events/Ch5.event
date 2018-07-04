@@ -52,7 +52,7 @@ ReinforcementEvent(Wave4)
 ENDA
 
 CharacterBasedEvents:
-CharacterEventBothWays(0x10,TalkEvent, Raphael, Staphanie)
+CharacterEventBothWays(0x10,HouseText, Raphael, Staphanie)
 END_MAIN
 
 LocationBasedEvents:
@@ -76,7 +76,16 @@ END_MAIN
 Dunno3:
 END_MAIN
 
-Units:
+Traps1:
+END_MAIN
+
+Traps2:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
 UNIT Raphael EphraimLord 0x00 Level(1, Ally, 0) [2,17] 0x00 0x00 0x0 0x00 [0x00] NoAI 
 UNIT Seth Paladin Raphael Level(1, Ally, 0) [2,16] 0x00 0x00 0x0 0x00 [0x00] NoAI 
 UNIT Seth Paladin Raphael Level(1, Ally, 0) [1,16] 0x00 0x00 0x0 0x00 [0x00] NoAI 
@@ -152,7 +161,7 @@ UNIT 0x80 Swordmaster Bazba Level(1, Enemy, 1) [21,11] 0x00 0x00 0x0 0x00 [IronB
 UNIT
 
 BeginningScene:
-LOAD2 0x1 Units
+LOAD2 0x1 Units1
 ENUN
 LOAD1 0x1 Bad
 ENUN

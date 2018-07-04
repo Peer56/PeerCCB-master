@@ -1,1 +1,2 @@
-Raptor[X]
+[OpenFarRight][LoadFace][0xFF][0xFF]
+Alright, this swith is on.[A][NL][X]

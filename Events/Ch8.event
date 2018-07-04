@@ -45,7 +45,7 @@ TurnBasedEvents:
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEvent(0x7, RecruitAlexei, Raphael)
+CharacterEvent(0x7,RecruitAlexei, Raphael, Alexei)
 END_MAIN
 
 LocationBasedEvents:

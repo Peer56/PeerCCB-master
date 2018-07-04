@@ -1,2 +1,5 @@
-Solidarity: Critical and Critical[N]
-Avoid +10 to adjacent allies.[X]
+[OpenFarLeft][LoadInnes]
+I'm sorry...[A][NL]
+I don't know...[A][NL]
+How to control these[NL]
+powers of mine...[A][NL][X]

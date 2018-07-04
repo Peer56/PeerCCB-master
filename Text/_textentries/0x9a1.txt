@@ -1,2 +1,1 @@
-Hawkeye: User will[N]
-always hit the enemy.[X]
+Seize[X]

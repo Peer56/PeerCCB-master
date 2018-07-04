@@ -1,6 +1,6 @@
 #define csvmacro000(arg000) "BYTE arg000 "
 
-#inctext PFinder "C:\PeerCCB-master\FE8_clean.gba" 0xe47180 ClassSkillTable
+#inctext PFinder "C:\Users\lenovo Z70\Desktop\Zaim\FE Hacking 2\PeerCCB-master\FE8_clean.gba" 0xe47180 ClassSkillTable
 
 ALIGN 4
 ClassSkillTable:

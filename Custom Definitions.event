@@ -40,6 +40,8 @@
 #define Kithin Tethys
 #define Seras Marisa
 #define Jonathan LArachel
+
+#define Erhuang 0xA2
  
 #define Larry ONeill
 //#define Ch1boss Breguet
@@ -55,11 +57,17 @@
 //#define Ch10boss Pablo
 //#define Ch10xboss Beran
 #define Yaurel Aias
-#define Brendain Selena
+#define Brendain SelenaCC
 #define Yvorhic Carlyle
+
+#define ChendolCh2 0x85
 
 //define the endgame bosses here
 
 //define classes here
 
+#define Halberdier 0x78
+
 //define items here
+
+#define WoDao Shamshir

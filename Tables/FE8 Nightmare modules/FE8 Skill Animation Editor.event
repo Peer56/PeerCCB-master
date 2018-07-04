@@ -1,6 +1,6 @@
 #define csvmacro003(arg000) "WORD arg000 "
 
-#inctext PFinder "C:\PeerCCB-master\FE8_clean.gba" 0xe47180 SkillAnimationPointerTable
+#inctext PFinder "C:\Users\lenovo Z70\Desktop\Zaim\FE Hacking 2\PeerCCB-master\FE8_clean.gba" 0xe47180 SkillAnimationPointerTable
 
 ALIGN 4
 SkillAnimationPointerTable:

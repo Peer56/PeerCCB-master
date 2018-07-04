@@ -37,9 +37,6 @@
 #include "Chapter9.event"
 }
 {
-#include "Chapter10.event"
-}
-{
 #include "Chapter10x.event"
 }
 {

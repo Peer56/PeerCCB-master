@@ -26,6 +26,10 @@ Learned  [X]
 Freeze all enemies[N]
 for one turn[X]
 
+## DVText_CreateBridge
+Creates a bridge.[N]
+lmao.[X]
+
 ## nameCamus
 #for identity problems
 Camus[X]
@@ -38,6 +42,10 @@ Zeke[X]
 
 #include "skilldesc_text.txt"
 
+#include "ch4text.txt"
+
 #include "ch6text.txt"
 
 #include "ch10text.txt"
+
+#include "unitnames.txt"
