@@ -14,7 +14,7 @@ POP
 
 */
 
-EventPointerTable(0x7, ThisChapter)
+EventPointerTable(0x12, ThisChapter)
 
 // ============================
 // = EVENT HELPERS START HERE =

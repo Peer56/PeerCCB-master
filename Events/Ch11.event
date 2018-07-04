@@ -2,7 +2,7 @@
 
 
 
-EventPointerTable(0x7,ThisChapter)
+EventPointerTable(0x16,ThisChapter)
 
 
 
@@ -58,7 +58,7 @@ NoFade
 ENDA
 
 TurnDeux:
-LOAD 0x1 SURPRISE
+LOAD1 0x1 SURPRISE
 ENUN
 //text: Yaurel: Finally... I've reached my home... The great temple of Kalisa... Home to the great lance of legend, Ignoth and the Blade of Justice, Loklin... Men... Secure the area. We must not let these... scum get the weapons!
 NoFade
@@ -157,35 +157,35 @@ UNIT
 
 
 THRACIAKILLERS:
-UNIT Theran WyvernRider 0x00 Level(4, Enemy, 0) [13,30] 0x00 0x00 0x1 REDA(12)R(20) [SteelLance, Spear] PursueWithoutHeedAI 
-UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [7,30] 0x00 0x00 0x1 REDA(7)R(24) [Horseslayer, Tomahawk] AttackInRangeAI 
-UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [5,30] 0x00 0x00 0x1 REDA(5)R(24) [Spear, Hammer] AttackInRangeAI 
-UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [4,30] 0x00 0x00 0x1 REDA(4)R(25) [BraveAxe, Spear] AttackInRangeAI 
-UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [8,30] 0x00 0x00 0x1 REDA(6)R(23) [BraveLance, Tomahawk] AttackInRangeAI 
-UNIT Brendain WyvernKnight 0x00 Level(12, Enemy, 0) [6,30] 0x00 0x00 0x1 REDA(12)R(20) [BraveLance, KillerLance, Spear, DelphiShield] AttackInRangeAI 
-UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [17,30] 0x00 0x00 0x1 REDA(17)R(29) [BraveAxe, Tomahawk] AttackInRangeAI 
-UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [19,30] 0x00 0x00 0x1 REDA(19)R(26) [BraveLance, Spear] AttackInRangeAI 
-UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [26,30] 0x00 0x00 0x1 REDA(26)R(22) [KillerLance, Tomahawk] AttackInRangeAI 
-UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [28,30] 0x00 0x00 0x1 REDA(28)R(21) [KillerAxe, Spear] AttackInRangeAI 
-UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [21,30] 0x00 0x00 0x1 REDA(21)R(21) [BraveLance, Horseslayer, Spear] AttackInRangeAI 
-UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [15,30] 0x00 0x00 0x1 REDA(15)R(26) [BraveLance, Horseslayer, Spear] AttackInRangeAI 
-UNIT 0x91 Druid 0x00 Level(4, Enemy, 0) [29,29] 0x00 0x00 0x1 REDA(28)R(29) [Luna, Fenrir] AttackInRangeAI 
-UNIT 0x91 Druid 0x00 Level(4, Enemy, 0) [29,25] 0x00 0x00 0x1 REDA(28)R(25) [Luna, Fenrir] AttackInRangeAI 
-UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [0,15] 0x00 0x00 0x1 REDA(5)R(15) [BraveLance, Axereaver] ChaseOnceApproachedAI 
-UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [0,19] 0x00 0x00 0x1 REDA(6)R(19) [BraveLance, Axereaver] ChaseOnceApproachedAI 
+UNIT Theran WyvernRider 0x00 Level(4, Enemy, 0) [13,30] 0x00 0x00 0x1 REDA12R20 [SteelLance, Spear] PursueWithoutHeedAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [7,30] 0x00 0x00 0x1 REDA7R24 [Horseslayer, Tomahawk] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [5,30] 0x00 0x00 0x1 REDA5R24 [Spear, Hammer] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [4,30] 0x00 0x00 0x1 REDA4R25 [BraveAxe, Spear] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [8,30] 0x00 0x00 0x1 REDA6R23 [BraveLance, Tomahawk] AttackInRangeAI 
+UNIT Brendain WyvernKnight 0x00 Level(12, Enemy, 0) [6,30] 0x00 0x00 0x1 REDA12R20 [BraveLance, KillerLance, Spear, DelphiShield] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [17,30] 0x00 0x00 0x1 REDA17R29 [BraveAxe, Tomahawk] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [19,30] 0x00 0x00 0x1 REDA19R26 [BraveLance, Spear] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [26,30] 0x00 0x00 0x1 REDA26R22 [KillerLance, Tomahawk] AttackInRangeAI 
+UNIT 0x91 WyvernLord 0x00 Level(4, Enemy, 0) [28,30] 0x00 0x00 0x1 REDA28R21 [KillerAxe, Spear] AttackInRangeAI 
+UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [21,30] 0x00 0x00 0x1 REDA21R21 [BraveLance, Horseslayer, Spear] AttackInRangeAI 
+UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [15,30] 0x00 0x00 0x1 REDA15R26 [BraveLance, Horseslayer, Spear] AttackInRangeAI 
+UNIT 0x91 Druid 0x00 Level(4, Enemy, 0) [29,29] 0x00 0x00 0x1 REDA28R29 [Luna, Fenrir] AttackInRangeAI 
+UNIT 0x91 Druid 0x00 Level(4, Enemy, 0) [29,25] 0x00 0x00 0x1 REDA28R25 [Luna, Fenrir] AttackInRangeAI 
+UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [0,15] 0x00 0x00 0x1 REDA5R15 [BraveLance, Axereaver] ChaseOnceApproachedAI 
+UNIT 0x91 WyvernKnight 0x00 Level(4, Enemy, 0) [0,19] 0x00 0x00 0x1 REDA6R19 [BraveLance, Axereaver] ChaseOnceApproachedAI 
 UNIT
 
 SURPRISE:
-UNIT Yaurel Sage_F 0x00 Level(8, Enemy, 0) [24,30] 0x00 0x00 0x1 REDA(6)R(19) [Bolting, Fimbulvetr] GuardTileAI 
-UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [25,27] 0x00 0x00 0x1 REDA(27)R(25) [BraveSword, Javelin] AttackInRangeAI 
-UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [24,27] 0x00 0x00 0x1 REDA(12)R(27) [BraveSword, Javelin] AttackInRangeAI 
-UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [23,27] 0x00 0x00 0x1 REDA(21)R(24) [BraveSword, Javelin] AttackInRangeAI 
-UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [25,28] 0x00 0x00 0x1 REDA(29)R(27) [BraveSword, Javelin] AttackInRangeAI 
-UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [24,28] 0x00 0x00 0x1 REDA(23)R(29) [BraveSword, Javelin] AttackInRangeAI 
-UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [23,28] 0x00 0x00 0x1 REDA(16)R(27) [BraveSword, Javelin] AttackInRangeAI 
-UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [25,29] 0x00 0x00 0x1 REDA(27)R(29) [BraveSword, Javelin] AttackInRangeAI 
-UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [24,29] 0x00 0x00 0x1 REDA(23)R(30) [BraveSword, Javelin] AttackInRangeAI 
-UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [23,29] 0x00 0x00 0x1 REDA(20)R(29) [BraveSword, Javelin] AttackInRangeAI 
+UNIT Yaurel Sage_F 0x00 Level(8, Enemy, 0) [24,30] 0x00 0x00 0x1 REDA6R19 [Bolting, Fimbulvetr] GuardTileAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [25,27] 0x00 0x00 0x1 REDA27R25 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [24,27] 0x00 0x00 0x1 REDA12R27 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [23,27] 0x00 0x00 0x1 REDA21R24 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [25,28] 0x00 0x00 0x1 REDA29R27 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [24,28] 0x00 0x00 0x1 REDA23R29 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [23,28] 0x00 0x00 0x1 REDA16R27 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [25,29] 0x00 0x00 0x1 REDA27R29 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [24,29] 0x00 0x00 0x1 REDA23R30 [BraveSword, Javelin] AttackInRangeAI 
+UNIT 0x93 Paladin 0x00 Level(4, Enemy, 0) [23,29] 0x00 0x00 0x1 REDA20R29 [BraveSword, Javelin] AttackInRangeAI 
 UNIT
 
 // Shop Data

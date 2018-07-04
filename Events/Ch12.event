@@ -1,6 +1,6 @@
 #include EAstdlib.event
 
-EventPointerTable(0x3b,ThisChapter)
+EventPointerTable(0x17,ThisChapter)
 
 ThisChapter:
 
@@ -23,6 +23,8 @@ POIN Units Units
 POIN $0 $0 $0 $0 $0 $0
 
 POIN BeginningScene EndingScene
+
+ALIGN 4
 
 Units:
 UNIT Eirika EirikaMasterLord 0x00 Level(4, Ally, 0) [2,2] 0x00 0x00 0x0 0x00 [BraveSword, Javelin] AttackInRangeAI 
@@ -89,13 +91,14 @@ Tutorial:
 //DO NOT TOUCH
 WORD $00
 
+ALIGN 4
+
 TrapData:
 BLST [12,7] IronBallista
 BLST [3,11] IronBallista
 BLST [20,7] IronBallista
-END_MAIN
-
 ALIGN 4
+END_MAIN
 
 // Events
 
@@ -104,6 +107,7 @@ ALIGN 4
 // Scripted Fights
 
 // Units
+ALIGN 4
 Remnants:
 UNIT Brendain WyvernKnight 0x00 Level(12, Enemy, 0) [18,7] 0x2 0x00 0x0 0x00 [BraveLance, SilverLance, Spear, DelphiShield] GuardTileAI 
 UNIT 0x91 Hero 0x00 Level(3, Enemy, 0) [8,7] 0x2 0x00 0x0 0x00 [SilverSword, Tomahawk] AttackInRangeAI 

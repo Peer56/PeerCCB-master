@@ -9,7 +9,7 @@
 //                                                //
 ////////////////////////////////////////////////////
 
-EventPointerTable(0x7, PointerList)
+EventPointerTable(0xC, PointerList)
 
 PointerList:
 POIN TurnBasedEvents

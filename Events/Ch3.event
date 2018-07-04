@@ -1,8 +1,8 @@
 #include EAstdlib.event
 
-EventPointerTable(0x07,ThisChapter)
+EventPointerTable(0x0A,ThisChapter)
 
-ORG 0xE80000
+//ORG 0xE80000
 
 ThisChapter:
 POIN TurnBasedEvents
@@ -72,9 +72,6 @@ TrapData:
 END_MAIN
 
 ALIGN 4
-
-BeginningScene:
-ENDA
 
 EndingScene:
 ENDA

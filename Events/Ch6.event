@@ -15,7 +15,7 @@ ALIGN 4
 
 ALIGN 4
 
-EventPointerTable(0x24, PointerList)
+EventPointerTable(0xD, PointerList)
 
 PointerList:
 POIN TurnBasedEvents
