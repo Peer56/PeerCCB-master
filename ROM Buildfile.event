@@ -1,7 +1,6 @@
 #ifdef _FE8_
     #include "EAstdlib.event"
     #include "Custom Definitions.event"
-    #include "REDAs.event"
 
     ORG FreeSpace
     //Text first for Text ID definitions
@@ -21,6 +20,7 @@
     MESSAGE Used hax space ends at currentOffset
 
     //Events
+	#include "REDAs.event"
     #include "Events/Master Event Installer.event"
 
     //Maps
